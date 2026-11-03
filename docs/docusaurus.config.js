@@ -3,14 +3,14 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Trilha Educacional 2026.2 — Grupo 01',
-  tagline: 'Suprimentos, materiais MRO e centralização de estoques',
+  title: 'AgroTech Inteli + Atvos',
+  tagline: 'Viabilidade de um centro de distribuição de materiais MRO',
   favicon: 'img/favicon.ico',
   url: 'https://agrotech-inteli-ati.github.io',
-  baseUrl: '/2026_02_TRAINEE_EDUCACIONAL_01/',
+  baseUrl: '/2026_02_Atvos/',
   trailingSlash: true,
   organizationName: 'AgroTech-Inteli-ATI',
-  projectName: '2026_02_TRAINEE_EDUCACIONAL_01',
+  projectName: '2026_02_Atvos',
   onBrokenLinks: 'throw',
   markdown: {
     hooks: {
@@ -38,7 +38,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logo.png',
       navbar: {
         title: 'AgroTech Inteli',
         logo: {
@@ -46,9 +46,15 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          {type: 'docSidebar', sidebarId: 'trilhaSidebar', position: 'left', label: 'Documentação'},
           {
-            href: 'https://github.com/AgroTech-Inteli-ATI/2026_02_TRAINEE_EDUCACIONAL_01',
+            href: 'https://atvos.com/',
+            label: 'Atvos',
+            position: 'right',
+            className: 'navbar-atvos',
+          },
+          {type: 'docSidebar', sidebarId: 'caseSidebar', position: 'left', label: 'Entregas'},
+          {
+            href: 'https://github.com/AgroTech-Inteli-ATI/2026_02_Atvos',
             label: 'GitHub',
             position: 'right',
           },
@@ -62,7 +68,7 @@ const config = {
             items: [{label: 'Início', to: '/'}],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AgroTech Inteli. Construído com Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AgroTech Inteli + Atvos. Desenvolvido no Programa de Trainees.`,
       },
       prism: {theme: prismThemes.github, darkTheme: prismThemes.dracula},
     }),

@@ -1,207 +1,168 @@
-# Projeto de Gestão de Materiais MRO e Centralização de Estoques - Programa de Trainees
+# Centro de Distribuição de Materiais MRO — Atvos
 
-## 📋 Visão Geral
+## 📋 Visão geral
 
-Este projeto faz parte do **Programa de Trainees - Trilha Educacional** da AgroTech Inteli, com foco na preparação conceitual e analítica para um futuro case de business sobre gestão e centralização de materiais MRO no setor sucroenergético.
+Este projeto integra o **Programa de Trainees do AgroTech Inteli**, em parceria com a **Atvos**, e desenvolve um estudo preliminar de viabilidade de um centro de distribuição (CD) de materiais de manutenção, reparo e operação (MRO) para as unidades agroindustriais da empresa.
 
-O programa prioriza o desenvolvimento de:
+A análise compara o abastecimento atual com um CD centralizado e um modelo híbrido, considerando fornecedores, logística, regiões candidatas, investimentos, custos, benefícios e atendimento às unidades.
 
-- **Capacidade de pesquisa e pensamento estruturado**
-- **Análise setorial, operacional e da cadeia de valor**
-- **Compreensão de Suprimentos, manutenção e gestão de materiais MRO**
-- **Raciocínio estratégico e comunicação executiva**
+## 🏢 Sobre a Atvos
 
+A **[Atvos](https://atvos.com/)** produz e comercializa etanol, açúcar VHP e energia elétrica a partir da cana-de-açúcar e de sua biomassa. O case está vinculado à área de **Suprimentos — Gestão de Materiais MRO**.
 
-## 🎯 Objetivo
+## 🎯 Objetivo e escopo
 
-Desenvolver uma análise estruturada do setor sucroenergético e da operação de uma empresa do setor, evoluindo do entendimento da cadeia de valor e do papel de Suprimentos para o estudo da gestão de materiais MRO, dos modelos de centralização de estoques, do mercado fornecedor e dos fatores logísticos.
+Avaliar em quais condições a centralização da gestão, armazenagem, controle e distribuição de materiais pode melhorar a eficiência operacional, a governança dos estoques e a disponibilidade de itens essenciais.
 
-O projeto serve como preparação para um case real com a Diretoria de Suprimentos da Atvos, sem antecipar ou reproduzir a solução do projeto.
+O estudo está limitado a **pneus, filtros, lubrificantes, rolamentos, mangueiras e peças de desgaste agrícola**, nas unidades definidas com a Atvos. Inclui análise de consumo desde 2024, estoques, fornecedores, alternativas de abastecimento e análise exploratória de tributos.
 
+Não inclui implantação, projeto de engenharia, planejamento operacional detalhado, modelo financeiro aprofundado, parecer tributário ou abertura de fábricas.
 
-## 🌱 Frentes de Estudo
+## 🔗 Links do projeto
 
-Todos os grupos estudarão o **setor sucroenergético**. Cada grupo deverá selecionar uma empresa diferente como referência e mantê-la ao longo dos dois entregáveis.
+- [Documentação no GitHub Pages](https://agrotech-inteli-ati.github.io/2026_02_Atvos/)
+- [Repositório no GitHub](https://github.com/AgroTech-Inteli-ATI/2026_02_Atvos)
+- [Termo de Abertura do Projeto](<Documentação do Projeto/[Inteli] TAP ATVOS.docx.pdf>)
+- [Documento de entregáveis](<Documentação do Projeto/[ATI] ENTREGÁVEIS ATVOS.pdf>)
 
-### 1. Contexto sucroenergético
+## 📅 Cronograma e entregáveis
 
-- **Escopo**: cadeia de valor, operação e dinâmica de empresas produtoras de cana-de-açúcar, açúcar, etanol e bioenergia.
-- **Pontos relevantes**: atividades agrícolas, industriais e logísticas; tendências; drivers; desafios operacionais e continuidade da operação.
-- **Relações analisadas**: operação, manutenção, almoxarifados, logística e Suprimentos.
-- **Exemplos de empresas para pesquisa**: Raízen, São Martinho e BP Bunge Bioenergia.
+| Sprint | Período (2026) | Entregas principais |
+|---|---|---|
+| 1 — Diagnóstico | 03/11 → 13/11 | Diagnóstico inicial, planilha de dados e informações pendentes |
+| 2 — Avaliação inicial | 16/11 → 27/11 | Comparação de alternativas e regiões, planilha inicial de viabilidade |
+| 3 — Recomendação final | 30/11 → 16/12 | Planilha final, cenários, relatório e apresentação executiva |
 
-### 2. Materiais e estoques MRO
+### Sprint 1 — Diagnóstico do abastecimento e dados para avaliar o CD
 
-- **Escopo**: materiais de manutenção, reparo e operação e sua importância para a continuidade operacional.
-- **Pontos relevantes**: ruptura, excesso, consumo, lead time, obsolescência, compras emergenciais, Curva ABC e criticidade.
-- **Possíveis análises**: reposição, priorização de materiais, indicadores de estoque e nível de serviço.
+**Período:** 03/11 a 13/11/2026
 
-### 3. Centralização, fornecedores e logística
+Analisar o consumo desde 2024 e a posição dos estoques das categorias selecionadas, por material e unidade, para estabelecer a base de comparação do estudo.
 
-- **Escopo**: modelos centralizado, descentralizado e híbrido, mercado fornecedor de MRO e distribuição entre unidades.
-- **Pontos relevantes**: benefícios, riscos e limitações dos modelos; categorias de materiais; padronização; frete; prazo; distância; nível de serviço e fatores tributários introdutórios.
-- **Ferramentas**: SIPOC ou equivalente, benchmark de práticas e matriz de decisão multicritério.
+## Entregas previstas
 
-Os exemplos de empresas são ilustrativos e não configuram parceria formal. Não é necessário acesso a informações proprietárias.
+- Necessidades de materiais MRO: consumo, frequência, variações, criticidade, reposição, armazenagem e classificação ABC, conforme os dados disponíveis.
+- Mapeamento dos fornecedores prioritários, localização, cobertura, prazos e condições de atendimento.
+- Diagnóstico do abastecimento atual: unidades, fluxos, estoques e custos de armazenagem, transporte e equipe.
+- Planilha de dados com fontes e datas, comparando a situação atual com CD centralizado e modelo híbrido.
+- Lista das informações pendentes e suposições necessárias para avaliar investimento, custos e benefícios.
 
+**Ferramentas previstas:** Excel / Google Sheets e PowerPoint / Google Slides.
 
-## 📅 Cronograma e Entregáveis
+### Sprint 2 — Avaliação inicial da viabilidade e comparação de alternativas
 
-### 📊 Entregável 1: Contexto Setorial, Operação e Papel de Suprimentos
+**Período:** 16/11 a 27/11/2026
 
-**Data**: 05/10/2026
+Comparar alternativas de abastecimento e regiões candidatas para estimar em quais condições o CD pode valer a pena.
 
-**Objetivo**: Compreender o setor sucroenergético, a operação agroindustrial e o papel estratégico de Suprimentos e da manutenção, utilizando uma empresa como referência prática para a pesquisa.
+## Entregas previstas
 
-**Conteúdo**:
+- Comparação da situação atual, CD centralizado e modelo híbrido, incluindo referências de gestão de MRO, custos, prazos e atendimento aos materiais essenciais.
+- Comparação de regiões candidatas por distância, acesso às unidades, fornecedores, infraestrutura e riscos.
+- Estimativa de investimento inicial e custos de funcionamento, com cálculos, fontes, datas e unidades de medida.
+- Análise exploratória dos impostos que afetam as alternativas, com pontos a confirmar com a área fiscal da Atvos.
+- Estimativa de benefícios e impactos, separando capital liberado pela redução de estoques da economia recorrente e evitando dupla contagem.
+- Planilha inicial de viabilidade e conclusão preliminar, com critérios de comparação das regiões e informações ainda necessárias.
 
-- Contextualização, tamanho e relevância do setor sucroenergético.
-- Principais tendências e desafios.
-- Drivers econômicos, produtivos, operacionais, logísticos e regulatórios, quando aplicável.
-- Mapeamento simplificado da cadeia de valor e da operação agroindustrial.
-- Investigação da empresa: atuação, produtos, serviços e presença geográfica.
-- Características da operação, da manutenção e do papel de Suprimentos.
-- Registro das fontes utilizadas.
+**Ferramentas previstas:** Excel / Google Sheets e PowerPoint / Google Slides. Power BI é opcional.
 
-**Apresentação executiva**:
+### Sprint 3 — Conclusão da viabilidade e recomendação final
 
-- Contexto do setor.
-- Principais drivers e desafios.
-- Cadeia de valor e relação entre manutenção e Suprimentos.
-- Empresa, operação e papel de Suprimentos.
-- Principais aprendizados.
+**Período:** 30/11 a 16/12/2026
 
+Consolidar a viabilidade das alternativas e apresentar uma recomendação apoiada nos dados disponíveis, explicitando condições, riscos e próximos passos.
 
-### 📦 Entregável 2: Gestão de Materiais MRO e Centralização de Estoques
+## Entregas previstas
 
-**Data**: 30/10/2026
+- Comparação final da situação atual, CD centralizado e modelo híbrido: investimento, custos, benefícios e atendimento às unidades.
+- Estimativa da economia ou custo adicional, separando o capital liberado pela redução de estoques.
+- Estimativa de payback quando houver dados suficientes e economia líquida positiva.
+- Cenários favorável, esperado e desfavorável, variando volume, frete, instalação e redução dos estoques.
+- Recomendação do modelo e da região quando os resultados permitirem, com riscos, informações pendentes e próximos passos.
+- Relatório e apresentação final, com diagnóstico, resultados, fontes e suposições.
+- Planilha editável de viabilidade e apoio à decisão, com valores ajustáveis, cálculos, gráficos e instruções básicas de uso e atualização.
 
-**Objetivo**: Aprofundar a pesquisa sobre gestão de materiais MRO e modelos de centralização de estoques, aplicando ferramentas analíticas úteis para a compreensão do futuro case.
+**Indicadores previstos:** custo total, disponibilidade de materiais essenciais, prazo de atendimento e giro de estoque.
 
-**Conteúdo**:
+**Ferramentas previstas:** Excel / Google Sheets e PowerPoint / Google Slides. Power BI, Looker Studio, mapa ou dashboard são complementos opcionais.
 
-- Retomada da empresa, da operação e dos desafios identificados.
-- Impactos da falta e do excesso de estoque.
-- Consumo, lead time, obsolescência e compras emergenciais.
-- Classificação por Curva ABC e criticidade.
-- Indicadores de estoque e nível de serviço.
-- Comparação entre estoques centralizado, descentralizado e híbrido.
-- Mapeamento do fluxo de materiais por SIPOC ou ferramenta equivalente.
-- Mercado fornecedor, categorias de materiais e fatores logísticos.
-- Benchmark de pelo menos três práticas ou referências.
-- Critérios para avaliar a centralização e matriz multicritério aplicada a cenário genérico.
-- Registro das fontes utilizadas.
+## 📌 MVP do projeto
 
-**Apresentação executiva**:
+Uma **planilha editável de viabilidade e apoio à decisão**, com:
 
-- Empresa, operação e papel de Suprimentos.
-- Principais desafios da gestão de materiais MRO.
-- Modelos de centralização e fluxo de materiais.
-- Mercado fornecedor, fatores logísticos e benchmark.
-- Critérios e aprendizados para análise.
+- Dados organizados de consumo desde 2024, estoques, unidades e fornecedores.
+- Comparação entre situação atual, CD centralizado e modelo híbrido.
+- Investimentos, custos, benefícios e premissas ajustáveis para testar cenários.
+- Fontes, cálculos, estimativas e resumo das recomendações.
+- Payback quando houver dados suficientes e economia líquida positiva.
 
+Gráficos, mapa ou dashboard são complementos opcionais.
 
-## 🚀 Como Começar
+## 📁 Estrutura do repositório
 
-### 1. Configuração do Ambiente
+```text
+2026_02_Atvos/
+├── Documentação do Projeto/        # TAP e documento de entregáveis
+├── docs/                          # Site Docusaurus
+│   ├── docs/
+│   │   ├── intro.md
+│   │   ├── 001_Diagnostico_Abastecimento/
+│   │   ├── 002_Avaliacao_Inicial_Viabilidade/
+│   │   └── 003_Viabilidade_Recomendacao_Final/
+│   ├── src/css/                   # Estilos
+│   └── static/img/                # Identidade visual e imagens
+└── .github/workflows/deploy.yml    # Build e publicação no GitHub Pages
+```
 
-É necessário ter o Node.js 20 ou superior instalado.
+As pastas das sprints contêm apenas resumos do escopo das entregas. A equipe pode adicionar os próprios documentos, sem um template obrigatório.
+
+## 🚀 Como executar a documentação
+
+Requisito: **Node.js 20 ou superior** e npm.
 
 ```bash
-# Clone o repositório
-git clone [seu-repositorio]
-
-# Acesse a documentação
-cd docs
-
-# Instale as dependências
-npm install
-
-# Inicie o Docusaurus
+git clone https://github.com/AgroTech-Inteli-ATI/2026_02_Atvos.git
+cd 2026_02_Atvos/docs
+npm ci
 npm start
 ```
 
-### 2. Organização do Projeto
+Acesse o endereço exibido no terminal, normalmente `http://localhost:3000/2026_02_Atvos/`.
 
-- Defina a empresa sucroenergética que será utilizada como referência.
-- Mantenha a mesma empresa ao longo dos dois entregáveis.
-- Desenvolva os conteúdos nas pastas correspondentes em `docs/docs/`.
-- Salve imagens em `docs/static/img/`.
-- Documente fontes, premissas, limitações e possíveis vieses.
-- Execute `npm run build` antes de abrir o pull request.
+Para validar e visualizar a versão de produção:
 
+```bash
+npm run build
+npm run serve
+```
 
-## 📋 Critérios de Avaliação
+## 🌐 Publicação
 
-### Entregável 1
+O workflow de GitHub Pages instala as dependências, gera o site em `docs/build` e publica após um push na branch `main` ou execução manual do workflow. Em **Settings → Pages**, a origem da publicação deve ser **GitHub Actions**.
 
-- **Qualidade das fontes**
-- **Clareza da análise**
-- **Compreensão do setor e de Suprimentos**
-- **Capacidade de síntese**
-
-### Entregável 2
-
-- **Profundidade da análise**
-- **Coerência do raciocínio**
-- **Qualidade dos benchmarks e das fontes**
-- **Clareza na comunicação**
-
-### Rubrica Geral
-
-- **Pesquisa e fontes:** variedade, confiabilidade e uso adequado.
-- **Estrutura e lógica:** clareza do raciocínio e organização das análises.
-- **Compreensão de MRO e centralização:** capacidade de relacionar conceitos, riscos, critérios e alternativas.
-- **Comunicação executiva:** síntese, clareza e qualidade visual.
-- **Ética e conformidade:** uso de dados públicos, respeito à confidencialidade e transparência sobre limitações.
-
-
-## 🎯 Diretrizes Importantes
-
-### Dados, Ética e Conformidade
-
-- Utilizar apenas informações públicas.
-- Citar todas as fontes, incluindo link e data de acesso.
-- Não incluir dados sensíveis ou confidenciais.
-- Indicar limitações e possíveis vieses dos dados.
-- Em caso de dúvida, sinalizar a limitação e adotar estimativas conservadoras.
-- Aplicar frameworks à empresa pesquisada ou a cenários genéricos.
-- Não utilizar dados da Atvos nem antecipar ou reproduzir a solução do case real.
-
-### Interações e Feedback
-
-- Cada entrega contará com apresentação para banca e feedback técnico.
-- Tempo por grupo: aproximadamente 10 minutos de apresentação e 5–8 minutos de perguntas.
-- O feedback será direcionado à qualidade da pesquisa e à preparação para o Eixo Mercado.
-
-
-## 📚 Recursos Recomendados
-
-### Fontes de Dados
-
-- IBGE
-- MAPA
-- Embrapa
-- CONAB
-- UNICA
-- ANP
-- Relatórios anuais, operacionais e de sustentabilidade das empresas
-- Publicações acadêmicas e relatórios setoriais
-
-### Ferramentas
-
-- Dados e análises: Excel / Google Sheets
-- Apresentações: PowerPoint / Google Slides
-- Documentação: Docusaurus
-- Diagramas e fluxos: ferramentas de modelagem ou recursos compatíveis com Markdown
-
+A configuração usa a organização `AgroTech-Inteli-ATI` e o caminho `/2026_02_Atvos/`. Após renomear o repositório, é necessário executar o workflow novamente para publicar os arquivos com esse caminho.
 
 ## 👥 Equipe
 
-**Integrantes**: [Preencher]
+| Integrantes |
+|---|
+| Anna Castellini |
+| Julia Jesus Bezerra |
+| Clara Carvalho Rapuano |
+| Arthur Marques de Almeida |
+| Laís Victoria Lopes de Araújo |
+| Gabrielli Marques Battini |
+| Ana Clara da Silva Silvestre |
 
-**Empresa estudada**: [Preencher]
+### Lideranças
 
----
+| Função | Responsáveis |
+|---|---|
+| Líder do projeto | Amanda Rosa — AgroTech Inteli |
+| Líder técnico | Stefanne Soares — AgroTech Inteli |
+| Líderes de negócio | Matheus Silva e Paulo Fernandes — AgroTech Inteli |
+| Líder executivo | Cristiano Dale — Gerente de Materiais da Atvos |
 
-**Nota:** Este projeto possui caráter educacional. As análises devem utilizar dados públicos e têm finalidade exclusivamente acadêmica e preparatória.
+## 🧠 Uso e dados
+
+Projeto acadêmico e estratégico desenvolvido pelo AgroTech Inteli em parceria com a Atvos. Os insumos incluem dados públicos e informações fornecidas pela empresa, conforme as condições de uso acordadas. Fontes, datas, suposições e limitações devem ser registradas; estimativas não devem ser apresentadas como resultados comprovados. Informações restritas devem permanecer nos canais autorizados.

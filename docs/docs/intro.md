@@ -1,118 +1,73 @@
 ---
 sidebar_position: 1
 slug: /
-description: "Introdução ao Projeto"
+title: AgroTech Inteli + Atvos
+description: Estudo de viabilidade de um centro de distribuição de materiais MRO para as unidades agroindustriais da Atvos.
 ---
 
-# Introdução ao Projeto
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Objetivo do Projeto
+<div className="case-partnership" aria-label="Parceria AgroTech Inteli e Atvos">
+  <img src={useBaseUrl('/img/logo.png')} alt="AgroTech Inteli" className="case-partnership__agrotech" />
+  <span className="case-partnership__divider" aria-hidden="true">×</span>
+  <a href="https://atvos.com/" className="case-partnership__atvos">
+    <img src={useBaseUrl('/img/atvos-logo.svg')} alt="Atvos" />
+  </a>
+</div>
 
-### Propósito
+# Centro de distribuição de materiais MRO
 
-Este projeto tem como objetivo preparar os trainees para um futuro case de business sobre gestão e centralização de materiais MRO, desenvolvendo uma análise estruturada do setor sucroenergético, da operação agroindustrial e do papel de Suprimentos e da manutenção.
+Este projeto integra o **Programa de Trainees do AgroTech Inteli**, em parceria com a **Atvos**, e avalia a viabilidade de centralizar a gestão, armazenagem, controle e distribuição de materiais de manutenção, reparo e operação (MRO) das unidades agroindustriais da empresa.
 
-Ao longo do projeto, os grupos irão evoluir em duas etapas principais:
+## Objetivo e escopo
 
-1. Contexto setorial, operação e papel de Suprimentos.
-2. Gestão de materiais MRO e centralização de estoques.
+Comparar a situação atual, um **CD centralizado** e um **modelo híbrido**, com parte dos estoques no CD e parte nas unidades. O estudo considera custos, investimento, fornecedores, logística, regiões candidatas e disponibilidade de materiais essenciais para apoiar a decisão da Atvos.
 
-O projeto é preparatório e não deve antecipar ou reproduzir a solução do case real com a Atvos.
+O recorte contempla **pneus, filtros, lubrificantes, rolamentos, mangueiras e peças de desgaste agrícola**. As unidades participantes serão definidas com a Atvos. As conclusões se limitam às categorias e aos dados analisados.
 
----
+## Entregas e cronograma
 
-### Metodologia
+| Sprint | Período (2026) | Entregas principais |
+|---|---|---|
+| 1 — Diagnóstico | 03/11 → 13/11 | Diagnóstico inicial, planilha de dados e informações pendentes |
+| 2 — Avaliação inicial | 16/11 → 27/11 | Comparação de alternativas e regiões, planilha inicial de viabilidade |
+| 3 — Recomendação final | 30/11 → 16/12 | Planilha final, cenários, relatório e apresentação executiva |
 
-O desenvolvimento seguirá uma abordagem estruturada baseada em:
+- [Sprint 1 — Diagnóstico do abastecimento](./001_Diagnostico_Abastecimento/index.md)
+- [Sprint 2 — Avaliação inicial da viabilidade](./002_Avaliacao_Inicial_Viabilidade/index.md)
+- [Sprint 3 — Viabilidade e recomendação final](./003_Viabilidade_Recomendacao_Final/index.md)
 
-- Pesquisa com informações públicas.
-- Análise do contexto, dos drivers e da operação do setor sucroenergético.
-- Mapeamento da cadeia de valor e da relação entre manutenção e Suprimentos.
-- Análise de materiais e estoques MRO.
-- Comparação entre modelos de gestão e armazenagem.
-- Mapeamento de fluxo por SIPOC ou ferramenta equivalente.
-- Benchmark de práticas e referências de mercado.
-- Aplicação de matriz de decisão multicritério a um cenário genérico.
-- Registro de fontes, premissas, limitações e possíveis vieses.
+## MVP: planilha de viabilidade e apoio à decisão
 
----
+A entrega principal é uma planilha editável com dados de consumo desde 2024, estoques, unidades, fornecedores e alternativas de abastecimento. Ela deverá comparar investimentos, custos e benefícios, permitir ajustar premissas e testar cenários e apresentar fontes, estimativas e recomendações.
 
-## Setor Estudado
+O prazo de retorno do investimento será estimado quando houver dados suficientes e economia líquida positiva. Gráficos, mapa ou dashboard podem complementar a análise.
 
-**Setor**: Sucroenergético
+## Equipe
 
-Todos os grupos estudarão empresas produtoras de cana-de-açúcar, açúcar, etanol e bioenergia, considerando as etapas agrícola, industrial e logística e sua relação com a continuidade operacional.
+| Integrantes |
+|---|
+| Anna Castellini |
+| Julia Jesus Bezerra |
+| Clara Carvalho Rapuano |
+| Arthur Marques de Almeida |
+| Laís Victoria Lopes de Araújo |
+| Gabrielli Marques Battini |
+| Ana Clara da Silva Silvestre |
 
----
+### Lideranças
 
-## Empresa Analisada
+| Função | Responsáveis |
+|---|---|
+| Líder do projeto | Amanda Rosa — AgroTech Inteli |
+| Líder técnico | Stefanne Soares — AgroTech Inteli |
+| Líderes de negócio | Matheus Silva e Paulo Fernandes — AgroTech Inteli |
+| Líder executivo | Cristiano Dale — Gerente de Materiais da Atvos |
 
-**Empresa estudada**: [Preencher]
+## Dados e limites do estudo
 
-### Justificativa da Escolha
+O projeto utiliza dados públicos e informações fornecidas pela Atvos, conforme as condições de uso acordadas. Fontes, datas, premissas e limitações devem acompanhar as análises. Dados confirmados e estimativas serão identificados separadamente; informações restritas devem permanecer nos canais autorizados.
 
-Explicar a escolha da empresa com base em:
+O escopo é um estudo preliminar de viabilidade. Não inclui implantação, projeto de engenharia, planejamento operacional detalhado, modelo financeiro aprofundado, parecer tributário ou abertura de fábricas.
 
-- Relevância no setor sucroenergético.
-- Disponibilidade de informações públicas.
-- Possibilidade de analisar operação, manutenção e Suprimentos.
-- Adequação aos objetivos dos dois entregáveis.
-
-Cada grupo deverá analisar uma empresa diferente e mantê-la como referência ao longo das duas etapas.
-
----
-
-## Equipe do Projeto
-
-### Integrantes
-
-- [Nome do integrante 1]
-- [Nome do integrante 2]
-- [Nome do integrante 3]
-- [Nome do integrante 4]
-- [Nome do integrante 5]
-
----
-
-## Cronograma de Entregas
-
-| Entregável | Data de Entrega | Status |
-|---|---:|---|
-| Contexto Setorial, Operação e Papel de Suprimentos | 05/10/2026 | Pendente |
-| Gestão de Materiais MRO e Centralização de Estoques | 30/10/2026 | Pendente |
-
----
-
-## Estrutura da Documentação
-
-### Entregável 1: Contexto Setorial, Operação e Papel de Suprimentos
-
-- Contexto, tamanho e relevância do setor sucroenergético.
-- Tendências, desafios e drivers do setor.
-- Cadeia de valor e operação agroindustrial.
-- Empresa, manutenção e papel de Suprimentos.
-
-### Entregável 2: Gestão de Materiais MRO e Centralização de Estoques
-
-- Retomada da empresa e dos desafios identificados.
-- Materiais MRO, Curva ABC, criticidade e indicadores.
-- Modelos centralizado, descentralizado e híbrido.
-- Fluxo de materiais por SIPOC ou equivalente.
-- Mercado fornecedor e fatores logísticos.
-- Benchmark de práticas.
-- Critérios e matriz de decisão multicritério.
-
----
-
-## Ferramentas Utilizadas
-
-- Dados e análises: Excel / Google Sheets.
-- Documentação: Docusaurus.
-- Apresentações: PowerPoint / Google Slides.
-- Fontes de dados: órgãos públicos, associações setoriais, publicações acadêmicas e relatórios de empresas.
-
----
-
-## Observações
-
-Este projeto possui caráter educacional. Todas as análises devem utilizar informações públicas, citar suas fontes e explicitar limitações e premissas. Os frameworks devem ser aplicados à empresa pesquisada ou a cenários genéricos, sem utilização de dados da Atvos.
+O TAP e o documento de entregáveis estão na pasta **Documentação do Projeto** do repositório.
