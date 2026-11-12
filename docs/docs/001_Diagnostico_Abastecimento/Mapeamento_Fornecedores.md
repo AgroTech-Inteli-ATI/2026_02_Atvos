@@ -143,3 +143,89 @@ Além dos fornecedores de maior abrangência, foram identificadas empresas com a
 *Nota: o lead time mediano na Tabela 5 considera todos os materiais fornecidos pela empresa às unidades indicadas, podendo diferir do valor apresentado por grupo específico na Tabela 2.*
 
 Os dados indicam que parte da rede atual de fornecimento já possui abrangência suficiente para atender um CD centralizado, sem necessariamente exigir a substituição dos fornecedores. Por outro lado, os fornecedores regionais apresentam alternativas de atendimento mais próximas das unidades e, em alguns casos, prazos menores. A possibilidade de manter esses fornecedores no abastecimento direto deve ser avaliada na comparação do modelo híbrido, na Sprint 2.
+
+## 2.4. Prazos de entrega e condições de compra
+
+O *lead time* mediano geral do recorte é de 24 dias. Entretanto, apenas 40% dos registros possuem essa informação preenchida, o que limita a representatividade da análise e indica a necessidade de complementação da base.
+
+A Tabela 6 apresenta a distribuição dos prazos por grupo, considerando os registros com *lead time* informado.
+
+**Tabela 6 – Distribuição do lead time por grupo**
+
+| Grupo | Registros com lead time | 25% mais rápidos até | Mediana | 75% até | Máximo | Acima de 60 dias |
+|---|---:|---:|---:|---:|---:|---:|
+| Pneus | 56% | 17 dias | 23 dias | 33 dias | 159 dias | 2% |
+| Filtros | 46% | 15 dias | 22 dias | 31 dias | 298 dias | 3% |
+| Lubrificantes | 45% | 22 dias | 32 dias | 49 dias | 162 dias | 8% |
+| Rolamentos e retentores | 33% | 18 dias | 25 dias | 34 dias | 182 dias | 2% |
+| Mangueiras | 29% | 16 dias | 22 dias | 30 dias | 117 dias | 1% |
+| Peças de desgaste agrícola | 52% | 16 dias | 23 dias | 31 dias | 137 dias | 2% |
+
+Os resultados destacam os seguintes pontos:
+
+- **Lubrificantes:** apresentam o maior *lead time* mediano, de 32 dias, e a maior proporção de registros acima de 60 dias, correspondente a 8%.
+- **Localização:** fornecedores localizados no mesmo estado da unidade apresentam *lead time* mediano de 20 dias, enquanto aqueles situados em outros estados apresentam mediana de 25 dias.
+- **Criticidade:** não foi identificada diferença na mediana entre materiais de alto consumo e os demais; ambos apresentam prazo de 23 dias.
+- **Prazos atípicos:** foram identificados registros com prazos de até 298 dias. Esses valores precisam ser validados com a Atvos para verificar se correspondem a situações excepcionais ou inconsistências cadastrais.
+
+**Condições de compra.** A base disponibilizada não contém informações suficientes sobre as condições comerciais dos fornecedores. Para calcular o custo total de abastecimento e comparar os modelos logísticos, será necessário complementar os dados com as informações indicadas na Tabela 7.
+
+**Tabela 7 – Informações de fornecimento disponíveis e pendências**
+
+| Informação | Situação na base | Informação necessária |
+|---|---|---|
+| Fornecedor | Parcial | Identificar os registros sem fornecedor, principalmente em lubrificantes, e completar nomes truncados. |
+| Localização do fornecedor | Disponível | Confirmar quais filiais atendem cada unidade. |
+| Lead time | Parcial (40%) | Completar os registros e validar os prazos atípicos. |
+| Preço unitário de compra | Não disponível | Obter o histórico dos preços efetivos de compra. |
+| Frete | Não disponível | Identificar a modalidade (CIF/FOB) e os respectivos valores. |
+| Pedido mínimo e prazo de pagamento | Não disponíveis | Levantar as condições comerciais por fornecedor. |
+| Tipo de contrato | Não disponível | Identificar contratos pontuais, corporativos ou consignados. |
+| Compras emergenciais | Não disponível | Levantar frequência, valores e fornecedores envolvidos. |
+
+## 2.5. Dados para comparação de custos, prazos e formas de abastecimento
+
+O modelo atual combina fornecedores com capacidade de atendimento às oito unidades e fornecedores regionais, cuja atuação está concentrada em uma ou poucas unidades. A participação de cada perfil varia conforme o grupo de materiais e permite identificar diferentes possibilidades de organização do abastecimento.
+
+A Tabela 8 reúne os indicadores de abrangência dos fornecedores, fragmentação das compras, estoque atual e cobertura estimada.
+
+**Tabela 8 – Características do abastecimento atual por grupo**
+
+| Grupo | Valor com fornecedores que atendem as 8 unidades | Materiais comprados de mais de um fornecedor* | Estoque atual | Cobertura de estoque estimada | Forma predominante |
+|---|---:|---:|---:|---:|---|
+| Pneus | 100% | 3% | R$ 4,5 mi | 3,7 meses | Fornecedor nacional direto |
+| Filtros | 25% | 70% | R$ 4,3 mi | 4,5 meses | Fornecedores regionais |
+| Lubrificantes | 93% | 26% | R$ 5,1 mi | 2,6 meses | Fornecedor único nacional |
+| Rolamentos e retentores | 69% | 35% | R$ 3,8 mi | 7,5 meses | Distribuidores que atendem todas as unidades |
+| Mangueiras | 4% | 62% | R$ 1,2 mi | 4,9 meses | Fornecedores regionais |
+| Peças de desgaste agrícola | 82% | 25% | R$ 2,0 mi | 3,0 meses | Fornecedor nacional direto |
+| **Total do recorte** | — | — | **R$ 20,9 mi** | **3,8 meses** | — |
+
+O indicador considera os materiais utilizados em duas ou mais unidades que são comprados de mais de um fornecedor. A cobertura de estoque é calculada pela divisão do valor do estoque pelo consumo estimado de 2025, multiplicada por 12. Trata-se de uma estimativa, pois o valor de consumo também foi estimado.
+
+**Análise dos indicadores para a Etapa.** Os dados permitem levantar hipóteses para a comparação entre os modelos de abastecimento:
+
+- **Filtros e mangueiras:** apresentam maior fragmentação das compras. Isso significa que um mesmo material pode ser adquirido de fornecedores diferentes conforme a unidade. A centralização pode contribuir para a padronização e a negociação de preços. Em mangueiras, entretanto, a participação dos fornecedores regionais indica que a manutenção do atendimento local também deve ser considerada.
+- **Rolamentos e retentores:** apresentam a maior cobertura de estoque, de 7,5 meses. Esse resultado indica uma oportunidade de avaliar a redução de estoques repetidos entre as unidades.
+- **Pneus, lubrificantes e peças de desgaste agrícola:** apresentam maior concentração em fornecedores que atendem todas as unidades. Nesses grupos, os possíveis ganhos de um CD podem estar mais relacionados à gestão de estoques e ao transporte do que à negociação com novos fornecedores.
+
+Essas interpretações são hipóteses iniciais e deverão ser testadas na Sprint 2, considerando os custos efetivos de aquisição, frete, armazenagem e distribuição.
+
+## 2.6. Conclusão e pontos a validar
+
+O mapeamento demonstra diferenças relevantes entre os grupos de materiais MRO. Pneus, lubrificantes e peças de desgaste agrícola apresentam maior concentração em poucos fornecedores, enquanto filtros, rolamentos e retentores e mangueiras possuem uma rede mais pulverizada, com presença significativa de fornecedores regionais.
+
+A concentração de 86% do valor associado aos fornecedores identificados em São Paulo e Minas Gerais, somada à existência de 25 fornecedores que atendem as oito unidades, indica que a rede atual possui fornecedores com abrangência compatível com o abastecimento de um CD. Ao mesmo tempo, os fornecedores regionais apresentam alternativas de atendimento mais próximas e, em alguns casos, prazos menores, o que reforça a necessidade de avaliar sua permanência em um possível modelo híbrido.
+
+Antes da conclusão da comparação entre os modelos de abastecimento, as seguintes informações deverão ser validadas com a Atvos:
+
+**Pendências para validação**
+
+- Confirmar a reclassificação dos materiais nos seis grupos, incluindo os critérios e as palavras-chave utilizados.
+- Identificar os fornecedores dos registros sem essa informação, especialmente no grupo de lubrificantes.
+- Confirmar a existência de contrato corporativo com a Petronas e com a Bússola, bem como as respectivas modalidades de entrega.
+- Disponibilizar preços efetivos de compra, valores e modalidades de frete e demais condições comerciais dos fornecedores prioritários.
+- Validar os registros de *lead time* superiores a 100 dias.
+- Confirmar se as compras de filtros e mangueiras são realizadas diretamente pelas unidades ou centralizadas pela matriz.
+
+**Encaminhamento para a Etapa.** Os fornecedores, as localizações, os prazos de entrega e os indicadores de estoque apresentados neste documento serão utilizados na comparação entre o abastecimento atual, o modelo com CD centralizado e o modelo híbrido. A análise deverá considerar a concentração geográfica dos fornecedores em São Paulo e Minas Gerais, a localização das unidades e os custos associados às diferentes formas de abastecimento.
