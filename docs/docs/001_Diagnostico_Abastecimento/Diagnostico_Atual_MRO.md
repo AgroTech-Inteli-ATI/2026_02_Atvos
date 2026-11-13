@@ -1,8 +1,17 @@
-# Diagnóstico do abastecimento atual de materiais MRO 
+---
+sidebar_position: 3
+sidebar_label: 3. Abastecimento atual e seus custos
+slug: /sprint-1/abastecimento-atual-e-custos
+description: "Diagnóstico do abastecimento atual de materiais MRO e seus custos: localização das unidades, caminho dos materiais, estoques por almoxarifado, custos atuais e resumo do que foi confirmado e estimado."
+---
+
+# 3. Abastecimento atual e seus custos
+
+> **Diagnóstico do abastecimento atual de materiais MRO**
 
 A Sprint 1 já consegue descrever a rede de oito usinas, o piloto do Polo Norte e as bases de estoque e consumo. Ainda não consegue dizer quanto custa a operação atual: esses gastos precisam vir da Atvos ou ser estimados com premissas claras.
 
-## 1. Objetivo, escopo e fontes
+## 3.1. Objetivo, escopo e fontes
 
 O objetivo da Sprint 1 é descrever como funciona hoje o abastecimento de materiais de manutenção, reparo e operação (MRO) nas unidades agroindustriais da Atvos. Esse retrato serve de base para comparar, nas próximas sprints, a operação atual com dois cenários: um centro de distribuição (CD) centralizado e um modelo híbrido, com parte do estoque no CD e parte nas usinas.
 
@@ -19,7 +28,7 @@ Este relatório junta dois tipos de fonte, que devem ser tratados de forma difer
 
 Regra do relatório: números da Atvos e cálculos da equipe são resultados; referências externas servem apenas para montar cenários e nunca devem aparecer como dado da Atvos. Os totais de duplicidade e baixo giro citados aqui são os reportados pela Atvos, e ainda precisam ser recalculados no recorte do projeto.
 
-## 2. Localização das unidades
+## 3.2. Localização das unidades
 
 As oito usinas ficam em quatro estados (GO, MT, MS e SP) e se organizam em dois polos mais a unidade isolada de Pontal. A aba Consolidado liga o código do centro à usina e ao município, o que é essencial porque as bases de estoque e consumo identificam a unidade só pelo código. A lista bate com o site oficial da Atvos.
 
@@ -45,7 +54,7 @@ As oito usinas ficam em quatro estados (GO, MT, MS e SP) e se organizam em dois 
 
 A distância real por estrada costuma ser 20–30% maior que a linha reta. Antes de usar no relatório final, as rotas devem ser conferidas no Google Maps. Também falta a Atvos confirmar se as oito unidades formam o escopo do estudo.
 
-## 3. Caminho dos materiais entre fornecedores, estoques e unidades
+## 3.3. Caminho dos materiais entre fornecedores, estoques e unidades
 
 O único trecho do fluxo físico bem documentado é o piloto de estoque compartilhado do Polo Norte. Para o restante da rede, só há o modelo típico do setor, que ainda precisa ser confirmado com a Atvos.
 
@@ -86,7 +95,7 @@ flowchart LR
 
 **Por que isso importa.** Se o piloto ainda estiver ativo, ele faz parte do cenário atual. Nesse caso, um novo CD deve ser avaliado pelo ganho *a mais* que traz sobre o que a Atvos já centralizou. Falta confirmar se o cronograma continua valendo, quais materiais passam pelo estoque compartilhado e como as outras usinas são abastecidas.
 
-## 4. Estoque por material e almoxarifado
+## 3.4. Estoque por material e almoxarifado
 
 As bases já permitem levantar o estoque de cada almoxarifado e cruzá-lo com o consumo, desde que a equipe filtre os materiais do escopo e una as bases pelo par centro + código do material.
 
@@ -106,7 +115,7 @@ As bases já permitem levantar o estoque de cada almoxarifado e cruzá-lo com o 
 
 Com estoque e consumo cruzados, dá para encontrar itens repetidos entre unidades e itens parados (próxima seção).
 
-## 5. Estoques repetidos e materiais de baixo consumo
+## 3.5. Estoques repetidos e materiais de baixo consumo
 
 Segundo a própria Atvos, quase metade dos itens com reposição ativa (9.741 de 19.614) está em mais de duas unidades. Esses números são do diagnóstico da empresa e devem ser citados com esse recorte.
 
@@ -131,7 +140,7 @@ Segundo a própria Atvos, quase metade dos itens com reposição ativa (9.741 de
 
 **Cuidado na leitura.** Material repetido em várias usinas é uma oportunidade de análise, não prova de excesso. Um item de baixo consumo pode ser essencial numa manutenção de emergência e precisar ficar na usina. Quando houver dados, a avaliação deve considerar a criticidade do item e o tempo para repô-lo ou transferi-lo.
 
-## 6. Custos atuais de armazenagem, transporte e equipe
+## 3.6. Custos atuais de armazenagem, transporte e equipe
 
 As fontes da Atvos trazem o valor dos materiais, mas não o custo de operar o abastecimento. Esse custo deve ser pedido à Atvos; enquanto não chega, as referências de mercado abaixo servem só para montar cenários.
 
@@ -161,8 +170,18 @@ Exemplo de uso: uma viagem Morro Vermelho → Água Emendada (138 km) custaria, 
 
 **Regras para os valores:** todos no mesmo período de referência. Se almoxarifado, equipe ou veículo forem compartilhados com outras operações, registrar como foi calculada a parte do MRO. Verificar se algum valor já inclui equipe ou transporte, para não contar a mesma despesa duas vezes.
 
+## 3.7. Resumo do abastecimento atual: confirmado e estimado
 
-## Fontes
+A tabela abaixo sintetiza os elementos do diagnóstico do abastecimento atual, separando o que está confirmado nos dados fornecidos pela Atvos do que foi estimado ou depende de confirmação para a Sprint 2:
+
+| Dimensão | O que foi confirmado (dados Atvos) | O que foi estimado / aguarda confirmação |
+| --- | --- | --- |
+| **Unidades e localização** | 8 unidades identificadas na aba Consolidado e no site oficial (UMV, UAE, UCR, UAT, URC, USL, UEL e UCP) em 4 estados (GO, MS, MT e SP). Distâncias rodoviárias do Polo Norte documentadas no PPT: UMV → UAE (138 km), UMV → UCR (124 km) e UMV → UAT (105 km). | Distâncias entre os demais pares de unidades estimadas inicialmente em linha reta (a aferir por rota rodoviária). Confirmação formal da função do centro 1011 (saldo residual de R$ 6,5 mil). |
+| **Fluxo de materiais e piloto Polo Norte** | Associação entre fornecedores, materiais e centros na aba Consolidado; rota fixa semanal do piloto de estoque compartilhado no Polo Norte a partir do hub UMV (Mineiros/GO) para UAE, UCR e UAT, com movimentação reportada de R$ 298 mil/mês em notas fiscais. | Fluxo completo de requisição, compra e entrega para as unidades fora do piloto (baseado em modelo típico do setor); confirmação se as compras são centralizadas ou locais e se o valor de R$ 298 mil/mês refere-se apenas à mercadoria transferida. |
+| **Estoques, repetição e baixo giro** | Posição de estoque por centro e depósito (`Base_Estoque_Atual`, R$ 23,96 mi nos 6 grupos MRO da base de 09/11) e histórico mensal de consumo (`Base_Consumo`). Diagnóstico corporativo da Atvos reporta 9.741 itens repetidos em mais de duas unidades (de 19.614 ativos) e 2.877 itens de baixo giro; no Polo Norte, R$ 3,90 mi analisados com redução para R$ 1,98 mi e R$ 473 mil potenciais para venda. | Valor financeiro do consumo mensal estimado pelo custo unitário do estoque atual; data de corte exata da posição de estoque e regras formais da Atvos para os depósitos `OBSO` e `SLOW`. |
+| **Custos de armazenagem, transporte e equipe** | Valores contábeis do estoque em reais por depósito e valor movimentado no piloto do Polo Norte (R$ 298 mil/mês). | Custos operacionais atuais de armazenagem, frete (CIF/FOB ou frota própria) e equipe de almoxarifado não constam nas bases recebidas; parametrizados provisoriamente para cenários via referências de mercado (taxa de manutenção de estoque de 20%–30% a.a., piso ANTT de R$ 4,00–R$ 9,25/km + carga/descarga, e salário médio de almoxarife de R$ 2.139–R$ 2.345,64/mês + encargos de 60%–80%). |
+
+## 3.8. Fontes
 
 **Dados da Atvos:** Planejamento de Materiais (aba Consolidado); Base de Planejamento de Materiais (abas Base_Consumo e Base_Estoque_Atual); Apresentação Estoque Compartilhado (slides 4 a 8).
 

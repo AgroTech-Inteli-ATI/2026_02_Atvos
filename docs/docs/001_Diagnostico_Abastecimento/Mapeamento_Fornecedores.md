@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2
-sidebar_label: 2. Mapeamento dos fornecedores
+sidebar_label: 2. Mapeamento dos fornecedores prioritários
 slug: /sprint-1/mapeamento-fornecedores
 description: "Mapeamento dos fornecedores prioritários, localização, unidades atendidas e prazos de entrega dos seis grupos de materiais MRO."
 ---
 
-# 2. Mapeamento dos fornecedores
+# 2. Mapeamento dos fornecedores prioritários
 
 ## 2.1. Objetivo, base de dados e metodologia
 
@@ -28,7 +28,7 @@ Este entregável apresenta o mapeamento dos fornecedores responsáveis pelo abas
 
 **Identificação dos fornecedores.** Para a contagem, foi considerada a combinação entre nome e cidade. Assim, uma mesma empresa registrada em municípios diferentes pode aparecer como mais de um fornecedor, devido à presença de filiais. Para fins de leitura nas tabelas a seguir, casos específicos em que duas praças foram consolidadas (como Durão Comércio de Rolamentos na Tabela 2 e RZK Agro na Tabela 5) são apresentados em uma única linha.
 
-## 2.2. Principais fornecedores dos grupos selecionados
+## 2.2. Principais fornecedores dos grupos de materiais selecionados
 
 O recorte contempla 94 fornecedores distintos, considerando a combinação de nome e cidade, e aproximadamente R$ 66,7 milhões em consumo estimado para 2025. A quantidade de fornecedores e o nível de concentração variam entre os grupos, conforme apresentado na Tabela 1.
 
@@ -88,7 +88,7 @@ A distribuição dos fornecedores evidencia características distintas entre os 
 - **Mangueiras:** presença relevante de fornecedores regionais. A JD Borracha atende unidades de GO e MT, a Comanbor atende unidades de MS e a Comanborr está registrada somente para a UCP.
 - **Peças de desgaste agrícola:** concentração na Bússola, responsável por 78% do valor do grupo, principalmente em materiais como facas de picador e facas de corte de base.
 
-## 2.3. Localização dos fornecedores e unidades atendidas
+## 2.3. Localização dos fornecedores e unidades que conseguem atender
 
 A distribuição geográfica demonstra concentração dos fornecedores em São Paulo e Minas Gerais, estados que representam, juntos, 86% do valor associado aos fornecedores identificados. Em contrapartida, sete das oito unidades da Atvos estão localizadas em Mato Grosso do Sul, Goiás e Mato Grosso, evidenciando a dependência de fornecedores situados fora das regiões de operação.
 
@@ -144,7 +144,7 @@ Além dos fornecedores de maior abrangência, foram identificadas empresas com a
 
 Os dados indicam que parte da rede atual de fornecimento já possui abrangência suficiente para atender um CD centralizado, sem necessariamente exigir a substituição dos fornecedores. Por outro lado, os fornecedores regionais apresentam alternativas de atendimento mais próximas das unidades e, em alguns casos, prazos menores. A possibilidade de manter esses fornecedores no abastecimento direto deve ser avaliada na comparação do modelo híbrido, na Sprint 2.
 
-## 2.4. Prazos de entrega e condições de compra
+## 2.4. Prazos de entrega e condições de compra e atendimento
 
 O *lead time* mediano geral do recorte é de 24 dias. Entretanto, apenas 40% dos registros possuem essa informação preenchida, o que limita a representatividade da análise e indica a necessidade de complementação da base.
 
@@ -183,7 +183,7 @@ Os resultados destacam os seguintes pontos:
 | Tipo de contrato | Não disponível | Identificar contratos pontuais, corporativos ou consignados. |
 | Compras emergenciais | Não disponível | Levantar frequência, valores e fornecedores envolvidos. |
 
-## 2.5. Dados para comparação de custos, prazos e formas de abastecimento
+## 2.5. Dados de fornecimento para comparar custos, prazos e formas de abastecimento
 
 O modelo atual combina fornecedores com capacidade de atendimento às oito unidades e fornecedores regionais, cuja atuação está concentrada em uma ou poucas unidades. A participação de cada perfil varia conforme o grupo de materiais e permite identificar diferentes possibilidades de organização do abastecimento.
 
@@ -211,21 +211,22 @@ O indicador considera os materiais utilizados em duas ou mais unidades que são 
 
 Essas interpretações são hipóteses iniciais e deverão ser testadas na Sprint 2, considerando os custos efetivos de aquisição, frete, armazenagem e distribuição.
 
-## 2.6. Conclusão e pontos a validar
+## 2.6. Conclusão
 
 O mapeamento demonstra diferenças relevantes entre os grupos de materiais MRO. Pneus, lubrificantes e peças de desgaste agrícola apresentam maior concentração em poucos fornecedores, enquanto filtros, rolamentos e retentores e mangueiras possuem uma rede mais pulverizada, com presença significativa de fornecedores regionais.
 
 A concentração de 86% do valor associado aos fornecedores identificados em São Paulo e Minas Gerais, somada à existência de 25 fornecedores que atendem as oito unidades, indica que a rede atual possui fornecedores com abrangência compatível com o abastecimento de um CD. Ao mesmo tempo, os fornecedores regionais apresentam alternativas de atendimento mais próximas e, em alguns casos, prazos menores, o que reforça a necessidade de avaliar sua permanência em um possível modelo híbrido.
 
-Antes da conclusão da comparação entre os modelos de abastecimento, as seguintes informações deverão ser validadas com a Atvos:
+## 2.7. Referências
 
-**Pendências para validação**
+AGROTECH INTELI; ATVOS. **Termo de abertura do projeto e documento de entregáveis**. São Paulo, 2026. Documento interno.
 
-- Confirmar a reclassificação dos materiais nos seis grupos, incluindo os critérios e as palavras-chave utilizados.
-- Identificar os fornecedores dos registros sem essa informação, especialmente no grupo de lubrificantes.
-- Confirmar a existência de contrato corporativo com a Petronas e com a Bússola, bem como as respectivas modalidades de entrega.
-- Disponibilizar preços efetivos de compra, valores e modalidades de frete e demais condições comerciais dos fornecedores prioritários.
-- Validar os registros de *lead time* superiores a 100 dias.
-- Confirmar se as compras de filtros e mangueiras são realizadas diretamente pelas unidades ou centralizadas pela matriz.
+ATVOS. **Base_Planejamento_Materiais**: abas Base_Consumo e Base_Estoque_Atual. [*S. l.*]: Atvos, 2026. 1 planilha eletrônica (.xlsx). Documento interno, recebido em 9 nov. 2026.
 
-**Encaminhamento para a Etapa.** Os fornecedores, as localizações, os prazos de entrega e os indicadores de estoque apresentados neste documento serão utilizados na comparação entre o abastecimento atual, o modelo com CD centralizado e o modelo híbrido. A análise deverá considerar a concentração geográfica dos fornecedores em São Paulo e Minas Gerais, a localização das unidades e os custos associados às diferentes formas de abastecimento.
+ATVOS. **Cópia de Planejamento_Materiais.xlsx – Consolidado**. [*S. l.*]: Atvos, 2026. 1 arquivo (2.160 p.), PDF. Documento interno.
+
+ATVOS. **Estoque compartilhado**: projeto Polo Norte. [*S. l.*]: Atvos, 2026. 1 apresentação (8 slides), PowerPoint. Documento interno, recebido em 9 nov. 2026.
+
+ATVOS. **Nossas unidades**. São Paulo, [2026]. Disponível em: https://atvos.com/. Acesso em: nov. 2026.
+
+ATVOS. **Planejamento_Materiais**: aba Consolidado. [*S. l.*]: Atvos, 2026. 1 planilha eletrônica (.xlsx). Documento interno, recebido em 11 nov. 2026.

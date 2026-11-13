@@ -22,8 +22,10 @@
 }
 
 table {
-  display: table;
+  display: block;
   width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 /* Identidade da parceria: verde AgroTech e detalhes em laranja Atvos. */
