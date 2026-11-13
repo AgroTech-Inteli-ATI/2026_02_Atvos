@@ -1,35 +1,22 @@
-# Diagnóstico de materiais MRO na Atvos: consumo, riscos, estoques e classificação (2024–2026)
+---
+sidebar_position: 1
+sidebar_label: 1. Necessidades de materiais MRO
+slug: /sprint-1/necessidades-materiais-mro
+description: "Diagnóstico de materiais MRO na Atvos: importância operacional, grupos definidos, consumo desde 2024, riscos de falta, estoques repetidos, itens sem uso e classificação ABC."
+---
 
+# 1. Necessidades de materiais MRO
+
+> **Diagnóstico de materiais MRO na Atvos: consumo, riscos, estoques e classificação (2024–2026)**
 > **Período analisado:** jan/2024 a out/2026 (34 meses)
 > **Escopo:** 6 grupos MRO · 8 unidades · 3.201 materiais · 8.224 combinações de centro e material
 > **Estoque do escopo:** R$ 23,96 milhões (todos os depósitos)
 
 ---
 
-## Índice
+## 1.1. Importância dos materiais MRO e visão executiva
 
-1. [Sumário executivo](#1-sumário-executivo)
-2. [Por que MRO importa para as unidades](#2-por-que-mro-importa-para-as-unidades)
-3. [Bases, escopo e método](#3-bases-escopo-e-método)
-4. [Visão geral dos seis grupos](#4-visão-geral-dos-seis-grupos)
-5. [Curva ABC](#5-curva-abc)
-6. [Sazonalidade, frequência e variabilidade](#6-sazonalidade-frequência-e-variabilidade)
-7. [Consumo por unidade](#7-consumo-por-unidade)
-8. [Itens sem uso e de baixo giro](#8-itens-sem-uso-e-de-baixo-giro)
-9. [Estoques repetidos entre unidades](#9-estoques-repetidos-entre-unidades)
-10. [Riscos de falta](#10-riscos-de-falta)
-11. [Importância para a operação](#11-importância-para-a-operação)
-12. [Fichas por grupo](#12-fichas-por-grupo)
-13. [O que o piloto Polo Norte já mostra](#13-o-que-o-piloto-polo-norte-já-mostra)
-14. [Síntese estratégica](#14-síntese-estratégica)
-15. [Limitações e dados pendentes](#15-limitações-e-dados-pendentes)
-16. [Regras e métodos](#16-regras-e-métodos)
-17. [Glossário](#17-glossário)
-18. [Referências](#18-referências)
-
----
-
-## 1. Sumário executivo
+### 1.1.1. Sumário executivo
 
 Os seis grupos MRO movimentaram cerca de **R$ 204 milhões** em consumo nas 8 unidades entre jan/2024 e out/2026, e o gasto está acelerando:
 
@@ -38,7 +25,7 @@ Os seis grupos MRO movimentaram cerca de **R$ 204 milhões** em consumo nas 8 un
 | Safra 25/26 vs. safra 24/25 | **+12,8%** |
 | Safra 26/27 (abr–out) vs. mesmo período de 25/26 | **+19,8%** |
 
-### Principais resultados
+**Principais resultados:**
 
 1. **O valor está concentrado em poucos itens.** 119 itens (5,6% dos valorizados) fazem 80% do valor consumido na safra 25/26 (R$ 72,4 mi). Lubrificantes e pneus somam 58% de todo o consumo desde 2024.
 2. **O portfólio tem dois perfis de gestão.** Lubrificantes, pneus, filtros e desgaste agrícola são poucos itens de consumo contínuo e alto valor (82% do consumo). Rolamentos e transmissão/mangueiras são muitos itens de consumo esporádico (58% das combinações, 18% do valor).
@@ -48,17 +35,17 @@ Os seis grupos MRO movimentaram cerca de **R$ 204 milhões** em consumo nas 8 un
 6. **Os parâmetros de reposição pendem para o excesso.** Em 42% dos itens planejados (VB), o máximo supera seis meses de consumo. Lubrificantes são a exceção: 12% têm mínimo abaixo da demanda no lead time, com lead time P90 de 75 dias e um único fornecedor relevante.
 7. **A sazonalidade é oposta entre agrícola e industrial.** Desgaste agrícola consome 2,8× mais na safra; rolamentos têm pico na entressafra, nas reformas industriais.
 
-### Três pontos que pedem decisão
+**Três pontos que pedem decisão:**
 
 1. **Pneus é o grupo que mais cresce** (+43% em 25/26 e +33% em 26/27). A causa precisa ser explicada antes de virar parâmetro de reposição.
 2. **A dependência de fornecedor é extrema** em lubrificantes (Petronas = 93% do valor) e desgaste agrícola (Bússola = 78%).
 3. **Os grupos de cauda longa são os candidatos naturais ao estoque compartilhado.** Os grupos de consumo contínuo devem seguir abastecidos localmente, com parâmetros por safra.
 
-> *Valores em R$ são estimativas: quantidade consumida × preço de referência do estoque atual (ver seção 3).*
+*Valores em R$ são estimativas: quantidade consumida × preço de referência do estoque atual (ver seção 1.2.1).*
 
 ---
 
-## 2. Por que MRO importa para as unidades
+### 1.1.2. Importância para a manutenção e operação das unidades
 
 **MRO (Manutenção, Reparo e Operação)** é o conjunto de materiais que não entra no produto final, mas mantém de pé o ativo que produz. Na Atvos, isso cobre a frota agrícola (colhedoras, tratores, transbordos), a frota de transporte de cana e os equipamentos industriais das 8 usinas.
 
@@ -77,9 +64,11 @@ O valor do MRO não está no preço do item, e sim no **custo da parada que ele 
 
 ---
 
-## 3. Bases, escopo e método
+## 1.2. Grupos de materiais definidos pela Atvos
 
-### 3.1 Bases utilizadas
+### 1.2.1. Bases de dados, escopo e método
+
+**Bases utilizadas:**
 
 | Base | Uso |
 | --- | --- |
@@ -89,7 +78,7 @@ O valor do MRO não está no preço do item, e sim no **custo da parada que ele 
 | **Apresentação "Estoque compartilhado"** | Projeto Polo Norte: diagnóstico, cascata de redução e logística |
 | **Atvos_S1_Diagnostico_MRO_v2.xlsx** | Planilha de apoio com todos os cálculos em fórmula (≈600 mil), conferida com cálculo independente em Python |
 
-### 3.2 Escopo e tratamento
+**Escopo e tratamento:**
 
 | Item | Situação |
 | --- | --- |
@@ -102,16 +91,16 @@ O valor do MRO não está no preço do item, e sim no **custo da parada que ele 
 | Fornecedor informado | 5.746 combinações (70%), 92 fornecedores |
 | Preço de referência | R$ ÷ quantidade do estoque atual de cada código; 544 códigos sem estoque ficaram sem preço |
 
-**Cuidados:**
+**Cuidados metodológicos:**
 
-- ⚠️ **Classificação de grupo divergente.** A base de 11/11 tem só 4 grupos e coloca filtros e mangueiras em "Pneus", luvas e botinas em "Filtros". Dos 3.201 códigos, 66% aparecem em grupo diferente. **Mantivemos os 6 grupos da base de 09/11.**
-- ⚠️ **Estoque.** A coluna de estoque da base de 11/11 é menor (R$ 21,5 mi) e parece não incluir parte dos depósitos OBSO e SLOW. Mantivemos a posição de 09/11.
-- ✅ **Outubro/2026 completo.** A base de 11/11 confirma que a extração anterior estava parcial.
-- ✅ **Consumo consistente.** Nos meses em comum, as bases diferem em 1,5% do total.
+- **Classificação de grupo divergente:** a base de 11/11 tem só 4 grupos e coloca filtros e mangueiras em "Pneus", luvas e botinas em "Filtros". Dos 3.201 códigos, 66% aparecem em grupo diferente. **Mantivemos os 6 grupos da base de 09/11.**
+- **Estoque:** a coluna de estoque da base de 11/11 é menor (R$ 21,5 mi) e parece não incluir parte dos depósitos OBSO e SLOW. Mantivemos a posição de 09/11.
+- **Outubro/2026 completo:** a base de 11/11 confirma que a extração anterior estava parcial.
+- **Consumo consistente:** nos meses em comum, as bases diferem em 1,5% do total.
 
 ---
 
-## 4. Visão geral dos seis grupos
+### 1.2.2. Panorama dos seis grupos MRO
 
 Lubrificantes e pneus respondem por **58% do valor consumido**; rolamentos e transmissão/mangueiras têm 58% das combinações, mas só 18% do valor.
 
@@ -138,44 +127,15 @@ Lubrificantes e pneus respondem por **58% do valor consumido**; rolamentos e tra
 | Filtros e elementos | 65 de 535 | Quase todos John Deere |
 | Rolamentos e vedação | 174 de 1.174 | Gestão só funciona por regra, não item a item |
 
-*Esta é uma concentração dentro de cada grupo, em 34 meses. A curva ABC da seção 5 é global e usa só a safra 25/26.*
+*Esta é uma concentração dentro de cada grupo, em 34 meses. A curva ABC da seção 1.5.1 é global e usa só a safra 25/26.*
 
 ---
 
-## 5. Curva ABC
+## 1.3. Análise do consumo desde 2024, reposição e armazenagem
 
-Valor de consumo estimado na **safra 25/26 completa** (abr/2025–mar/2026), para que a sazonalidade não distorça o resultado.
+### 1.3.1. Sazonalidade, frequência e variabilidade
 
-| Classe | Itens | % dos itens | Valor consumido | % do valor | Estoque atual |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| A | 119 | 5,6% | R$ 57,9 mi | 80,1% | R$ 12,0 mi |
-| B | 358 | 16,8% | R$ 10,8 mi | 14,9% | R$ 5,5 mi |
-| C | 1.651 | 77,6% | R$ 3,6 mi | 5,0% | R$ 4,5 mi |
-| Sem valor (sem preço) | 289 | – | não valorizado | – | – |
-| Sem consumo na safra | 784 | – | – | – | R$ 1,9 mi |
-
-**Valor dos itens A por grupo:**
-
-| Grupo | Itens A | Valor |
-| --- | ---: | ---: |
-| Lubrificantes e fluidos | 32 | R$ 22,1 mi |
-| Pneus e acessórios | 25 | R$ 17,5 mi |
-| Desgaste agrícola | 11 | R$ 7,3 mi |
-| Filtros e elementos | 21 | R$ 5,2 mi |
-| Transmissão e mangueiras | 17 | R$ 4,0 mi |
-| Rolamentos e vedação | 13 | R$ 1,7 mi |
-
-- A concentração é maior que a referência clássica: 5,6% dos itens fazem 80% do valor, o que permite controlar de perto poucos itens.
-- O item de maior valor é o pneu 295/80R22.5 (R$ 5,9 mi na safra), seguido de óleos e facas picadoras.
-- Rolamentos e vedação têm 44% dos códigos, mas só 13 itens A.
-
----
-
-## 6. Sazonalidade, frequência e variabilidade
-
-### 6.1 Sazonalidade
-
-Índice mensal de consumo em R$ (1,00 = média do ano), média jan/2024–set/2026:
+**Sazonalidade — índice mensal de consumo em R$ (1,00 = média do ano), média jan/2024–set/2026:**
 
 | Grupo | abr | mai | jun | jul | ago | set | out | nov | dez | jan | fev | mar | Safra ÷ entressafra |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -193,12 +153,10 @@ Pela classe global, o MRO agrícola consome na entressafra 0,60× a média da sa
 - Um mínimo/máximo fixo o ano todo é errado para quase todos os grupos.
 - Desgaste agrícola, filtros e lubrificantes precisam de estoque reforçado **antes de maio** e reduzido **a partir de novembro**.
 - Rolamentos precisam do movimento contrário, com estoque chegando **antes de janeiro**.
-- O pico de pneus em jan–fev **não é sazonal**: é o consumo atípico de Santa Luzia em 2026 (ver 12.2).
+- O pico de pneus em jan–fev **não é sazonal**: é o consumo atípico de Santa Luzia em 2026 (ver seção 1.3.3 — Pneus e acessórios).
 - Para um centro de distribuição, o pico de demanda de cada grupo cai em épocas diferentes do ano, o que afeta espaço e equipe.
 
-### 6.2 Frequência
-
-% das combinações por número de meses com consumo (jan/2024–out/2026):
+**Frequência — percentual das combinações por número de meses com consumo (jan/2024–out/2026):**
 
 | Grupo | Até 5 meses | 6–17 meses | 18–27 meses | 28–34 meses |
 | --- | ---: | ---: | ---: | ---: |
@@ -209,7 +167,7 @@ Pela classe global, o MRO agrícola consome na entressafra 0,60× a média da sa
 | Lubrificantes e fluidos | 38% | 33% | 13% | 16% |
 | Desgaste agrícola | 30% | 23% | 20% | **26%** |
 
-### 6.3 Variabilidade e padrão de demanda
+**Variabilidade e padrão de demanda:**
 
 | Padrão de demanda | Itens | Leitura |
 | --- | ---: | --- |
@@ -222,22 +180,22 @@ Pelo coeficiente de variação mensal, 82% dos itens são Z, 14% Y e 4% X. Mesmo
 
 ---
 
-## 7. Consumo por unidade
+### 1.3.2. Consumo por unidade
 
 Consumo jan/2024–out/2026 em R$ milhões:
 
 | Unidade | Polo Norte | Lubrif. | Pneus | Filtros | Desgaste | Rolam. | Transm. | **Total** | Δ 25/26 | Δ 26/27 |
 | --- | :---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Santa Luzia (USL) | | **11,5** | **10,4** | **4,0** | 3,8 | **4,4** | 2,3 | **36,4 (18%)** | +26% | +23% |
-| Conquista do Pontal (UCP) | | 10,8 | 7,3 | 3,7 | **4,5** | 2,3 | 2,1 | 30,8 (15%) | +14% | +11% |
-| Costa Rica (UCR) | ● | 10,8 | 6,0 | 3,7 | 3,2 | 2,4 | 2,1 | 28,1 (14%) | +11% | +4% |
-| Rio Claro (URC) | | 6,6 | 8,5 | 2,5 | 3,8 | 2,6 | 2,7 | 26,6 (13%) | **+48%** | +31% |
-| Eldorado (UEL) | | 9,7 | 5,3 | 3,2 | 2,9 | 2,6 | 2,2 | 25,8 (13%) | +5% | +35% |
-| Morro Vermelho (UMV) — hub | ● | 8,0 | 6,2 | 2,9 | 2,9 | 2,0 | **2,9** | 24,9 (12%) | +10% | +10% |
-| Alto Taquari (UAT) | ● | 7,5 | 3,6 | 2,6 | 1,8 | 1,6 | 1,2 | 18,2 (9%) | −9% | **+36%** |
-| Água Emendada (UAE) | ● | 4,7 | 2,3 | 1,9 | 1,6 | 1,4 | 1,3 | 13,2 (6%) | −20% | +17% |
+| Santa Luzia (USL) | Não | **11,5** | **10,4** | **4,0** | 3,8 | **4,4** | 2,3 | **36,4 (18%)** | +26% | +23% |
+| Conquista do Pontal (UCP) | Não | 10,8 | 7,3 | 3,7 | **4,5** | 2,3 | 2,1 | 30,8 (15%) | +14% | +11% |
+| Costa Rica (UCR) | Sim | 10,8 | 6,0 | 3,7 | 3,2 | 2,4 | 2,1 | 28,1 (14%) | +11% | +4% |
+| Rio Claro (URC) | Não | 6,6 | 8,5 | 2,5 | 3,8 | 2,6 | 2,7 | 26,6 (13%) | **+48%** | +31% |
+| Eldorado (UEL) | Não | 9,7 | 5,3 | 3,2 | 2,9 | 2,6 | 2,2 | 25,8 (13%) | +5% | +35% |
+| Morro Vermelho (UMV) — hub | Sim | 8,0 | 6,2 | 2,9 | 2,9 | 2,0 | **2,9** | 24,9 (12%) | +10% | +10% |
+| Alto Taquari (UAT) | Sim | 7,5 | 3,6 | 2,6 | 1,8 | 1,6 | 1,2 | 18,2 (9%) | −9% | **+36%** |
+| Água Emendada (UAE) | Sim | 4,7 | 2,3 | 1,9 | 1,6 | 1,4 | 1,3 | 13,2 (6%) | −20% | +17% |
 
-*● = unidade do Polo Norte. Em negrito, a unidade líder de cada grupo.*
+*Em negrito, a unidade líder de cada grupo.*
 
 - **USL, UCP e UCR** concentram 47% do consumo e lideram em lubrificantes.
 - **Rio Claro** cresce de forma forte e consistente (+48% e +31%). Em 26/27, o avanço vem de filtros (+72%), lubrificantes (+57%) e desgaste agrícola (+51%).
@@ -246,69 +204,119 @@ Consumo jan/2024–out/2026 em R$ milhões:
 
 ---
 
-## 8. Itens sem uso e de baixo giro
+### 1.3.3. Análise por grupo: operação, reposição e armazenagem
 
-| Situação (regra ajustável) | Itens | Estoque (R$) |
-| --- | ---: | ---: |
-| Giro regular | 1.195 | 16,32 mi |
-| Excesso de cobertura (mais de 12 meses de consumo) | 561 | 4,54 mi |
-| Baixo giro (consumo em até 3 dos 34 meses) | 340 | 1,58 mi |
-| Sem giro (sem consumo há 12 meses ou mais) | 561 | 1,52 mi |
-| Sem estoque, mas consumido no período | 533 | – |
-| Sem estoque e sem consumo no período | 11 | – |
+Cada ficha cruza importância operacional, consumo, reposição e armazenagem. Os cuidados de armazenagem combinam o que a base mostra com boas práticas técnicas de referência, já que a base não traz atributos de armazenagem.
 
-- **Rolamentos e vedação concentram o problema:** 256 itens sem giro (R$ 773 mil), 175 de baixo giro (R$ 591 mil) e cobertura de 9,9 meses, contra 3,5 meses na média do escopo.
-- A parcela do estoque acima de 12 meses de cobertura soma cerca de **R$ 3,6 mi**.
-- Os maiores valores sem giro são rolamentos industriais de grande porte (QJ334, NU2240). **Parte disso pode ser reserva estratégica** de equipamento crítico; a criticidade precisa ser validada antes de propor redução.
-- A Atvos já separa **R$ 1,57 mi no depósito OBSO** e **R$ 1,59 mi no SLOW**. Esses depósitos não coincidem totalmente com a classificação acima.
+**1. Lubrificantes e fluidos — o maior gasto, com o maior risco de fornecimento**
 
-**Itens bloqueados ou obsoletos:** 124 combinações seguem sendo consumidas mesmo bloqueadas para compras (98) ou marcadas como obsoletas (26). Isso indica cadastro desatualizado ou item ainda necessário sem fonte de reposição.
-
----
-
-## 9. Estoques repetidos entre unidades
-
-| Indicador | Resultado |
+| Indicador | Valor |
 | --- | --- |
-| Itens com estoque em 2 ou mais centros | 1.417 de 2.657 (53%), somando R$ 20,07 mi |
-| Itens com estoque em 3 ou mais centros | 819 (31%), somando R$ 16,77 mi |
-| ↳ dos quais com cobertura somada acima de 12 meses | 340 itens, somando R$ 4,02 mi (rolamentos R$ 1,66 mi) |
-| Repetidos e sem giro ou de baixo giro | 280 itens, somando R$ 1,56 mi |
-| **Estoque em centro que não consumiu o item em 12 meses** | **1.884 combinações, R$ 4,70 mi** |
-| ↳ material consumido em outro centro (transferível) | **1.082 combinações (719 materiais), R$ 3,18 mi** |
-| ↳ fora do depósito OBSO | R$ 2,22 mi |
-| Centro que consumiu sem ter estoque local | 983 combinações |
-| Itens A: média de centros com estoque | 4,9 |
+| Consumo (jan/24–out/26) | R$ 69,5 mi (34%) |
+| Itens A | 32 (R$ 22,1 mi na safra 25/26) |
+| Safra ÷ entressafra | 1,6× |
+| Variação 25/26 · 26/27 | +9% · +18% |
+| Lead time mediano / P90 | 32 / **75 dias** |
+| Concentração de fornecedor | **Petronas 93%** |
+| Cobertura · estoque OBSO + SLOW | 2,5 meses · 4,9% |
+| Risco alto | 119 combinações |
 
-**Estoque transferível por grupo:** rolamentos R$ 1,31 mi · filtros R$ 0,56 mi · lubrificantes R$ 0,56 mi · pneus R$ 0,40 mi · transmissão R$ 0,27 mi · desgaste R$ 0,08 mi.
+- **Importância:** consumido por toda a frota todos os dias; óleo errado ou contaminado danifica motor e transmissão.
+- **Atenção:** o Arbor MTF 10W30 tem **dois códigos** (2552437 e 2552441), somando R$ 20,3 mi; num deles, o lead time em Santa Luzia é de 136 dias. 12% dos itens planejados têm mínimo abaixo da demanda no lead time.
+- **Armazenagem:** área coberta com piso impermeável e bacia de contenção; tambores deitados com bujões na horizontal; separação por tipo de óleo; controle de lote e validade; FIFO.
 
-**Por unidade:**
+**2. Pneus e acessórios — o grupo que mais cresce**
 
-| Unidade | Estoque (R$ mi) | Sem consumo em 12 meses (R$ mi) | % do estoque |
-| --- | ---: | ---: | ---: |
-| USL – Santa Luzia | 4,14 | 0,94 | 23% |
-| UEL – Eldorado | 3,90 | 0,72 | 19% |
-| UCP – Conquista do Pontal | 3,26 | 0,60 | 18% |
-| URC – Rio Claro | 3,05 | 0,54 | 18% |
-| UCR – Costa Rica | 2,87 | 0,54 | 19% |
-| UMV – Morro Vermelho (hub) | 2,81 | 0,50 | 18% |
-| UAT – Alto Taquari | 2,11 | 0,40 | 19% |
-| UAE – Água Emendada | 1,81 | 0,46 | **25%** |
+| Indicador | Valor |
+| --- | --- |
+| Consumo (jan/24–out/26) | R$ 49,6 mi (24%) |
+| Itens A | 25 (R$ 17,5 mi na safra 25/26) |
+| Safra ÷ entressafra | 1,4× |
+| Variação 25/26 · 26/27 | **+43%** · +33% |
+| Lead time mediano / P90 | 21 / 37 dias (o mais previsível) |
+| Concentração de fornecedor | Bridgestone 34%, Titan 22% |
+| Cobertura · estoque OBSO + SLOW | 2,8 meses · 6,8% |
+| Risco alto | 67 combinações |
 
-*O centro 1011 (R$ 6,5 mil, todo sem consumo) entra no total de R$ 4,70 mi, mas não aparece na tabela.*
+- **Importância:** caminhões, transbordos e tratores não rodam sem pneu; pneu fora de especificação afeta segurança e compactação do solo.
+- **Outlier:** em jan–fev/2026, Santa Luzia consumiu ~R$ 3,3 mi do 295/80R22.5 direcional (≈1.800 unidades), contra R$ 0,2 mi no mesmo bimestre de 2025. Sem esse evento, o crescimento de 25/26 cairia para ~+19%. Eldorado (+112%) e Alto Taquari (+79%) também dispararam em 26/27.
+- **Armazenagem:** local coberto, seco e escuro, longe de motores elétricos (ozônio), calor e combustíveis; pneus na vertical, girados periodicamente; FIFO pela data de fabricação (DOT).
 
-**Leitura:**
+**3. Filtros e elementos — consumo previsível, mas pouco planejado**
 
-- Repetir estoque não é errado por si só: itens de alto giro e críticos devem estar perto de quem consome.
-- O problema está nos **R$ 4,7 mi em centros que não usaram o item em um ano**. Dois terços disso (R$ 3,2 mi) são materiais que outra unidade usa, o que permite começar por **rebalanceamento entre unidades, com custo só de frete**, antes de qualquer investimento em hub.
-- O peso do estoque parado é parecido em todas as unidades (18% a 25%). O problema é do **modelo de abastecimento como um todo**, não de uma unidade específica.
-- Os maiores valores são rolamentos autocompensadores, como o 23156CCK: R$ 99 mil parados na UAE e R$ 57 mil na UMV.
+| Indicador | Valor |
+| --- | --- |
+| Consumo (jan/24–out/26) | R$ 24,5 mi (12%) |
+| Itens A | 21 (R$ 5,2 mi na safra 25/26) |
+| Safra ÷ entressafra | 1,8× |
+| Variação 25/26 · 26/27 | +9% · +10% |
+| Lead time mediano / P90 | 22 / 48 dias |
+| Concentração de fornecedor | Hidrara 27%, Mecanizza 17% |
+| Cobertura · estoque OBSO + SLOW | 4,7 meses · 15,8% |
+| Risco alto | **179 combinações** (2º maior) |
+
+- **Importância:** protegem os componentes mais caros da máquina; trocados em toda manutenção preventiva.
+- **Atenção:** combinam **excesso e falta ao mesmo tempo**: R$ 0,79 mi parados em centros sem consumo e 17 dos 30 casos de consumo recorrente sem estoque na UMV.
+- **Armazenagem:** embalagem original fechada; ambiente seco e sem poeira (o elemento de papel absorve umidade); empilhamento limitado; FIFO.
+
+**4. Desgaste agrícola — o grupo mais sazonal e mais concentrado**
+
+| Indicador | Valor |
+| --- | --- |
+| Consumo (jan/24–out/26) | R$ 24,5 mi (12%) |
+| Itens A | 11 (R$ 7,3 mi na safra 25/26) |
+| Safra ÷ entressafra | **2,8×** (pico em julho) |
+| Variação 25/26 · 26/27 | +3% · +19% |
+| Lead time mediano / P90 | 24 / 46 dias |
+| Concentração de fornecedor | **Bússola 78%** |
+| Cobertura · estoque OBSO + SLOW | 2,4 meses · 3,9% |
+| Risco alto | 56 combinações |
+
+- **Importância:** facas, lâminas e discos efetivamente cortam a cana; desgastam por hora de colheita e definem o ritmo da frente.
+- **Comportamento:** o grupo mais regular e o mais sazonal; o estoque gira.
+- **Armazenagem:** proteção anticorrosiva e local coberto; suportes que preservem o fio; organização por modelo de colhedora; manuseio com EPI.
+
+**5. Rolamentos e vedação — a cauda longa e o estoque parado**
+
+| Indicador | Valor |
+| --- | --- |
+| Consumo (jan/24–out/26) | R$ 19,1 mi (9%) |
+| Materiais · itens A | 1.417 (44% dos códigos) · 13 |
+| Safra ÷ entressafra | **0,8× (contra-sazonal, pico em fev)** |
+| Variação 25/26 · 26/27 | −7% · +4% |
+| Lead time mediano / P90 | 25 / 53 dias (até 77 em itens grandes) |
+| Cobertura · estoque OBSO + SLOW | **9,9 meses · 26,7%** |
+| Estoque em centro sem consumo | R$ 2,08 mi (R$ 1,31 mi transferível) |
+| Risco alto | **204 combinações** (o maior) |
+
+- **Importância:** baixa frequência, alta criticidade. Um rolamento autocompensador de moenda ou redutor custa R$ 20–29 mil e, se faltar, para um equipamento industrial.
+- **Paradoxo do grupo:** é o que mais tem estoque parado **e** o que mais tem combinações de risco alto. Há excesso nos itens errados e falta nos certos — exatamente o caso para o hub.
+- **Armazenagem:** embalagem original com inibidor de corrosão; local seco e limpo; rolamentos deitados e longe de vibração; retentores seguem as regras de borracha.
+
+**6. Transmissão e mangueiras — esporádico, com muito estoque segregado**
+
+| Indicador | Valor |
+| --- | --- |
+| Consumo (jan/24–out/26) | R$ 16,7 mi (8%) |
+| Itens A | 17 (R$ 4,0 mi na safra 25/26) |
+| Safra ÷ entressafra | 1,2× |
+| Variação 25/26 · 26/27 | 0% · +24% |
+| Lead time mediano / P90 | 22 / 46 dias |
+| Concentração de fornecedor | Unimil 24%, JD Comércio 19% |
+| Cobertura · estoque OBSO + SLOW | 4,2 meses · 20,2% |
+| Risco alto | 87 combinações |
+
+- **Importância:** correntes de colhedora e mangueiras hidráulicas; uma mangueira rompida para a máquina e derrama óleo no campo.
+- **Atenção:** a mangueira 1" 6300 PSI está cadastrada em metro e em unidade (dois códigos).
+- **Armazenagem:** diretrizes de borracha (ISO 2230): longe de UV, ozônio e calor; rolos sem dobra abaixo do raio mínimo; terminais tampados; FIFO pela data de fabricação. Correntes lubrificadas e protegidas de umidade.
 
 ---
 
-## 10. Riscos de falta
+## 1.4. Riscos de falta, estoques repetidos e itens sem uso
 
-### 10.1 Lead time de reposição
+### 1.4.1. Prazos de reposição e riscos de falta
+
+**Lead time de reposição:**
 
 | Grupo | Mediana (dias) | 90% dos casos até (dias) |
 | --- | ---: | ---: |
@@ -336,7 +344,7 @@ Consumo jan/2024–out/2026 em R$ milhões:
 
 86% do valor vem de SP e MG, com prazos 3 a 9 dias maiores que os de fornecedores regionais (GO, MS, MT). Os fornecedores que atendem mais itens são distribuidores de rolamentos (Rolimac, Durão, Abecom), de pneus (Master) e de peças agrícolas (Ciarama, RZK).
 
-### 10.2 Risco calculado
+**Risco calculado:**
 
 Para cada centro e material com consumo nos últimos 12 meses, risco = probabilidade × impacto:
 
@@ -364,7 +372,7 @@ Para cada centro e material com consumo nos últimos 12 meses, risco = probabili
 - Os casos mais graves são óleos de alto consumo com estoque abaixo do lead time. Exemplo: Arbor MTF 10W30 na UCP, com lead time de 73 dias e estoque para cerca de 32 dias.
 - **Cuidado na leitura:** sem os pedidos em aberto, um item abaixo do ponto de pedido pode já estar com reposição a caminho. O número mostra onde verificar primeiro, não faltas confirmadas.
 
-### 10.3 Sinais pelos parâmetros MRP
+**Sinais pelos parâmetros MRP:**
 
 | Sinal | Combinações | Leitura |
 | --- | ---: | --- |
@@ -407,11 +415,102 @@ O desvio predominante é de **excesso**. Lubrificantes são a exceção: somando
 
 ---
 
-## 11. Importância para a operação
+### 1.4.2. Estoques repetidos entre unidades
+
+| Indicador | Resultado |
+| --- | --- |
+| Itens com estoque em 2 ou mais centros | 1.417 de 2.657 (53%), somando R$ 20,07 mi |
+| Itens com estoque em 3 ou mais centros | 819 (31%), somando R$ 16,77 mi |
+| Dos quais com cobertura somada acima de 12 meses | 340 itens, somando R$ 4,02 mi (rolamentos R$ 1,66 mi) |
+| Repetidos e sem giro ou de baixo giro | 280 itens, somando R$ 1,56 mi |
+| **Estoque em centro que não consumiu o item em 12 meses** | **1.884 combinações, R$ 4,70 mi** |
+| Material consumido em outro centro (transferível) | **1.082 combinações (719 materiais), R$ 3,18 mi** |
+| Fora do depósito OBSO | R$ 2,22 mi |
+| Centro que consumiu sem ter estoque local | 983 combinações |
+| Itens A: média de centros com estoque | 4,9 |
+
+**Estoque transferível por grupo:** rolamentos R$ 1,31 mi · filtros R$ 0,56 mi · lubrificantes R$ 0,56 mi · pneus R$ 0,40 mi · transmissão R$ 0,27 mi · desgaste R$ 0,08 mi.
+
+**Por unidade:**
+
+| Unidade | Estoque (R$ mi) | Sem consumo em 12 meses (R$ mi) | % do estoque |
+| --- | ---: | ---: | ---: |
+| USL – Santa Luzia | 4,14 | 0,94 | 23% |
+| UEL – Eldorado | 3,90 | 0,72 | 19% |
+| UCP – Conquista do Pontal | 3,26 | 0,60 | 18% |
+| URC – Rio Claro | 3,05 | 0,54 | 18% |
+| UCR – Costa Rica | 2,87 | 0,54 | 19% |
+| UMV – Morro Vermelho (hub) | 2,81 | 0,50 | 18% |
+| UAT – Alto Taquari | 2,11 | 0,40 | 19% |
+| UAE – Água Emendada | 1,81 | 0,46 | **25%** |
+
+*O centro 1011 (R$ 6,5 mil, todo sem consumo) entra no total de R$ 4,70 mi, mas não aparece na tabela.*
+
+**Leitura:**
+
+- Repetir estoque não é errado por si só: itens de alto giro e críticos devem estar perto de quem consome.
+- O problema está nos **R$ 4,7 mi em centros que não usaram o item em um ano**. Dois terços disso (R$ 3,2 mi) são materiais que outra unidade usa, o que permite começar por **rebalanceamento entre unidades, com custo só de frete**, antes de qualquer investimento em hub.
+- O peso do estoque parado é parecido em todas as unidades (18% a 25%). O problema é do **modelo de abastecimento como um todo**, não de uma unidade específica.
+- Os maiores valores são rolamentos autocompensadores, como o 23156CCK: R$ 99 mil parados na UAE e R$ 57 mil na UMV.
+
+---
+
+### 1.4.3. Itens sem uso e de baixo giro
+
+| Situação (regra ajustável) | Itens | Estoque (R$) |
+| --- | ---: | ---: |
+| Giro regular | 1.195 | 16,32 mi |
+| Excesso de cobertura (mais de 12 meses de consumo) | 561 | 4,54 mi |
+| Baixo giro (consumo em até 3 dos 34 meses) | 340 | 1,58 mi |
+| Sem giro (sem consumo há 12 meses ou mais) | 561 | 1,52 mi |
+| Sem estoque, mas consumido no período | 533 | – |
+| Sem estoque e sem consumo no período | 11 | – |
+
+- **Rolamentos e vedação concentram o problema:** 256 itens sem giro (R$ 773 mil), 175 de baixo giro (R$ 591 mil) e cobertura de 9,9 meses, contra 3,5 meses na média do escopo.
+- A parcela do estoque acima de 12 meses de cobertura soma cerca de **R$ 3,6 mi**.
+- Os maiores valores sem giro são rolamentos industriais de grande porte (QJ334, NU2240). **Parte disso pode ser reserva estratégica** de equipamento crítico; a criticidade precisa ser validada antes de propor redução.
+- A Atvos já separa **R$ 1,57 mi no depósito OBSO** e **R$ 1,59 mi no SLOW**. Esses depósitos não coincidem totalmente com a classificação acima.
+
+**Itens bloqueados ou obsoletos:** 124 combinações seguem sendo consumidas mesmo bloqueadas para compras (98) ou marcadas como obsoletas (26). Isso indica cadastro desatualizado ou item ainda necessário sem fonte de reposição.
+
+---
+
+## 1.5. Curva ABC e importância para a operação
+
+### 1.5.1. Classificação por valor de consumo (curva ABC)
+
+Valor de consumo estimado na **safra 25/26 completa** (abr/2025–mar/2026), para que a sazonalidade não distorça o resultado.
+
+| Classe | Itens | % dos itens | Valor consumido | % do valor | Estoque atual |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| A | 119 | 5,6% | R$ 57,9 mi | 80,1% | R$ 12,0 mi |
+| B | 358 | 16,8% | R$ 10,8 mi | 14,9% | R$ 5,5 mi |
+| C | 1.651 | 77,6% | R$ 3,6 mi | 5,0% | R$ 4,5 mi |
+| Sem valor (sem preço) | 289 | – | não valorizado | – | – |
+| Sem consumo na safra | 784 | – | – | – | R$ 1,9 mi |
+
+**Valor dos itens A por grupo:**
+
+| Grupo | Itens A | Valor |
+| --- | ---: | ---: |
+| Lubrificantes e fluidos | 32 | R$ 22,1 mi |
+| Pneus e acessórios | 25 | R$ 17,5 mi |
+| Desgaste agrícola | 11 | R$ 7,3 mi |
+| Filtros e elementos | 21 | R$ 5,2 mi |
+| Transmissão e mangueiras | 17 | R$ 4,0 mi |
+| Rolamentos e vedação | 13 | R$ 1,7 mi |
+
+- A concentração é maior que a referência clássica: 5,6% dos itens fazem 80% do valor, o que permite controlar de perto poucos itens.
+- O item de maior valor é o pneu 295/80R22.5 (R$ 5,9 mi na safra), seguido de óleos e facas picadoras.
+- Rolamentos e vedação têm 44% dos códigos, mas só 13 itens A.
+
+---
+
+### 1.5.2. Criticidade e importância operacional (VED)
 
 A classificação definitiva (VED) depende da Manutenção/PCM. Com os dados disponíveis, já há três dimensões.
 
-### 11.1 Frequência de uso (faixas de criticidade de consumo da Atvos)
+**Frequência de uso (faixas de criticidade de consumo da Atvos):**
 
 A Atvos classifica cada material pelo número de meses com consumo. Aplicamos as mesmas faixas aos **últimos 12 meses completos** (nov/2025–out/2026):
 
@@ -445,11 +544,11 @@ Quase todos os itens A (100 de 119) são consumidos em 10 meses ou mais. Em rola
 | **Ignora a sazonalidade** | Um rolamento usado só nas reformas de jan–fev sempre cai em Baixo, mesmo sendo crítico para a parada industrial. |
 | **Mede frequência, não impacto** | Um item que sai todo mês pode ser trivial; um rolamento de moenda que sai uma vez por ano pode parar a usina. |
 
-### 11.2 Dificuldade de reposição (critério C3 do VED)
+**Dificuldade de reposição (critério C3 do VED):**
 
 Entre os 2.387 materiais consumidos no último ano: 493 têm C3 = 3 (lead time acima de 30 dias), 1.884 têm C3 = 2 (8 a 30 dias) e 10 têm C3 = 1.
 
-### 11.3 VED (pendente)
+**VED (pendente):**
 
 | Critério | 3 | 2 | 1 | Peso |
 | --- | --- | --- | --- | ---: |
@@ -462,115 +561,9 @@ Entre os 2.387 materiais consumidos no último ano: 493 têm C3 = 3 (lead time a
 
 ---
 
-## 12. Fichas por grupo
+## 1.6. Piloto Polo Norte, síntese estratégica e referências
 
-Cada ficha cruza importância operacional, consumo, reposição e armazenagem. Os cuidados de armazenagem combinam o que a base mostra com boas práticas técnicas de referência, já que a base não traz atributos de armazenagem.
-
-### 12.1 Lubrificantes e fluidos — o maior gasto, com o maior risco de fornecimento
-
-| Indicador | Valor |
-| --- | --- |
-| Consumo (jan/24–out/26) | R$ 69,5 mi (34%) |
-| Itens A | 32 (R$ 22,1 mi na safra 25/26) |
-| Safra ÷ entressafra | 1,6× |
-| Variação 25/26 · 26/27 | +9% · +18% |
-| Lead time mediano / P90 | 32 / **75 dias** |
-| Concentração de fornecedor | **Petronas 93%** |
-| Cobertura · estoque OBSO + SLOW | 2,5 meses · 4,9% |
-| Risco alto | 119 combinações |
-
-- **Importância:** consumido por toda a frota todos os dias; óleo errado ou contaminado danifica motor e transmissão.
-- ⚠️ **Atenção:** o Arbor MTF 10W30 tem **dois códigos** (2552437 e 2552441), somando R$ 20,3 mi; num deles, o lead time em Santa Luzia é de 136 dias. 12% dos itens planejados têm mínimo abaixo da demanda no lead time.
-- **Armazenagem:** área coberta com piso impermeável e bacia de contenção; tambores deitados com bujões na horizontal; separação por tipo de óleo; controle de lote e validade; FIFO.
-
-### 12.2 Pneus e acessórios — o grupo que mais cresce
-
-| Indicador | Valor |
-| --- | --- |
-| Consumo (jan/24–out/26) | R$ 49,6 mi (24%) |
-| Itens A | 25 (R$ 17,5 mi na safra 25/26) |
-| Safra ÷ entressafra | 1,4× |
-| Variação 25/26 · 26/27 | **+43%** · +33% |
-| Lead time mediano / P90 | 21 / 37 dias (o mais previsível) |
-| Concentração de fornecedor | Bridgestone 34%, Titan 22% |
-| Cobertura · estoque OBSO + SLOW | 2,8 meses · 6,8% |
-| Risco alto | 67 combinações |
-
-- **Importância:** caminhões, transbordos e tratores não rodam sem pneu; pneu fora de especificação afeta segurança e compactação do solo.
-- ⚠️ **Outlier:** em jan–fev/2026, Santa Luzia consumiu ~R$ 3,3 mi do 295/80R22.5 direcional (≈1.800 unidades), contra R$ 0,2 mi no mesmo bimestre de 2025. Sem esse evento, o crescimento de 25/26 cairia para ~+19%. Eldorado (+112%) e Alto Taquari (+79%) também dispararam em 26/27.
-- **Armazenagem:** local coberto, seco e escuro, longe de motores elétricos (ozônio), calor e combustíveis; pneus na vertical, girados periodicamente; FIFO pela data de fabricação (DOT).
-
-### 12.3 Filtros e elementos — consumo previsível, mas pouco planejado
-
-| Indicador | Valor |
-| --- | --- |
-| Consumo (jan/24–out/26) | R$ 24,5 mi (12%) |
-| Itens A | 21 (R$ 5,2 mi na safra 25/26) |
-| Safra ÷ entressafra | 1,8× |
-| Variação 25/26 · 26/27 | +9% · +10% |
-| Lead time mediano / P90 | 22 / 48 dias |
-| Concentração de fornecedor | Hidrara 27%, Mecanizza 17% |
-| Cobertura · estoque OBSO + SLOW | 4,7 meses · 15,8% |
-| Risco alto | **179 combinações** (2º maior) |
-
-- **Importância:** protegem os componentes mais caros da máquina; trocados em toda manutenção preventiva.
-- ⚠️ **Atenção:** combinam **excesso e falta ao mesmo tempo**: R$ 0,79 mi parados em centros sem consumo e 17 dos 30 casos de consumo recorrente sem estoque na UMV.
-- **Armazenagem:** embalagem original fechada; ambiente seco e sem poeira (o elemento de papel absorve umidade); empilhamento limitado; FIFO.
-
-### 12.4 Desgaste agrícola — o grupo mais sazonal e mais concentrado
-
-| Indicador | Valor |
-| --- | --- |
-| Consumo (jan/24–out/26) | R$ 24,5 mi (12%) |
-| Itens A | 11 (R$ 7,3 mi na safra 25/26) |
-| Safra ÷ entressafra | **2,8×** (pico em julho) |
-| Variação 25/26 · 26/27 | +3% · +19% |
-| Lead time mediano / P90 | 24 / 46 dias |
-| Concentração de fornecedor | **Bússola 78%** |
-| Cobertura · estoque OBSO + SLOW | 2,4 meses · 3,9% |
-| Risco alto | 56 combinações |
-
-- **Importância:** facas, lâminas e discos efetivamente cortam a cana; desgastam por hora de colheita e definem o ritmo da frente.
-- **Comportamento:** o grupo mais regular e o mais sazonal; o estoque gira.
-- **Armazenagem:** proteção anticorrosiva e local coberto; suportes que preservem o fio; organização por modelo de colhedora; manuseio com EPI.
-
-### 12.5 Rolamentos e vedação — a cauda longa e o estoque parado
-
-| Indicador | Valor |
-| --- | --- |
-| Consumo (jan/24–out/26) | R$ 19,1 mi (9%) |
-| Materiais · itens A | 1.417 (44% dos códigos) · 13 |
-| Safra ÷ entressafra | **0,8× (contra-sazonal, pico em fev)** |
-| Variação 25/26 · 26/27 | −7% · +4% |
-| Lead time mediano / P90 | 25 / 53 dias (até 77 em itens grandes) |
-| Cobertura · estoque OBSO + SLOW | **9,9 meses · 26,7%** |
-| Estoque em centro sem consumo | R$ 2,08 mi (R$ 1,31 mi transferível) |
-| Risco alto | **204 combinações** (o maior) |
-
-- **Importância:** baixa frequência, alta criticidade. Um rolamento autocompensador de moenda ou redutor custa R$ 20–29 mil e, se faltar, para um equipamento industrial.
-- ⚠️ **Paradoxo do grupo:** é o que mais tem estoque parado **e** o que mais tem combinações de risco alto. Há excesso nos itens errados e falta nos certos — exatamente o caso para o hub.
-- **Armazenagem:** embalagem original com inibidor de corrosão; local seco e limpo; rolamentos deitados e longe de vibração; retentores seguem as regras de borracha.
-
-### 12.6 Transmissão e mangueiras — esporádico, com muito estoque segregado
-
-| Indicador | Valor |
-| --- | --- |
-| Consumo (jan/24–out/26) | R$ 16,7 mi (8%) |
-| Itens A | 17 (R$ 4,0 mi na safra 25/26) |
-| Safra ÷ entressafra | 1,2× |
-| Variação 25/26 · 26/27 | 0% · +24% |
-| Lead time mediano / P90 | 22 / 46 dias |
-| Concentração de fornecedor | Unimil 24%, JD Comércio 19% |
-| Cobertura · estoque OBSO + SLOW | 4,2 meses · 20,2% |
-| Risco alto | 87 combinações |
-
-- **Importância:** correntes de colhedora e mangueiras hidráulicas; uma mangueira rompida para a máquina e derrama óleo no campo.
-- ⚠️ **Atenção:** a mangueira 1" 6300 PSI está cadastrada em metro e em unidade (dois códigos).
-- **Armazenagem:** diretrizes de borracha (ISO 2230): longe de UV, ozônio e calor; rolos sem dobra abaixo do raio mínimo; terminais tampados; FIFO pela data de fabricação. Correntes lubrificadas e protegidas de umidade.
-
----
-
-## 13. O que o piloto Polo Norte já mostra
+### 1.6.1. Resultados do piloto Polo Norte
 
 A **UMV (Morro Vermelho, Mineiros-GO)** passou a abastecer UAE (138 km), UCR (124 km) e UAT (105 km), com entregas semanais em rota fixa.
 
@@ -582,7 +575,7 @@ A **UMV (Morro Vermelho, Mineiros-GO)** passou a abastecer UAE (138 km), UCR (12
 | Reparametrização do MRP | −R$ 0,81 mi |
 | Estoque após a centralização | R$ 1,98 mi (**−49%**) |
 
-> ⚠️ **Redução de 49%, não 51%.** A apresentação destaca "−51%", mas pela própria cascata o estoque final é 51% do inicial. A redução atribuível às ações estruturais (venda e reparametrização) é de **cerca de 33%**; o restante veio do consumo normal.
+> **Nota — Redução de 49%, não 51%.** A apresentação destaca "−51%", mas pela própria cascata o estoque final é 51% do inicial. A redução atribuível às ações estruturais (venda e reparametrização) é de **cerca de 33%**; o restante veio do consumo normal.
 
 - As quatro unidades do Polo Norte somam R$ 9,6 mi de estoque no escopo (40% do total). A UAE segue com a maior proporção de estoque sem consumo (25%).
 - O valor de **R$ 298 mil por mês** é a estimativa das movimentações pelas notas fiscais; falta confirmar se é valor de mercadoria transportada ou custo de frete.
@@ -590,7 +583,7 @@ A **UMV (Morro Vermelho, Mineiros-GO)** passou a abastecer UAE (138 km), UCR (12
 
 ---
 
-## 14. Síntese estratégica
+### 1.6.2. Síntese estratégica
 
 Os seis grupos não pedem uma política única: **quatro pedem disponibilidade local com parâmetros por safra; dois pedem centralização e limpeza de estoque.**
 
@@ -603,7 +596,7 @@ Os seis grupos não pedem uma política única: **quatro pedem disponibilidade l
 | Rolamentos e vedação | Esporádico, cauda longa | Entressafra (0,8×) | 25 / 53 | Baixo | 9,9 m | 26,7% | **Hub** + venda/baixa do parado, após validar reservas estratégicas |
 | Transmissão e mangueiras | Esporádico, cauda longa | Neutro (1,2×) | 22 / 46 | Baixo | 4,2 m | 20,2% | **Hub** para a cauda; correntes locais |
 
-### Implicações
+**Implicações:**
 
 1. **Começar pelo que não exige compra nem obra.** R$ 3,2 mi podem ser rebalanceados entre unidades, e 42% dos máximos do MRP podem ser revistos para baixo.
 2. **O alvo do hub é a cauda longa, não o volume:** itens repetidos, intermitentes, de baixo giro e de baixo impacto, com destaque para rolamentos.
@@ -616,9 +609,9 @@ Os seis grupos não pedem uma política única: **quatro pedem disponibilidade l
 
 ---
 
-## 15. Limitações e dados pendentes
+### 1.6.3. Limitações e dados pendentes
 
-### 15.1 Premissas e limites
+**Premissas e limites:**
 
 - **Valor de consumo** estimado pelo preço do estoque atual; não é o valor contábil. Variações entre safras refletem volume, não inflação.
 - **Impacto provisório:** a frequência de uso não mede a consequência de uma falta; o risco de itens raros pode estar subestimado.
@@ -628,16 +621,14 @@ Os seis grupos não pedem uma política única: **quatro pedem disponibilidade l
 - **Demanda normal:** para os 71% de itens intermitentes, o ponto de pedido de referência deve ser lido como ordem de grandeza.
 - **Escopo:** conclusões válidas só para os seis grupos e os 3.201 códigos.
 
-### 15.2 Dados a pedir para a Atvos
-
-**Prioridade alta (mudam os resultados):**
+**Dados a pedir para a Atvos — prioridade alta (mudam os resultados):**
 
 1. **Pedidos de compra em aberto** por centro e material (quantidade, data do pedido, previsão de entrega, fornecedor).
 2. **Valor do consumo ou preço de compra**, de preferência o consumo mensal em R$ desde jan/2024, direto do SAP.
 3. **Criticidade operacional:** cadastrada no SAP ou validação de C1, C2 e C4 com Manutenção/PCM.
 4. **Escopo oficial:** lista de códigos e grupos válida para o estudo.
 
-**Prioridade média (confirmam premissas):**
+**Dados a pedir para a Atvos — prioridade média (confirmam premissas):**
 
 5. Lead time: definição, se é cadastro ou histórico, e confirmação dos 64 casos acima de 90 dias. Idealmente, histórico de pedidos com data do pedido e do recebimento.
 6. Data da posição de estoque e depósitos incluídos na base de 11/11.
@@ -647,17 +638,17 @@ Os seis grupos não pedem uma política única: **quatro pedem disponibilidade l
 10. O que é o centro 1011.
 11. Viabilidade logística e fiscal de transferir estoque entre unidades.
 
-### 15.3 Perguntas pontuais
+**Perguntas pontuais para validação:**
 
-- [ ] O que explica os ≈1.800 pneus 295/80R22.5 em Santa Luzia em jan–fev/2026?
-- [ ] Os dois códigos do Arbor MTF 10W30 (e as demais descrições duplicadas) podem ser unificados?
-- [ ] Há contrato ou contingência para Petronas e Bússola?
-- [ ] Por que a UMV, sendo o hub, tem o maior número de itens recorrentes sem estoque?
-- [ ] Os rolamentos grandes sem giro (QJ334, NU2240, 23156CCK) são reserva estratégica?
+- O que explica os ≈1.800 pneus 295/80R22.5 em Santa Luzia em jan–fev/2026?
+- Os dois códigos do Arbor MTF 10W30 (e as demais descrições duplicadas) podem ser unificados?
+- Há contrato ou contingência para Petronas e Bússola?
+- Por que a UMV, sendo o hub, tem o maior número de itens recorrentes sem estoque?
+- Os rolamentos grandes sem giro (QJ334, NU2240, 23156CCK) são reserva estratégica?
 
 ---
 
-## 16. Regras e métodos
+### 1.6.4. Regras e métodos
 
 | Regra | Definição |
 | --- | --- |
@@ -683,7 +674,7 @@ Os seis grupos não pedem uma política única: **quatro pedem disponibilidade l
 
 ---
 
-## 17. Glossário
+### 1.6.5. Glossário
 
 | Termo | Significado |
 | --- | --- |
@@ -701,7 +692,7 @@ Os seis grupos não pedem uma política única: **quatro pedem disponibilidade l
 
 ---
 
-## 18. Referências
+### 1.6.6. Referências
 
 ATVOS. **Base_Planejamento_Materiais**: abas Base_Consumo e Base_Estoque_Atual. [*S. l.*]: Atvos, 2026. 1 planilha eletrônica (.xlsx). Documento interno, recebido em 9 nov. 2026.
 
