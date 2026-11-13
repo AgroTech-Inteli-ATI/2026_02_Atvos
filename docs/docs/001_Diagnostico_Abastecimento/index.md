@@ -16,8 +16,8 @@ Analisar o consumo desde 2024 e a posição dos estoques das categorias selecion
 - [1. Necessidades de materiais MRO: consumo, frequência, variações, criticidade, reposição, armazenagem e classificação ABC, conforme os dados disponíveis](./Diagnostico_MRO.md).
 - [2. Mapeamento dos fornecedores prioritários, localização, cobertura, prazos e condições de atendimento](./Mapeamento_Fornecedores.md).
 - [3. Diagnóstico do abastecimento atual: unidades, fluxos, estoques e custos de armazenagem, transporte e equipe](./Diagnostico_Atual_MRO.md).
-- Planilha de dados com fontes e datas, comparando a situação atual com CD centralizado e modelo híbrido.
-- Lista das informações pendentes e suposições necessárias para avaliar investimento, custos e benefícios.
+- [4. Planilha de dados com fontes e datas, comparando a situação atual com CD centralizado e modelo híbrido](./Organizacao_Dados_Alternativas.md).
+- [Lista das informações pendentes e suposições necessárias para avaliar investimento, custos e benefícios](./Organizacao_Dados_Alternativas.md).
 
 ---
 
@@ -44,3 +44,9 @@ Analisar o consumo desde 2024 e a posição dos estoques das categorias selecion
 - **Caminho dos materiais** entre fornecedores, estoques e unidades.
 - **Estoques por material e almoxarifado**, comparados com o consumo para identificar estoques repetidos e itens de baixo consumo, e **custos atuais** de armazenagem, transporte e equipe, conforme os dados disponíveis.
 - **Resumo do abastecimento atual**, indicando o que foi confirmado e o que foi estimado.
+
+### [4. Organização dos dados e alternativas do estudo](./Organizacao_Dados_Alternativas.md)
+
+- **Planilha com dados** de unidades, materiais, consumo, estoques, fornecedores e custos, incluindo fontes e datas.
+- **Alternativas a comparar:** situação atual, CD centralizado e modelo híbrido (parte do estoque no CD e parte nas unidades), comparando custos, prazos e disponibilidade dos materiais essenciais.
+- **Lista dos dados e das suposições iniciais** necessários para estimar investimento, custos de funcionamento e benefícios.
