@@ -58,45 +58,45 @@ A planilha `Organizacao_Dados_Alternativas.xlsx` organiza os dados de unidades, 
 **Tabela 3 – Conferência com o item 1**
 
 
-| Indicador                                 |                  Planilha |           Item 1 |
-| ------------------------------------------- | --------------------------: | -----------------: |
-| Materiais                                 |                     3.201 |            3.201 |
-| Combinações de centro e material        |                     8.224 |            8.224 |
-| Estoque do recorte                        | R$ 23,96 mi | R$ 23,96 mi |                  |
-| Consumo de jan/2024 a out/2026            | R$ 204,0 mi | R$ 204,0 mi |                  |
-| Consumo da safra 25/26                    |   R$ 72,4 mi | R$ 72,4 mi |                  |
-| Estoque em centro sem consumo em 12 meses |   R$ 4,70 mi | R$ 4,70 mi |                  |
-| Estoque transferível                     |   R$ 3,18 mi | R$ 3,18 mi |                  |
-| Itens de classe A, B e C                  |          119, 358 e 1.651 | 119, 358 e 1.651 |
+| Indicador                                 |          Planilha |           Item 1 |
+| ----------------------------------------- | ----------------: | ---------------: |
+| Materiais                                 |             3.201 |            3.201 |
+| Combinações de centro e material          |             8.224 |            8.224 |
+| Estoque do recorte                        |       R$ 23,96 mi |      R$ 23,96 mi |
+| Consumo de jan/2024 a out/2026            |       R$ 204,0 mi |      R$ 204,0 mi |
+| Consumo da safra 25/26                    |        R$ 72,4 mi |       R$ 72,4 mi |
+| Estoque em centro sem consumo em 12 meses |        R$ 4,70 mi |       R$ 4,70 mi |
+| Estoque transferível                      |        R$ 3,18 mi |       R$ 3,18 mi |
+| Itens de classe A, B e C                  |  119, 358 e 1.651 | 119, 358 e 1.651 |
 
 **Tabela 4 – Situação atual por grupo de material**
 
 
-| Grupo                     | Materiais | Consumo safra 25/26 (R$ mi) | Estoque (R$ mi) | Cobertura (meses) | Estoque sem consumo em 12 meses (R$ mi) | Estoque transferível (R$ mi) | Lead time médio (dias) | Consumo recorrente sem estoque |          |         |
-| --------------------------- | ----------: | ----------------------------------------------: | ------------------: | ------------------------------------------------------------------------: | ------------------------: | -------------------------------: | ---------: | --------: |
-| Pneus e acessórios       |       220 |                                          19,1 |              5,21 |                                                                     2,8 |                    0,50 |                           0,40 |     24,6 |      10 |
-| Filtros e elementos       |       596 |                                           8,7 |              3,61 |                                                                     4,7 |                    0,79 |                           0,56 |     27,8 |      32 |
-| Lubrificantes e fluidos   |       242 |                                          24,3 |              5,64 |                                                                     2,5 |                    0,71 |                           0,56 |     40,4 |      22 |
-| Rolamentos e vedação    |     1.417 |                                           6,3 |              5,33 |                                                                     9,9 |                    2,08 |                           1,31 |     29,9 |      25 |
-| Transmissão e mangueiras |       617 |                                           5,7 |              2,28 |                                                                     4,2 |                    0,50 |                           0,27 |     27,2 |      13 |
-| Desgaste agrícola        |       109 |                                           8,2 |              1,87 |                                                                     2,4 |                    0,12 |                           0,08 |     28,3 |       9 |
-| **Total**                 | **3.201** |                                      **72,4** |         **23,96** |                                                                 **3,5** |                **4,70** |                       **3,18** | **29,1** | **111** |
+| Grupo                     | Materiais | Consumo safra 25/26 (R$ mi) | Estoque (R$ mi) | Cobertura (meses) | Estoque sem consumo em 12 meses (R$ mi) | Estoque transferível (R$ mi) | Lead time médio (dias) | Consumo recorrente sem estoque |
+| ------------------------- | --------: | --------------------------: | --------------: | ----------------: | --------------------------------------: | ---------------------------: | ---------------------: | -----------------------------: |
+| Pneus e acessórios        |       220 |                        19,1 |            5,21 |               2,8 |                                    0,50 |                         0,40 |                   24,6 |                             10 |
+| Filtros e elementos       |       596 |                         8,7 |            3,61 |               4,7 |                                    0,79 |                         0,56 |                   27,8 |                             32 |
+| Lubrificantes e fluidos   |       242 |                        24,3 |            5,64 |               2,5 |                                    0,71 |                         0,56 |                   40,4 |                             22 |
+| Rolamentos e vedação      |     1.417 |                         6,3 |            5,33 |               9,9 |                                    2,08 |                         1,31 |                   29,9 |                             25 |
+| Transmissão e mangueiras  |       617 |                         5,7 |            2,28 |               4,2 |                                    0,50 |                         0,27 |                   27,2 |                             13 |
+| Desgaste agrícola         |       109 |                         8,2 |            1,87 |               2,4 |                                    0,12 |                         0,08 |                   28,3 |                              9 |
+| **Total**                 | **3.201** |                    **72,4** |       **23,96** |           **3,5** |                                **4,70** |                     **3,18** |               **29,1** |                        **111** |
 
 *Notas: o lead time é a média simples das combinações com prazo informado (35% do total); os itens 1 e 2 usam a mediana, por isso os valores diferem. "Consumo recorrente sem estoque" conta as combinações com consumo em seis ou mais dos últimos 12 meses e saldo zero. O estoque sem consumo e o estoque transferível se sobrepõem e não devem ser somados.*
 
 **Tabela 5 – Situação atual por unidade**
 
 
-| Unidade                   | Grupo de CNPJ (a confirmar) | Consumo 12 meses (R$ mi) | Estoque (R$ mi) | Cobertura (meses) | Estoque sem consumo em 12 meses (R$ mi) |      |
-| --------------------------- | ----------------------------- | -------------------------------------------: | ------------------: | ----------------------------------------: | -----: |
-| Conquista do Pontal (UCP) | Próprio                    |                                       12,0 |              3,26 |                                     3,3 | 0,60 |
-| Santa Luzia (USL)         | Próprio                    |                                       15,6 |              4,14 |                                     3,2 | 0,94 |
-| Eldorado (UEL)            | Próprio                    |                                       10,4 |              3,90 |                                     4,5 | 0,72 |
-| Rio Claro (URC)           | Próprio                    |                                       12,0 |              3,05 |                                     3,0 | 0,54 |
-| Água Emendada (UAE)      | Compartilhado (Polo Norte)  |                                        4,6 |              1,81 |                                     4,8 | 0,46 |
-| Morro Vermelho (UMV)      | Compartilhado (Polo Norte)  |                                        9,5 |              2,81 |                                     3,6 | 0,50 |
-| Costa Rica (UCR)          | Compartilhado (Polo Norte)  |                                       10,3 |              2,87 |                                     3,3 | 0,54 |
-| Alto Taquari (UAT)        | Compartilhado (Polo Norte)  |                                        7,0 |              2,11 |                                     3,6 | 0,40 |
+| Unidade                   | Grupo de CNPJ (a confirmar) | Consumo 12 meses (R$ mi) | Estoque (R$ mi) | Cobertura (meses) | Estoque sem consumo em 12 meses (R$ mi) |
+| ------------------------- | --------------------------- | -----------------------: | --------------: | ----------------: | --------------------------------------: |
+| Conquista do Pontal (UCP) | Próprio                     |                     12,0 |            3,26 |               3,3 |                                    0,60 |
+| Santa Luzia (USL)         | Próprio                     |                     15,6 |            4,14 |               3,2 |                                    0,94 |
+| Eldorado (UEL)            | Próprio                     |                     10,4 |            3,90 |               4,5 |                                    0,72 |
+| Rio Claro (URC)           | Próprio                     |                     12,0 |            3,05 |               3,0 |                                    0,54 |
+| Água Emendada (UAE)       | Compartilhado (Polo Norte)  |                      4,6 |            1,81 |               4,8 |                                    0,46 |
+| Morro Vermelho (UMV)      | Compartilhado (Polo Norte)  |                      9,5 |            2,81 |               3,6 |                                    0,50 |
+| Costa Rica (UCR)          | Compartilhado (Polo Norte)  |                     10,3 |            2,87 |               3,3 |                                    0,54 |
+| Alto Taquari (UAT)        | Compartilhado (Polo Norte)  |                      7,0 |            2,11 |               3,6 |                                    0,40 |
 
 *Nota: o grupo de CNPJ segue o que foi informado pela Atvos em reunião (quatro unidades no mesmo CNPJ e quatro com CNPJ próprio) e ainda não foi confirmado por documento.*
 
@@ -148,7 +148,7 @@ A variante A2a decorre do diagnóstico do item 1, que separa grupos de consumo c
 | A0+         | Estoque transferível entre unidades                             |                                                                                                                                  R$ 3,18 mi | Parado em um centro e consumido em outro; pode ser rebalanceado sem compra nova. |
 | A0+         | Estoque acima do máximo de reposição                          |                                                                                                                                  R$ 1,92 mi | Sobrepõe-se ao valor anterior; os dois não devem ser somados.                  |
 | A1          | Estoque total do recorte                                         |                                                                                                                                 R$ 23,96 mi | Todo o estoque do recorte passaria pelo CD.                                      |
-| A2a         | Estoque de rolamentos e vedação e de transmissão e mangueiras | R$ 7,62 mi | Estoque que passaria a ser gerido no CD nesta variante; R$ 2,58 mi estão sem consumo em 12 meses no centro onde se encontram. |                                                                                  |
+| A2a         | Estoque de rolamentos e vedação e de transmissão e mangueiras | R$ 7,62 mi | Estoque que passaria a ser gerido no CD nesta variante; R$ 2,58 mi estão sem consumo em 12 meses no centro onde se encontram. |
 | A2b         | Estoque das quatro unidades do Polo Norte                        |                                                                                                                                  R$ 9,60 mi | Unidades que, segundo a reunião, compartilham CNPJ.                             |
 | A2c         | Consumo de 12 meses de lubrificantes, pneus e desgaste agrícola |                                                                                                                                  R$ 59,1 mi | Grupos com fornecedor concentrado, conforme o item 2.                            |
 

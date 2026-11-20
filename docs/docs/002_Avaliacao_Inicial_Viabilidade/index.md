@@ -17,6 +17,6 @@ Comparar alternativas de abastecimento e regiões candidatas para estimar em qua
 - Comparação de regiões candidatas por distância, acesso às unidades, fornecedores, infraestrutura e riscos.
 - Estimativa de investimento inicial e custos de funcionamento, com cálculos, fontes, datas e unidades de medida.
 - Análise exploratória dos impostos que afetam as alternativas, com pontos a confirmar com a área fiscal da Atvos.
-- Estimativa de benefícios e impactos, separando capital liberado pela redução de estoques da economia recorrente e evitando dupla contagem.
+- [Estimativa de benefícios e impactos](./Beneficios_Impactos.md), separando capital liberado pela redução de estoques da economia recorrente e evitando dupla contagem.
 - Planilha inicial de viabilidade e conclusão preliminar, com critérios de comparação das regiões e informações ainda necessárias.
 
