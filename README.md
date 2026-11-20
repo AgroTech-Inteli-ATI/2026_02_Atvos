@@ -125,7 +125,7 @@ git clone https://github.com/AgroTech-Inteli-ATI/2026_02_Atvos.git
 cd 2026_02_Atvos/docs
 npm ci
 npm start
-```
+```npm start
 
 Acesse o endereço exibido no terminal, normalmente `http://localhost:3000/2026_02_Atvos/`.
 

@@ -2,15 +2,16 @@
 sidebar_position: 4
 sidebar_label: 4. Estimativa de benefícios e impactos
 slug: /sprint-2/estimativa-beneficios-impactos
-description: "Estimativa de benefícios financeiros e variações operacionais: redução de estoques repetidos, separação entre capital liberado e economia recorrente, ganhos potenciais em compras e mudanças nos custos de armazenagem e transporte."
+description: "Estimativa de benefícios financeiros e variações operacionais: redução de estoques repetidos, separação entre capital liberado e economia recorrente, ganhos potenciais em compras, mudanças nos custos de armazenagem e transporte e efeitos nos prazos de atendimento, na disponibilidade e no risco de falta de materiais."
 ---
 
 # 4. Estimativa de benefícios e impactos
 
-Esta seção estima os potenciais benefícios financeiros e as variações de custos operacionais associadas à centralização dos materiais de manutenção, reparo e operação (MRO) da Atvos. A análise concentra-se em duas frentes complementares:
+Esta seção estima os potenciais benefícios financeiros e as variações de custos operacionais associadas à centralização dos materiais de manutenção, reparo e operação (MRO) da Atvos. A análise concentra-se em três frentes complementares:
 
 1. **Redução de estoques repetidos e do capital aplicado em materiais**, separando o valor liberado uma única vez no caixa da economia recorrente gerada a cada mês e a cada ano.
 2. **Potenciais ganhos nas compras e mudanças nos custos de armazenagem e transporte**, comparando quatro alternativas de abastecimento em cenários conservador, esperado e otimista.
+3. **Efeitos nos prazos de atendimento, na disponibilidade e no risco de falta de materiais**, calculados com as mesmas regras do diagnóstico da Sprint 1 e apresentados separados do saldo financeiro.
 
 Todos os cálculos derivam do recorte oficial de **3.201 materiais** distribuídos nos **seis grupos MRO** e nas **oito unidades agroindustriais** (estoque atual de **R$ 23,96 milhões** em todos os depósitos e consumo anual estimado de **R$ 72,35 milhões** na Safra 25/26). As fórmulas e premissas editáveis estão consolidadas na planilha de apoio compartilhada nos canais internos do projeto; esta página apresenta os resultados agregados e as regras de cálculo.
 
@@ -185,11 +186,140 @@ A centralização altera o transporte em dois sentidos opostos:
 
 ---
 
-## 4.3. Síntese preliminar dos efeitos financeiros e operacionais
+## 4.3. Efeitos nos prazos de atendimento, na disponibilidade e no risco de falta de materiais
 
-A Tabela 9 reúne os resultados do cenário **Esperado**, mantendo estritamente separados o **efeito único no caixa (capital liberado)** e o **saldo recorrente anual e mensal**:
+As seções anteriores olharam para o dinheiro: quanto estoque pode ser reduzido e quanto cada alternativa custa ou economiza. Esta seção olha para o atendimento das usinas e tenta responder a uma pergunta simples: **em cada alternativa, a unidade recebe o material mais rápido ou mais devagar, e falta material com mais ou menos frequência?** Como esses efeitos não são valores em reais, eles ficam fora do saldo financeiro da Tabela 15, evitando contar o mesmo estoque duas vezes.
 
-**Tabela 9 – Consolidação preliminar por alternativa (Cenário Esperado)**
+Para manter a comparação justa, usamos a mesma base e as mesmas regras do [diagnóstico de materiais MRO](../001_Diagnostico_Abastecimento/Diagnostico_MRO.md). Foram analisadas as **5.263 combinações de unidade e material** que tiveram consumo nos últimos 12 meses (nov/2025 a out/2026), e o risco de falta foi calculado do mesmo jeito do item 1. O ponto de partida bate com o que foi publicado na Sprint 1: **712 combinações com risco alto, 1.946 com risco médio e 2.605 com risco baixo**.
+
+---
+
+### 4.3.1. Prazos de atendimento
+
+Quando falamos de prazo, existem dois tempos diferentes. O primeiro é o **prazo do fornecedor**, que é o tempo entre a Atvos fazer o pedido e o material chegar. O segundo é o **tempo de espera da unidade**, que é quanto a usina espera quando precisa de uma peça que não tem no próprio almoxarifado. A centralização mexe pouco no primeiro e bastante no segundo.
+
+Começando pelo prazo do fornecedor, hoje o mesmo material pode demorar muito mais para chegar em uma unidade do que em outra. Dos 1.092 materiais com prazo registrado em pelo menos duas unidades, **292 têm o prazo mais longo pelo menos duas vezes maior que o mais curto**. Isso acontece porque cada unidade compra do seu jeito, e uma compra centralizada poderia deixar esses prazos mais parecidos. A Tabela 9 mostra o que aconteceria nesse caso.
+
+**Tabela 9 – Prazo do fornecedor por grupo hoje e com prazos padronizados (dias)**
+
+| Grupo MRO | Prazo médio hoje | Em 9 de cada 10 casos, até | Pedidos acima de 30 dias | Prazo médio se todas as unidades tivessem o prazo mediano | Prazo médio se todas tivessem o melhor prazo já praticado |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Pneus e acessórios | 29,1 | 35 | 15,7% | 28,8 | 15,2 |
+| Filtros e elementos | 26,3 | 44 | 22,0% | 24,3 | 15,5 |
+| Lubrificantes e fluidos | **40,9** | **65** | **66,8%** | 41,2 | 21,4 |
+| Rolamentos e vedação | 32,7 | 42 | 22,9% | 31,8 | 26,1 |
+| Transmissão e mangueiras | 26,1 | 37 | 16,5% | 24,6 | 19,6 |
+| Desgaste agrícola | 25,9 | 41 | 20,6% | 24,4 | 14,9 |
+| **Total do recorte** | **32,4** | **43** | **24,1%** | **31,8** | **18,5** |
+
+*Nota: o prazo médio é ponderado pelo valor consumido nos últimos 12 meses. Os valores diferem um pouco do item 1, que considera só as combinações com prazo informado pela Atvos. O "melhor prazo já praticado" é o menor prazo registrado para aquele material em qualquer unidade.*
+
+A tabela mostra que apenas igualar os prazos pela mediana quase não muda nada: a média passa de 32,4 para **31,8 dias**. A diferença só aparece se a compra centralizada conseguir, para cada material, o prazo mais curto que a Atvos já teve em alguma unidade, e aí a média cairia para **18,5 dias**. Esse resultado é otimista, porque muitos desses prazos curtos vêm de fornecedores regionais que ficam perto de uma usina específica ([item 2](../001_Diagnostico_Abastecimento/Mapeamento_Fornecedores.md)) e talvez não atendam um CD em outra região. Por isso, nos cenários consideramos uma redução de **0 dia no conservador, 0,6 dia no esperado e 13,9 dias no otimista**. Os lubrificantes chamam atenção: têm o prazo mais longo e dois terços dos pedidos passam de 30 dias, e isso não melhora com a centralização porque quase tudo vem de um único fornecedor, a Petronas.
+
+O tempo de espera da unidade é onde a centralização faz mais diferença. Hoje, **1.165 combinações (22% das que tiveram consumo) têm estoque menor do que o necessário para aguentar até a próxima entrega do fornecedor**, e elas somam R$ 22,6 milhões do consumo do último ano. Quando o material acaba nesses casos, a usina espera o fornecedor: cerca de **25 dias** na metade dos casos e até **50 dias** em 9 de cada 10. O dado mais interessante é que, em **815 dessas combinações (70%)**, o mesmo material está guardado em outra unidade. Ou seja, muitas vezes a peça existe dentro da Atvos, só está no lugar errado. A Tabela 10 compara quanto tempo a unidade esperaria em cada alternativa.
+
+**Tabela 10 – Tempo de espera da unidade quando falta um material no estoque local**
+
+| Alternativa | Como a unidade é atendida | Conservador | Esperado | Otimista | Quais itens são atendidos assim |
+| --- | --- | ---: | ---: | ---: | --- |
+| **Situação atual** | Compra direta no fornecedor; no Polo Norte, entregas da UMV de 1 a 2 vezes por semana | 50 dias | 25 dias | 25 dias | Todos |
+| **Situação atual otimizada (sem CD)** | Transferência de estoque parado em outra unidade | 5 dias | 3 dias | 2 dias | Só os que têm estoque parado em outra unidade |
+| **CD centralizado** | Entrega do CD, uma vez por semana em cada unidade | 8 dias | 5 dias | 2 dias | Todos os que ficam no CD |
+| **Modelo híbrido** | Entrega do CD para os grupos esporádicos e compra direta para os demais | 8 dias | 5 dias | 2 dias | Rolamentos e vedação; transmissão e mangueiras |
+
+*Nota: os 5 dias do cenário esperado do CD somam a espera média pela entrega semanal (3,5 dias), 1 dia para separar e despachar o material e cerca de 6 horas de estrada para 300 km. O conservador usa a espera máxima de uma semana e 450 km; o otimista considera duas entregas por semana ou um envio de urgência e 150 km. Uma viagem de urgência de 300 km custaria entre R$ 2,8 mil e R$ 6,4 mil pelo piso da ANTT, então deve ser exceção. Os prazos de transferência entre unidades são suposições e precisam ser confirmados com a Atvos.*
+
+A centralização, porém, tem um custo que não aparece em reais. Ela encurta a espera dos itens que estão faltando, mas também faz a unidade esperar alguns dias por itens que hoje estão na prateleira, prontos para uso. Nos grupos de consumo esporádico, **1.845 das 2.899 combinações com consumo já têm estoque suficiente na própria unidade**, e **322 delas são usadas em 7 meses ou mais por ano**. Esses itens deveriam continuar na usina mesmo no modelo híbrido. Nos grupos de consumo contínuo, outras **617 combinações** bem abastecidas e de uso frequente passariam a depender do CD no modelo centralizado, e é por isso que a seção 4.1.3 já considera uma reserva local de 15% a 25% para esses itens.
+
+---
+
+### 4.3.2. Disponibilidade e risco de falta
+
+Para medir o efeito no risco de falta, simulamos cada alternativa usando o estoque que a Atvos tem hoje. Na **situação atual otimizada**, o estoque parado em uma unidade foi enviado para as unidades que estão com falta do mesmo material, começando pelas de maior risco. No **CD centralizado**, cada material passou a ser tratado como um estoque único, somando todas as unidades, e comparado com a demanda das oito usinas juntas durante o prazo do fornecedor mais o tempo de entrega do CD. No **modelo híbrido**, isso foi feito só para os dois grupos esporádicos, e os demais seguiram como na situação atual otimizada. Os cenários mudam o tempo de entrega do CD até a unidade: 8 dias no conservador, 5 no esperado e 2 no otimista.
+
+**Tabela 11 – Risco de falta por alternativa (Cenário Esperado)**
+
+| Indicador | Situação atual | Atual otimizada (sem CD) | CD centralizado | Modelo híbrido |
+| --- | ---: | ---: | ---: | ---: |
+| Combinações com **risco alto** | **712** | **637** | **366** | **486** |
+| Variação frente à situação atual | – | −10,5% | −48,6% | −31,7% |
+| Risco alto do conservador ao otimista | 712 | 637 | 406 a 293 | 502 a 461 |
+| Combinações com risco médio | 1.946 | 1.721 | 1.656 | 1.654 |
+| Combinações com risco baixo | 2.605 | 2.905 | 3.241 | 3.123 |
+| Estoque menor que o necessário até a próxima entrega | 1.165 | 882 | 446 | 640 |
+| Materiais com risco alto em pelo menos uma unidade | 467 | 409 | 198 | 302 |
+| Itens usados com frequência e sem nenhum estoque | 111 | 93 | 35 | 72 |
+| Itens usados quase todo mês (10 a 12 meses) com risco alto | 345 | 323 | 199 | 258 |
+
+*Nota: todas as colunas consideram as mesmas 5.263 combinações com consumo. "Usados com frequência" são os itens consumidos em 6 ou mais dos últimos 12 meses, como no item 4 da Sprint 1.*
+
+O rebalanceamento sem CD ajuda pouco no atendimento. Ele libera bastante capital, como visto na seção 4.1, mas reduz o risco alto em só **10,5%**, porque apenas **R$ 0,43 milhão** dos R$ 3,18 milhões de estoque parado é de materiais que estão faltando em outra usina. Se as transferências ficarem limitadas às quatro unidades do mesmo CNPJ, a queda é ainda menor, de 712 para 689 combinações.
+
+O modelo híbrido, por outro lado, resolve quase todo o problema nos grupos onde atua. A Tabela 12 mostra que, em rolamentos e transmissão, o risco alto cai de **291 para 107 combinações (−63%)**, exatamente o mesmo resultado do CD centralizado. Isso confirma o que o item 1 já indicava: nesses grupos o problema não é falta de estoque, e sim estoque no lugar errado. O ganho a mais do CD centralizado aparece nos grupos de consumo contínuo, principalmente em filtros (de 157 para 72), mas são justamente os itens que a usina deixaria de ter na prateleira.
+
+**Tabela 12 – Combinações com risco alto por grupo (Cenário Esperado)**
+
+| Grupo MRO | Situação atual | Atual otimizada (sem CD) | CD centralizado | Modelo híbrido |
+| --- | ---: | ---: | ---: | ---: |
+| Pneus e acessórios | 67 | 62 | 44 | 62 |
+| Filtros e elementos | 179 | 157 | **72** | 157 |
+| Lubrificantes e fluidos | 119 | 106 | 100 | 106 |
+| Rolamentos e vedação | 204 | 174 | **73** | **73** |
+| Transmissão e mangueiras | 87 | 84 | **34** | **34** |
+| Desgaste agrícola | 56 | 54 | 43 | 54 |
+| **Total** | **712** | **637** | **366** | **486** |
+
+Os lubrificantes são um caso à parte. O risco quase não muda em nenhuma alternativa (de 119 para 100 no melhor caso), porque em **47 dos 187 lubrificantes com consumo, o estoque de todas as unidades somadas já não aguenta até a próxima entrega**. Não adianta redistribuir o que não existe: a solução passa por contrato com a Petronas e pela revisão dos estoques mínimos, como o item 1 já sugeria.
+
+Olhando por unidade (Tabela 13), todas melhoram, mas a **UMV, hub do Polo Norte, é a que mais ganha com o CD** (de 110 para 43 combinações). Isso reforça a suspeita levantada no item 1 de que hoje ela abastece as outras usinas antes de si mesma.
+
+**Tabela 13 – Combinações com risco alto por unidade (Cenário Esperado)**
+
+| Unidade | Situação atual | Atual otimizada (sem CD) | CD centralizado | Modelo híbrido |
+| --- | ---: | ---: | ---: | ---: |
+| Morro Vermelho (UMV), hub do Polo Norte | 110 | 98 | 43 | 79 |
+| Rio Claro (URC) | 108 | 96 | 61 | 71 |
+| Eldorado (UEL) | 98 | 85 | 48 | 61 |
+| Santa Luzia (USL) | 95 | 87 | 55 | 60 |
+| Conquista do Pontal (UCP) | 87 | 83 | 49 | 66 |
+| Costa Rica (UCR) | 86 | 73 | 51 | 57 |
+| Alto Taquari (UAT) | 71 | 63 | 34 | 49 |
+| Água Emendada (UAE) | 57 | 52 | 25 | 43 |
+| **Total** | **712** | **637** | **366** | **486** |
+
+Mesmo no CD centralizado, ainda sobram **622 materiais com estoque total abaixo do ideal**. Para corrigir isso, a Atvos precisaria comprar cerca de **R$ 3,16 milhões**, contra **R$ 5,75 milhões** se cada unidade tivesse que resolver a falta sozinha (R$ 5,32 milhões depois do rebalanceamento). Juntar o estoque, então, diminui o quanto é preciso investir para acabar com as faltas. Esse valor não é dinheiro que entra no caixa e não deve ser somado à Tabela 4, porque vem do mesmo efeito de juntar os estoques de segurança já calculado na seção 4.1.2.
+
+Existe ainda uma escolha a fazer entre capital e disponibilidade. Se o CD mantiver o mesmo estoque de segurança que as unidades têm hoje (R$ 10,10 milhões), o nível de serviço subiria de 95% para cerca de **98%**. A seção 4.1 seguiu o outro caminho, de manter os 95% e liberar capital. **As duas coisas não acontecem ao mesmo tempo com o mesmo estoque**: se a Atvos preferir mais disponibilidade, o capital liberado da Tabela 4 fica menor.
+
+> **Ponto de atenção para a seção 4.1.2:** quando o tempo de entrega do CD até a unidade entra no cálculo, o estoque de segurança consolidado sobe de R$ 7,23 milhões para R$ 7,82 milhões no cenário esperado (R$ 8,16 milhões no conservador e R$ 7,42 milhões no otimista). Com isso, a redução de R$ 2,93 milhões da Tabela 3 pode estar cerca de R$ 0,6 milhão acima do real no cenário esperado, e vale revisar esse valor.
+
+---
+
+### 4.3.3. Novos riscos criados pela centralização
+
+Juntar o estoque reduz as faltas, mas cria riscos que a Atvos não tem hoje. O mais importante é depender de um único lugar: se o CD parar por qualquer motivo, as oito usinas sentem ao mesmo tempo. Também entram nessa conta o transporte em época de chuva, o volume de trabalho do próprio CD e as regras fiscais para mover material entre CNPJs. A Tabela 14 resume esses riscos e como cada um poderia ser reduzido.
+
+**Tabela 14 – Riscos criados por alternativa e como reduzi-los**
+
+| Risco | Atual otimizada | CD centralizado | Modelo híbrido | Por que preocupa | Como reduzir |
+| --- | :---: | :---: | :---: | --- | --- |
+| **Depender de um único CD** | – | **Alto** | Médio | No CD centralizado passam R$ 81,3 mi de consumo por ano; no híbrido, R$ 13,0 mi | Manter reserva dos itens vitais nas unidades e ter um plano de compra direta para emergências |
+| **Perder o atendimento imediato** | – | **Alto** | Baixo | 939 combinações de uso frequente estão bem abastecidas hoje na própria unidade | Classificar a criticidade dos itens com a Manutenção e manter os vitais na usina |
+| **Transporte em época de chuva** | Baixo | Alto | **Alto** | Rolamentos têm pico em janeiro e fevereiro, na entressafra chuvosa e nas reformas industriais | Enviar os kits de reforma para as unidades antes de dezembro |
+| **Sobrecarga no CD** | – | Alto | Médio | Grupos agrícolas têm pico em julho e agosto; rolamentos, em janeiro e fevereiro | Dimensionar equipe e espaço pelo mês mais cheio, não pela média |
+| **Demora fiscal nas transferências** | **Alto** | Médio | Médio | Transferir entre CNPJs diferentes conta como venda; sem isso, o risco alto só cai para 689 | Validar as regras com a área fiscal antes de definir rotas |
+| **Fornecedor único** | Alto | Alto | Alto | Petronas tem 93% dos lubrificantes e Bússola, 78% do desgaste agrícola | Contrato com prazo garantido e busca de um segundo fornecedor |
+| **Dados incompletos** | Médio | Médio | Médio | Prazo informado em só 35% das combinações e sem os pedidos em aberto | Pedir à Atvos os pedidos em aberto e o histórico de faltas |
+
+*Nota: a classificação é uma avaliação da equipe com base nos dados indicados. O traço indica que o risco não se aplica à alternativa.*
+
+---
+
+## 4.4. Síntese preliminar dos efeitos financeiros e operacionais
+
+A Tabela 15 reúne os resultados do cenário **Esperado**, mantendo estritamente separados o **efeito único no caixa (capital liberado)** e o **saldo recorrente anual e mensal**:
+
+**Tabela 15 – Consolidação preliminar por alternativa (Cenário Esperado)**
 
 | Alternativa | Caixa único (R$ mi) | Estoque (R$ mi/ano) | Compras (R$ mi/ano) | Armazenagem (R$ mi/ano) | Transporte (R$ mi/ano) | Saldo anual (R$ mi) | Saldo mensal (R$ mil) | Faixa anual (R$ mi) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -200,18 +330,30 @@ A Tabela 9 reúne os resultados do cenário **Esperado**, mantendo estritamente 
 
 *Ressalva importante: esta consolidação é preliminar e **não inclui** o investimento inicial de implantação do CD, o impacto tributário das transferências entre unidades de CNPJs diferentes nem o valor econômico de paradas de máquina evitadas por maior disponibilidade de peças. Eventuais diferenças de R$ 0,01 mi nas somas decorrem de arredondamento.*
 
+Os efeitos no atendimento, calculados na seção 4.3, aparecem separados na Tabela 16. Eles não foram convertidos em reais para não serem somados ao saldo acima.
+
+**Tabela 16 – Efeitos operacionais por alternativa (Cenário Esperado)**
+
+| Alternativa | Espera quando falta o item na unidade | Combinações com risco alto | Itens usados com frequência e sem estoque | Principal risco novo |
+| --- | --- | ---: | ---: | --- |
+| **Situação atual** | 25 dias (até 50 dias em 9 de cada 10 casos) | 712 | 111 | – |
+| **Situação atual otimizada (sem CD)** | 3 dias, só onde há estoque parado em outra unidade | 637 (−10,5%) | 93 | Atraso fiscal nas transferências entre CNPJs |
+| **CD centralizado** | 5 dias (2 a 8 dias) | 366 (−48,6%) | 35 | Depender de um único CD e perder o atendimento imediato nas unidades |
+| **Modelo híbrido** | 5 dias nos grupos esporádicos; demais itens como hoje | 486 (−31,7%) | 72 | Transporte em época de chuva, no pico de rolamentos (jan–fev) |
+
 **Principais pontos de atenção para a decisão:**
 
 1. **A maior parte da redução de estoque independe de um CD:** rebalancear estoques transferíveis e ajustar excessos acima do máximo libera cerca de R$ 3,45 milhões no cenário esperado (com ganho recorrente líquido de +R$ 0,50 milhão/ano) sem exigir novo imóvel, equipe adicional ou rotas frequentes.
 2. **O frete de distribuição é o principal fator de sensibilidade:** no CD centralizado, a variação de distância média e de tarifa desloca o saldo recorrente de **−R$ 4,35 milhões/ano** (450 km, tarifa alta) para **+R$ 2,50 milhões/ano** (150 km, tarifa baixa e ganhos plenos em compras). A localização do CD será decisiva.
 3. **O modelo híbrido reduz significativamente a exposição a custos fixos e frete:** ao manter os itens de alto giro e volume abastecidos localmente e centralizar a cauda longa, o modelo híbrido reduz em cerca de metade o custo adicional de armazenagem e transporte frente ao CD centralizado, preservando 80% do capital liberado.
 4. **Fatores pendentes antes de qualquer conclusão de viabilidade:** a escolha final entre manter a rede otimizada, adotar um modelo híbrido ou centralizar integralmente depende de quatro validações em andamento: **(a)** definição das regiões candidatas e rotas reais; **(b)** estimativa completa de investimento inicial e custos de funcionamento; **(c)** análise fiscal das transferências entre CNPJs distintos; e **(d)** confirmação com a Atvos sobre o grau atual de centralização das compras e condições de frete.
+5. **No atendimento, o modelo híbrido ganha onde mais importa:** nos grupos esporádicos, ele reduz o risco alto tanto quanto o CD centralizado (−63%) e troca uma espera de cerca de 25 dias pelo fornecedor por uns 5 dias. O ganho a mais do CD centralizado vem dos grupos contínuos, mas aí a usina perde os itens que hoje tem na prateleira. Já os lubrificantes precisam de contrato e de revisão dos estoques mínimos em qualquer alternativa, porque falta material na rede inteira.
 
 ---
 
-## 4.4. Metodologia e limitações
+## 4.5. Metodologia e limitações
 
-**Tabela 10 – Regras de cálculo aplicadas**
+**Tabela 17 – Regras de cálculo aplicadas**
 
 | Indicador | Regra de cálculo |
 | --- | --- |
@@ -220,6 +362,11 @@ A Tabela 9 reúne os resultados do cenário **Esperado**, mantendo estritamente 
 | **Redução por consolidação da demanda** | `Soma dos estoques de segurança individuais − Estoque de segurança da demanda agregada`, calculados por `1,65 × desvio-padrão mensal (12 meses) × √(prazo de entrega ÷ 30,4)`, limitado ao saldo atual de cada item. |
 | **Economia recorrente de estoque** | `Capital liberado × (Custo de oportunidade do capital + Taxa de risco e obsolescência)`, sem incluir armazenagem física. |
 | **Frete de distribuição paramétrico** | `Viagens por semana × 52 × (2 × Distância de ida × Tarifa por km + Carga e descarga)`. |
+| **Tempo de espera da unidade (CD)** | `Espera pela entrega semanal + 1 dia para separar e despachar + tempo de estrada (distância ÷ 55 km/h)`: 8, 5 e 2 dias nos cenários conservador, esperado e otimista. |
+| **Risco de falta** | Igual ao item 1 da Sprint 1: `Probabilidade (1 a 3) × Impacto (1 a 3)`, com risco alto a partir de 6. A probabilidade é 3 quando o estoque não aguenta até a próxima entrega e 2 quando está abaixo do ponto de pedido; o impacto vem da frequência de uso nos últimos 12 meses. |
+| **Risco com estoque compartilhado** | Mesmo cálculo, comparando o `Estoque somado das unidades` com a `Demanda somada × (Prazo do fornecedor + Tempo de entrega do CD) ÷ 30,4`; o estoque de segurança usa o consumo mensal das oito unidades juntas. |
+| **Rebalanceamento sem CD** | O estoque parado de um material é enviado às unidades que estão com falta desse mesmo material, começando pelas de maior risco. |
+| **Nível de serviço com o mesmo estoque** | `z = 1,65 × Estoque de segurança atual ÷ Estoque de segurança consolidado`, convertido em nível de serviço pela distribuição normal. |
 
 **Principais limitações e pontos a confirmar com a Atvos:**
 
@@ -228,10 +375,13 @@ A Tabela 9 reúne os resultados do cenário **Esperado**, mantendo estritamente 
 - **Condições comerciais e compras emergenciais:** os ganhos em compras e no frete de abastecimento dependem de confirmar se os contratos atuais já são corporativos, se o frete é CIF ou FOB e qual é o volume real de compras emergenciais.
 - **Impacto tributário:** transferências entre as quatro unidades de CNPJ próprio e o bloco do Polo Norte podem gerar incidência de impostos não contemplada nesta etapa.
 - **Valorização do consumo:** os valores de consumo utilizam o custo unitário médio do estoque atual; 544 materiais sem saldo em estoque permanecem sem preço de referência.
+- **Risco sem pedidos em aberto e sem criticidade:** como a base não mostra os pedidos já feitos, o risco pode parecer maior do que é para itens que já estão a caminho. Por outro lado, pode parecer menor para itens raros, mas críticos, como já foi apontado no item 1 da Sprint 1.
+- **Tempos de entrega são suposições:** a frequência de entregas do CD, o tempo de separação e o prazo das transferências entre unidades precisam ser confirmados com a Atvos e com a região escolhida para o CD.
+- **Foto de um único momento:** o risco de cada alternativa foi calculado com o estoque de hoje, sem simular a operação mês a mês nem as mudanças entre safra e entressafra.
 
 ---
 
-## 4.5. Referências
+## 4.6. Referências
 
 AGROTECH INTELI; ATVOS. **Termo de abertura do projeto e documento de entregáveis**. São Paulo, 2026. Documento interno.
 
