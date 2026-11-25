@@ -98,7 +98,7 @@ Antes da pontuação, aplicar dois filtros: **estrutura fiscal formalmente valid
 
 Na planilha, o custo recebe nota `5 × menor custo total comparável ÷ custo total da opção`. Acesso e atendimento recebem notas de 1 a 5 após validação: 1 indica acesso insuficiente ou prazo abaixo do SLA; 3 indica operação possível com restrições; 5 indica acesso robusto ou atendimento com folga. Registrar evidências e SLA por unidade antes de preencher. A nota final é a soma das notas vezes seus pesos.
 
-**Não há ranking numérico final:** faltam custos totais e SLAs. As notas permanecem pendentes, evitando transformar ausência de cotação em vantagem. Comparar apenas os três locais C1 e testar também pesos 40%/40%/20% e 60%/20%/20%, na ordem custo/atendimento/acesso. Se a liderança mudar, a escolha é sensível e requer validação adicional.
+**Não há ranking numérico final:** faltam custos totais e SLAs. As notas permanecem pendentes, evitando transformar ausência de cotação em vantagem. A planilha solicita revisão quando os custos são nulos ou negativos, as notas saem da escala de 1 a 5 ou os pesos não somam 100%. Comparar apenas os três locais C1 e testar também pesos 40%/40%/20% e 60%/20%/20%, na ordem custo/atendimento/acesso. Se a liderança mudar, a escolha é sensível e requer validação adicional.
 
 ## 5.5. Conclusão inicial: quando o CD pode valer a pena
 
