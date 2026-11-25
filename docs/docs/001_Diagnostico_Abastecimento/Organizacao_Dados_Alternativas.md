@@ -23,35 +23,35 @@ A planilha `Organizacao_Dados_Alternativas.xlsx` organiza os dados de unidades, 
 **Tabela 1 – Estrutura da planilha**
 
 
-| Aba                                  | Tipo               | Conteúdo                                                                                                                                                                                  |
+| Aba | Tipo | Conteúdo |
 | -------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Leiame`                             | Texto              | Objetivo, recorte, período, legenda de cores e instruções de atualização.                                                                                                             |
-| `Fontes`                             | Texto              | Fontes utilizadas, origem, data de recebimento e uso na planilha.                                                                                                                          |
-| `Premissas`                          | Valores editáveis | Limites da curva ABC, fator rodoviário, taxa de custo de manter estoque, piso de frete, salário e encargos, com a fonte de cada valor.                                                   |
-| `Escopo_Reconciliacao`               | Fórmulas e texto  | Comparação entre o recorte desta planilha e os valores publicados nos itens 1 e 2.                                                                                                       |
-| `Unidades`                           | Fórmulas          | Unidade, município, grupo de CNPJ a confirmar, papel no piloto do Polo Norte, totais por unidade e distâncias estimadas entre unidades e até os polos de fornecedores.                  |
-| `Materiais`                          | Fórmulas          | Uma linha por código: estoque, preço de referência, consumo e classe ABC.                                                                                                               |
-| `Centro_Material`                    | Fórmulas          | Uma linha por combinação de centro e material: consumo por período, estoque, cobertura, estoque sem consumo, estoque transferível, lead time, fornecedor e parâmetros de reposição. |
-| `Fornecedores`                       | Fórmulas          | Uma linha por fornecedor: unidades atendidas, consumo estimado por grupo e lead time médio.                                                                                               |
-| `Indicadores`                        | Fórmulas          | Situação atual por grupo de material e por unidade.                                                                                                                                      |
-| `Custos_Atuais`                      | Fórmulas          | Estimativas de custo para cenários, com a situação de cada valor (estimado ou pendente).                                                                                                |
-| `Alternativas`                       | Fórmulas e texto  | Definição das alternativas e matriz de comparação.                                                                                                                                     |
-| `Dados_Suposicoes`                   | Texto              | Dados e suposições iniciais para investimento, custos de funcionamento e benefícios.                                                                                                    |
-| `Solicitacoes`                       | Texto              | Dados a pedir à Atvos na Sprint 2.                                                                                                                                                        |
-| `Conferencia`                        | Fórmulas          | Controles que comparam os totais calculados com os dados brutos e com o item 1.                                                                                                            |
-| `D_Base`, `D_Estoque`, `D_Materiais` | Dados brutos       | Dados das bases da Atvos, limitados ao recorte.                                                                                                                                            |
+| `Leiame` | Texto | Objetivo, recorte, período, legenda de cores e instruções de atualização. |
+| `Fontes` | Texto | Fontes utilizadas, origem, data de recebimento e uso na planilha. |
+| `Premissas` | Valores editáveis | Limites da curva ABC, fator rodoviário, taxa de custo de manter estoque, piso de frete, salário e encargos, com a fonte de cada valor. |
+| `Escopo_Reconciliacao` | Fórmulas e texto | Comparação entre o recorte desta planilha e os valores publicados nos itens 1 e 2. |
+| `Unidades` | Fórmulas | Unidade, município, grupo de CNPJ a confirmar, papel no piloto do Polo Norte, totais por unidade e distâncias estimadas entre unidades e até os polos de fornecedores. |
+| `Materiais` | Fórmulas | Uma linha por código: estoque, preço de referência, consumo e classe ABC. |
+| `Centro_Material` | Fórmulas | Uma linha por combinação de centro e material: consumo por período, estoque, cobertura, estoque sem consumo, estoque transferível, lead time, fornecedor e parâmetros de reposição. |
+| `Fornecedores` | Fórmulas | Uma linha por fornecedor: unidades atendidas, consumo estimado por grupo e lead time médio. |
+| `Indicadores` | Fórmulas | Situação atual por grupo de material e por unidade. |
+| `Custos_Atuais` | Fórmulas | Estimativas de custo para cenários, com a situação de cada valor (estimado ou pendente). |
+| `Alternativas` | Fórmulas e texto | Definição das alternativas e matriz de comparação. |
+| `Dados_Suposicoes` | Texto | Dados e suposições iniciais para investimento, custos de funcionamento e benefícios. |
+| `Solicitacoes` | Texto | Dados a pedir à Atvos na Sprint 2. |
+| `Conferencia` | Fórmulas | Controles que comparam os totais calculados com os dados brutos e com o item 1. |
+| `D_Base`, `D_Estoque`, `D_Materiais` | Dados brutos | Dados das bases da Atvos, limitados ao recorte. |
 
 **Tabela 2 – Fontes e datas**
 
 
-| Fonte                                                   | Origem            | Uso                                                                                    |
+| Fonte | Origem | Uso |
 | --------------------------------------------------------- | ------------------- | ---------------------------------------------------------------------------------------- |
-| `Base_Planejamento_Materiais`, aba `Base_Consumo`       | Atvos             | Recorte de códigos e grupos; status, tipo de planejamento, mínimo e máximo.         |
-| `Base_Planejamento_Materiais`, aba `Base_Estoque_Atual` | Atvos             | Estoque por material, centro e depósito.                                              |
-| `Planejamento_Materiais`, aba `Consolidado`             | Atvos             | Consumo mensal, fornecedor, localização e lead time; nome e município das unidades. |
-| Apresentação Estoque Compartilhado                    | Atvos             | Distâncias e rota do piloto do Polo Norte; valor das mercadorias movimentadas.        |
-| Reunião de alinhamento com a Atvos                     | Atvos             | Grupos de CNPJ e orientações sobre itens a manter nas unidades.                      |
-| Itens 1, 2 e 3 da Sprint 1                              | Equipe do projeto | Regras de análise, pendências e referências de custo.                               |
+| `Base_Planejamento_Materiais`, aba `Base_Consumo` | Atvos | Recorte de códigos e grupos; status, tipo de planejamento, mínimo e máximo. |
+| `Base_Planejamento_Materiais`, aba `Base_Estoque_Atual` | Atvos | Estoque por material, centro e depósito. |
+| `Planejamento_Materiais`, aba `Consolidado` | Atvos | Consumo mensal, fornecedor, localização e lead time; nome e município das unidades. |
+| Apresentação Estoque Compartilhado | Atvos | Distâncias e rota do piloto do Polo Norte; valor das mercadorias movimentadas. |
+| Reunião de alinhamento com a Atvos | Atvos | Grupos de CNPJ e orientações sobre itens a manter nas unidades. |
+| Itens 1, 2 e 3 da Sprint 1 | Equipe do projeto | Regras de análise, pendências e referências de custo. |
 
 **Conferência.** Todas as fórmulas foram recalculadas de forma independente antes da entrega, sem erros. Os totais da planilha coincidem com os dados brutos e com os valores publicados no [item 1](./Diagnostico_MRO.md), conforme a Tabela 3.
 
@@ -109,41 +109,41 @@ O documento de entregáveis define três alternativas: situação atual, CD cent
 **Tabela 6 – Alternativas do estudo**
 
 
-| Código | Alternativa                                       | Descrição                                                                                                                                                                                                     |
+| Código | Alternativa | Descrição |
 | --------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| A0      | **Situação atual**                              | Oito almoxarifados, um por unidade. Cada unidade mantém o próprio estoque. O piloto do Polo Norte faz parte da situação atual se estiver ativo.                                                             |
-| A0+     | **Situação atual otimizada (referência)**      | Mesma estrutura, com rebalanceamento do estoque parado entre unidades e revisão dos máximos de reposição. Sem CD. Serve para não atribuir ao CD ganhos que não dependem dele.                             |
-| A1      | **CD centralizado**                               | Um CD atende as 8 unidades nos 6 grupos. As unidades mantêm apenas estoque mínimo de uso imediato.                                                                                                            |
-| A2a     | **Híbrido por tipo de item**                     | CD para itens de consumo esporádico e estoque repetido (rolamentos e vedação; transmissão e mangueiras; itens de baixo giro dos demais grupos). Itens de consumo contínuo e alto valor ficam nas unidades. |
-| A2b     | **Híbrido por região e CNPJ**                   | Estoque compartilhado por grupo de unidades próximas e do mesmo CNPJ (expansão do Polo Norte), evitando transferências entre CNPJs.                                                                          |
-| A2c     | **Híbrido com estoque do fornecedor na unidade** | Para grupos com fornecedor concentrado, o fornecedor mantém estoque dentro da unidade e fatura no consumo, como no modelo de filtros citado pela Atvos.                                                        |
+| A0 | **Situação atual** | Oito almoxarifados, um por unidade. Cada unidade mantém o próprio estoque. O piloto do Polo Norte faz parte da situação atual se estiver ativo. |
+| A0+ | **Situação atual otimizada (referência)** | Mesma estrutura, com rebalanceamento do estoque parado entre unidades e revisão dos máximos de reposição. Sem CD. Serve para não atribuir ao CD ganhos que não dependem dele. |
+| A1 | **CD centralizado** | Um CD atende as 8 unidades nos 6 grupos. As unidades mantêm apenas estoque mínimo de uso imediato. |
+| A2a | **Híbrido por tipo de item** | CD para itens de consumo esporádico e estoque repetido (rolamentos e vedação; transmissão e mangueiras; itens de baixo giro dos demais grupos). Itens de consumo contínuo e alto valor ficam nas unidades. |
+| A2b | **Híbrido por região e CNPJ** | Estoque compartilhado por grupo de unidades próximas e do mesmo CNPJ (expansão do Polo Norte), evitando transferências entre CNPJs. |
+| A2c | **Híbrido com estoque do fornecedor na unidade** | Para grupos com fornecedor concentrado, o fornecedor mantém estoque dentro da unidade e fatura no consumo, como no modelo de filtros citado pela Atvos. |
 
 A variante A2a decorre do diagnóstico do item 1, que separa grupos de consumo contínuo e grupos de consumo esporádico. As variantes A2b e A2c decorrem de pontos levantados pela Atvos em reunião: a transferência de materiais entre unidades de CNPJs diferentes é tratada como venda, e já existe um modelo de estoque do fornecedor dentro da unidade para filtros.
 
 **Tabela 7 – Matriz de comparação: custos, prazos e disponibilidade dos materiais essenciais**
 
 
-| Dimensão       | Critério                                          | A0 – Situação atual                   | A0+ – Atual otimizada                    | A1 – CD centralizado                                               | A2a – Híbrido por tipo de item | A2b – Híbrido por região e CNPJ     | A2c – Estoque do fornecedor                 |
+| Dimensão | Critério | A0 – Situação atual | A0+ – Atual otimizada | A1 – CD centralizado | A2a – Híbrido por tipo de item | A2b – Híbrido por região e CNPJ | A2c – Estoque do fornecedor |
 | ----------------- | ---------------------------------------------------- | ------------------------------------------ | ------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------- | ---------------------------------------- | ---------------------------------------------- |
-| Custos          | Capital em estoque                                 | R$ 23,96 mi                              | Reduz (estoque parado e acima do máximo) | Reduz mais (um estoque de segurança para 8 unidades)               | Reduz nos itens esporádicos     | Reduz dentro de cada grupo de unidades | Reduz (estoque passa a ser do fornecedor)    |
-| Custos          | Custo de manter estoque (anual)                    | R$ 4,8 mi a R$ 7,2 mi por ano (cenário) | Reduz na proporção do estoque           | Reduz na proporção do estoque                                     | Reduz em parte                   | Reduz em parte                         | Reduz; pode ser embutido no preço           |
-| Custos          | Estoque parado (sem consumo em 12 meses no centro) | R$ 4,70 mi                               | Reduz (alvo direto)                       | Reduz                                                               | Reduz (alvo direto)              | Reduz em parte                         | Sem efeito direto                            |
-| Custos          | Transporte                                         | Não informado                           | Aumenta pouco (transferências pontuais)  | Aumenta (trecho CD–unidades)                                       | Aumenta em parte                 | Aumenta pouco (distâncias curtas)     | Sem alteração relevante                    |
-| Custos          | Equipe                                             | Não informado                           | Sem alteração                           | Equipe do CD; possível redução nas unidades                      | Equipe do CD menor               | Sem alteração relevante              | Sem alteração relevante                    |
-| Custos          | Impostos nas transferências                       | Não quantificado                        | Incide nas transferências entre CNPJs    | Incide em todas as saídas para outro CNPJ                          | Incide nos itens centralizados   | Evitado dentro do mesmo CNPJ           | Evitado (venda direta do fornecedor)         |
-| Custos          | Investimento inicial                               | Nenhum                                   | Nenhum                                    | Maior                                                               | Intermediário                   | Baixo (usa estrutura existente)        | Baixo                                        |
-| Prazos          | Lead time do fornecedor (média, dias)             | 29,1 dias                                | Sem alteração                           | Sem alteração na compra; reposição da unidade passa a vir do CD | Reduz para itens no CD           | Reduz para itens compartilhados        | Imediato para itens em estoque do fornecedor |
-| Prazos          | Distância média entre unidades (km, estimada)    | 405 km                                   | Sem alteração                           | Depende da região do CD                                            | Depende da região do CD         | Curta dentro de cada grupo             | Não se aplica                               |
-| Disponibilidade | Itens de classe A (quantidade)                     | 119                                      | Sem alteração                           | Risco se o CD ficar longe da unidade                                | Mantidos na unidade              | Mantidos na unidade                    | Mantidos na unidade                          |
-| Disponibilidade | Combinações com consumo recorrente e sem estoque | 111                                      | Reduz em parte (rebalanceamento)          | Reduz (estoque único visível)                                     | Reduz nos itens esporádicos     | Reduz em parte                         | Reduz nos grupos cobertos                    |
-| Disponibilidade | Combinações planejadas abaixo do mínimo         | 825                                      | Sem alteração                           | Reduz se a reposição do CD for confiável                         | Reduz em parte                   | Reduz em parte                         | Reduz nos grupos cobertos                    |
+| Custos | Capital em estoque | R$ 23,96 mi | Reduz (estoque parado e acima do máximo) | Reduz mais (um estoque de segurança para 8 unidades) | Reduz nos itens esporádicos | Reduz dentro de cada grupo de unidades | Reduz (estoque passa a ser do fornecedor) |
+| Custos | Custo de manter estoque (anual) | R$ 4,8 mi a R$ 7,2 mi por ano (cenário) | Reduz na proporção do estoque | Reduz na proporção do estoque | Reduz em parte | Reduz em parte | Reduz; pode ser embutido no preço |
+| Custos | Estoque parado (sem consumo em 12 meses no centro) | R$ 4,70 mi | Reduz (alvo direto) | Reduz | Reduz (alvo direto) | Reduz em parte | Sem efeito direto |
+| Custos | Transporte | Não informado | Aumenta pouco (transferências pontuais) | Aumenta (trecho CD–unidades) | Aumenta em parte | Aumenta pouco (distâncias curtas) | Sem alteração relevante |
+| Custos | Equipe | Não informado | Sem alteração | Equipe do CD; possível redução nas unidades | Equipe do CD menor | Sem alteração relevante | Sem alteração relevante |
+| Custos | Impostos nas transferências | Não quantificado | Incide nas transferências entre CNPJs | Incide em todas as saídas para outro CNPJ | Incide nos itens centralizados | Evitado dentro do mesmo CNPJ | Evitado (venda direta do fornecedor) |
+| Custos | Investimento inicial | Nenhum | Nenhum | Maior | Intermediário | Baixo (usa estrutura existente) | Baixo |
+| Prazos | Lead time do fornecedor (média, dias) | 29,1 dias | Sem alteração | Sem alteração na compra; reposição da unidade passa a vir do CD | Reduz para itens no CD | Reduz para itens compartilhados | Imediato para itens em estoque do fornecedor |
+| Prazos | Distância média entre unidades (km, estimada) | 405 km | Sem alteração | Depende da região do CD | Depende da região do CD | Curta dentro de cada grupo | Não se aplica |
+| Disponibilidade | Itens de classe A (quantidade) | 119 | Sem alteração | Risco se o CD ficar longe da unidade | Mantidos na unidade | Mantidos na unidade | Mantidos na unidade |
+| Disponibilidade | Combinações com consumo recorrente e sem estoque | 111 | Reduz em parte (rebalanceamento) | Reduz (estoque único visível) | Reduz nos itens esporádicos | Reduz em parte | Reduz nos grupos cobertos |
+| Disponibilidade | Combinações planejadas abaixo do mínimo | 825 | Sem alteração | Reduz se a reposição do CD for confiável | Reduz em parte | Reduz em parte | Reduz nos grupos cobertos |
 
 *Notas: a coluna A0 traz valores calculados na planilha; as demais indicam a direção esperada, a ser calculada na Sprint 2. A distância média entre unidades é uma estimativa a partir do centro dos municípios e serve apenas como ordem de grandeza. Os materiais essenciais estão aproximados pela classe A e pela frequência de consumo, até que a criticidade operacional seja informada.*
 
 **Tabela 8 – Dimensão do que cada alternativa alcança na situação atual**
 
 
-| Alternativa | Indicador                                                        |                                                                                                                                       Valor | Leitura                                                                          |
+| Alternativa | Indicador | Valor | Leitura |
 | ------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------: | ---------------------------------------------------------------------------------- |
 | A0+         | Estoque transferível entre unidades                             |                                                                                                                                  R$ 3,18 mi | Parado em um centro e consumido em outro; pode ser rebalanceado sem compra nova. |
 | A0+         | Estoque acima do máximo de reposição                          |                                                                                                                                  R$ 1,92 mi | Sobrepõe-se ao valor anterior; os dois não devem ser somados.                  |
@@ -161,45 +161,45 @@ A Tabela 9 lista o que é necessário para calcular cada alternativa na Sprint 2
 **Tabela 9 – Dados e suposições iniciais**
 
 
-| ID    | Bloco                   | Dado necessário                                                                   | Alternativas | Situação        | Suposição inicial                                                                                                                                                                       |
+| ID | Bloco | Dado necessário | Alternativas | Situação | Suposição inicial |
 | ------- | ------------------------- | ------------------------------------------------------------------------------------ | -------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DS-01 | Investimento            | Área necessária do CD (m²) e capacidade de armazenagem                          | A1, A2       | Pendente          | Sem suposição nesta sprint. A dimensionar na Sprint 2 a partir do volume dos itens candidatos.                                                                                          |
-| DS-02 | Investimento            | Preparação do espaço: obras, piso, estantes e porta-paletes                     | A1, A2       | Pendente          | Sem suposição nesta sprint. Levantar referências de mercado na Sprint 2.                                                                                                               |
-| DS-03 | Investimento            | Equipamentos de movimentação (empilhadeira, paleteira)                           | A1, A2       | Pendente          | Sem suposição nesta sprint.                                                                                                                                                             |
-| DS-04 | Investimento            | Sistema de gestão do armazém (WMS) ou extensão do sistema atual                 | A1, A2       | Pendente          | Verificar se o sistema atual da Atvos pode ser estendido ao CD.                                                                                                                           |
-| DS-05 | Investimento            | Regiões candidatas e disponibilidade de imóvel                                   | A1, A2       | Pendente          | Unidades e polos de fornecedores já mapeados servem de ponto de partida (aba Unidades).                                                                                                  |
-| DS-06 | Custos de funcionamento | Custo de ocupação: aluguel por m² na região ou custo de imóvel próprio       | A1, A2       | Pendente          | Sem suposição nesta sprint. Levantar referência por região na Sprint 2.                                                                                                               |
-| DS-07 | Custos de funcionamento | Equipe do CD e dos almoxarifados (pessoas e custo)                                 | A0, A1, A2   | Estimado em parte | Salário médio de almoxarife de R$ 2.139 por mês, mais encargos de 60% a 80%. Número de pessoas pendente.                                                                              |
-| DS-08 | Custos de funcionamento | Custo de armazenagem atual por unidade                                             | A0           | Pendente          | Sem dado. Enquanto não houver, usar a taxa de custo de manter estoque (DS-13).                                                                                                           |
-| DS-09 | Custos de funcionamento | Frete entre fornecedor, CD e unidades                                              | A0, A1, A2   | Estimado          | Piso ANTT de R$ 4,00 a R$ 9,25 por km, mais R$ 436 a R$ 872 de carga e descarga por viagem. É um piso; o frete real tende a ser maior.                                                   |
-| DS-10 | Custos de funcionamento | Distâncias rodoviárias entre unidades e polos de fornecedores                    | A0, A1, A2   | Estimado          | Distância em linha reta multiplicada por fator rodoviário de 1,25 (faixa de 1,2 a 1,3). Três trechos do Polo Norte documentados pela Atvos.                                            |
-| DS-11 | Custos de funcionamento | Impostos nas transferências entre unidades                                        | A1, A2       | Pendente          | Suposição: 4 unidades no mesmo CNPJ (UMV, UAE, UCR e UAT) transferem sem imposto; nas demais, a transferência é tratada como venda. Alíquotas a confirmar com a área fiscal.        |
-| DS-12 | Custos de funcionamento | Condições comerciais dos fornecedores (frete CIF/FOB, pedido mínimo, contratos) | A0, A1, A2   | Pendente          | Sem suposição nesta sprint.                                                                                                                                                             |
-| DS-13 | Benefícios             | Taxa anual de custo de manter estoque (capital, armazenagem e risco)               | A0, A1, A2   | Estimado          | 20% a 30% ao ano sobre o estoque médio.                                                                                                                                                  |
-| DS-14 | Benefícios             | Estoque que pode ser reduzido (capital liberado, efeito único)                    | A0+, A1, A2  | Estimado          | Pontos de partida calculados na planilha: estoque em centro sem consumo em 12 meses, parcela transferível e estoque acima do máximo. Os valores se sobrepõem e não devem ser somados. |
-| DS-15 | Benefícios             | Redução do estoque de segurança por compartilhamento entre unidades             | A1, A2       | Pendente          | Sem percentual nesta sprint. O piloto do Polo Norte reporta redução de cerca de 49%, dos quais cerca de 33% por ações estruturais; resultado a confirmar.                             |
-| DS-16 | Benefícios             | Valor do consumo e preço de compra                                                | A0, A1, A2   | Estimado          | Quantidade consumida multiplicada pelo custo unitário do estoque atual de cada material.                                                                                                 |
-| DS-17 | Benefícios             | Ganho de negociação por compras consolidadas                                     | A1, A2       | Pendente          | Sem suposição nesta sprint. Depende de saber se as compras já são centralizadas.                                                                                                      |
-| DS-18 | Benefícios             | Efeito em prazos de atendimento                                                    | A1, A2       | Estimado em parte | Lead time médio dos fornecedores por grupo (aba Indicadores). Prazo CD–unidade a estimar pelas distâncias.                                                                             |
-| DS-19 | Benefícios             | Efeito na disponibilidade dos materiais essenciais                                 | A0, A1, A2   | Estimado em parte | Essenciais aproximados por classe A e frequência de consumo, até haver criticidade operacional.                                                                                         |
-| DS-20 | Benefícios             | Custo de paradas e compras emergenciais evitadas                                   | A1, A2       | Pendente          | Sem suposição nesta sprint.                                                                                                                                                             |
-| DS-21 | Escopo                  | Itens candidatos ao CD e itens que ficam na unidade                                | A1, A2       | Estimado em parte | Suposição inicial: grupos de consumo esporádico (rolamentos e vedação; transmissão e mangueiras) são candidatos ao CD; itens de classe A e consumo contínuo ficam na unidade.     |
-| DS-22 | Escopo                  | Situação atual a considerar (com ou sem piloto do Polo Norte)                    | A0           | Pendente          | Suposição: a posição de estoque de 09/11 já reflete o que o piloto alterou.                                                                                                          |
+| DS-01 | Investimento | Área necessária do CD (m²) e capacidade de armazenagem | A1, A2 | Pendente | Sem suposição nesta sprint. A dimensionar na Sprint 2 a partir do volume dos itens candidatos. |
+| DS-02 | Investimento | Preparação do espaço: obras, piso, estantes e porta-paletes | A1, A2 | Pendente | Sem suposição nesta sprint. Levantar referências de mercado na Sprint 2. |
+| DS-03 | Investimento | Equipamentos de movimentação (empilhadeira, paleteira) | A1, A2 | Pendente | Sem suposição nesta sprint. |
+| DS-04 | Investimento | Sistema de gestão do armazém (WMS) ou extensão do sistema atual | A1, A2 | Pendente | Verificar se o sistema atual da Atvos pode ser estendido ao CD. |
+| DS-05 | Investimento | Regiões candidatas e disponibilidade de imóvel | A1, A2 | Pendente | Unidades e polos de fornecedores já mapeados servem de ponto de partida (aba Unidades). |
+| DS-06 | Custos de funcionamento | Custo de ocupação: aluguel por m² na região ou custo de imóvel próprio | A1, A2 | Pendente | Sem suposição nesta sprint. Levantar referência por região na Sprint 2. |
+| DS-07 | Custos de funcionamento | Equipe do CD e dos almoxarifados (pessoas e custo) | A0, A1, A2 | Estimado em parte | Salário médio de almoxarife de R$ 2.139 por mês, mais encargos de 60% a 80%. Número de pessoas pendente. |
+| DS-08 | Custos de funcionamento | Custo de armazenagem atual por unidade | A0 | Pendente | Sem dado. Enquanto não houver, usar a taxa de custo de manter estoque (DS-13). |
+| DS-09 | Custos de funcionamento | Frete entre fornecedor, CD e unidades | A0, A1, A2 | Estimado | Piso ANTT de R$ 4,00 a R$ 9,25 por km, mais R$ 436 a R$ 872 de carga e descarga por viagem. É um piso; o frete real tende a ser maior. |
+| DS-10 | Custos de funcionamento | Distâncias rodoviárias entre unidades e polos de fornecedores | A0, A1, A2 | Estimado | Distância em linha reta multiplicada por fator rodoviário de 1,25 (faixa de 1,2 a 1,3). Três trechos do Polo Norte documentados pela Atvos. |
+| DS-11 | Custos de funcionamento | Impostos nas transferências entre unidades | A1, A2 | Pendente | Suposição: 4 unidades no mesmo CNPJ (UMV, UAE, UCR e UAT) transferem sem imposto; nas demais, a transferência é tratada como venda. Alíquotas a confirmar com a área fiscal. |
+| DS-12 | Custos de funcionamento | Condições comerciais dos fornecedores (frete CIF/FOB, pedido mínimo, contratos) | A0, A1, A2 | Pendente | Sem suposição nesta sprint. |
+| DS-13 | Benefícios | Taxa anual de custo de manter estoque (capital, armazenagem e risco) | A0, A1, A2 | Estimado | 20% a 30% ao ano sobre o estoque médio. |
+| DS-14 | Benefícios | Estoque que pode ser reduzido (capital liberado, efeito único) | A0+, A1, A2 | Estimado | Pontos de partida calculados na planilha: estoque em centro sem consumo em 12 meses, parcela transferível e estoque acima do máximo. Os valores se sobrepõem e não devem ser somados. |
+| DS-15 | Benefícios | Redução do estoque de segurança por compartilhamento entre unidades | A1, A2 | Pendente | Sem percentual nesta sprint. O piloto do Polo Norte reporta redução de cerca de 49%, dos quais cerca de 33% por ações estruturais; resultado a confirmar. |
+| DS-16 | Benefícios | Valor do consumo e preço de compra | A0, A1, A2 | Estimado | Quantidade consumida multiplicada pelo custo unitário do estoque atual de cada material. |
+| DS-17 | Benefícios | Ganho de negociação por compras consolidadas | A1, A2 | Pendente | Sem suposição nesta sprint. Depende de saber se as compras já são centralizadas. |
+| DS-18 | Benefícios | Efeito em prazos de atendimento | A1, A2 | Estimado em parte | Lead time médio dos fornecedores por grupo (aba Indicadores). Prazo CD–unidade a estimar pelas distâncias. |
+| DS-19 | Benefícios | Efeito na disponibilidade dos materiais essenciais | A0, A1, A2 | Estimado em parte | Essenciais aproximados por classe A e frequência de consumo, até haver criticidade operacional. |
+| DS-20 | Benefícios | Custo de paradas e compras emergenciais evitadas | A1, A2 | Pendente | Sem suposição nesta sprint. |
+| DS-21 | Escopo | Itens candidatos ao CD e itens que ficam na unidade | A1, A2 | Estimado em parte | Suposição inicial: grupos de consumo esporádico (rolamentos e vedação; transmissão e mangueiras) são candidatos ao CD; itens de classe A e consumo contínuo ficam na unidade. |
+| DS-22 | Escopo | Situação atual a considerar (com ou sem piloto do Polo Norte) | A0 | Pendente | Suposição: a posição de estoque de 09/11 já reflete o que o piloto alterou. |
 
 **Tabela 10 – Premissas numéricas da planilha**
 
 
-| Premissa                             | Valor                                         | Tipo                        | Fonte                                         |
+| Premissa | Valor | Tipo | Fonte |
 | -------------------------------------- | ----------------------------------------------- | ----------------------------- | ----------------------------------------------- |
-| Custo de manter estoque              | 20% a 30% ao ano                              | Referência externa         | Item 3, seção 3.6                           |
-| Frete: piso ANTT                     | R$ 4,00 a R$ 9,25 por km                      | Referência externa         | Item 3, seção 3.6                           |
-| Frete: carga e descarga              | R$ 436 a R$ 872 por viagem                    | Referência externa         | Item 3, seção 3.6                           |
-| Salário médio de almoxarife        | R$ 2.139 por mês                             | Referência externa         | Item 3, seção 3.6                           |
-| Encargos sobre o salário            | 60% a 80%                                     | Suposição                 | Item 3, seção 3.6                           |
-| Fator rodoviário sobre a linha reta | 1,25                                          | Suposição                 | Item 3, seção 3.2                           |
-| Curva ABC                            | A até 80% e B até 95% do valor acumulado    | Regra de análise           | Item 1, seção 1.6.4                         |
-| Consumo recorrente                   | Consumo em 6 ou mais dos últimos 12 meses    | Regra de análise           | Suposição deste entregável                 |
-| Rota do piloto do Polo Norte         | 5 viagens por semana, ida e volta, 52 semanas | Dado da Atvos e suposição | Apresentação Estoque Compartilhado, slide 8 |
+| Custo de manter estoque | 20% a 30% ao ano | Referência externa | Item 3, seção 3.6 |
+| Frete: piso ANTT | R$ 4,00 a R$ 9,25 por km | Referência externa | Item 3, seção 3.6 |
+| Frete: carga e descarga | R$ 436 a R$ 872 por viagem | Referência externa | Item 3, seção 3.6 |
+| Salário médio de almoxarife | R$ 2.139 por mês | Referência externa | Item 3, seção 3.6 |
+| Encargos sobre o salário | 60% a 80% | Suposição | Item 3, seção 3.6 |
+| Fator rodoviário sobre a linha reta | 1,25 | Suposição | Item 3, seção 3.2 |
+| Curva ABC | A até 80% e B até 95% do valor acumulado | Regra de análise | Item 1, seção 1.6.4 |
+| Consumo recorrente | Consumo em 6 ou mais dos últimos 12 meses | Regra de análise | Suposição deste entregável |
+| Rota do piloto do Polo Norte | 5 viagens por semana, ida e volta, 52 semanas | Dado da Atvos e suposição | Apresentação Estoque Compartilhado, slide 8 |
 
 ## 4.4. Limitações e dados a solicitar
 
