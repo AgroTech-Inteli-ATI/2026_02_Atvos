@@ -13,7 +13,7 @@ Comparar alternativas de abastecimento e regiões candidatas para estimar em qua
 
 ## Entregas previstas
 
-- Comparação da situação atual, CD centralizado e modelo híbrido, incluindo referências de gestão de MRO, custos, prazos e atendimento aos materiais essenciais.
+- [Comparação da situação atual, CD centralizado e modelo híbrido](./Comparacao_Modelos.md), incluindo referências de gestão de MRO, custos, prazos e atendimento aos materiais essenciais.
 - Comparação de regiões candidatas por distância, acesso às unidades, fornecedores, infraestrutura e riscos.
 - Estimativa de investimento inicial e custos de funcionamento, com cálculos, fontes, datas e unidades de medida.
 - Análise exploratória dos impostos que afetam as alternativas, com pontos a confirmar com a área fiscal da Atvos.
