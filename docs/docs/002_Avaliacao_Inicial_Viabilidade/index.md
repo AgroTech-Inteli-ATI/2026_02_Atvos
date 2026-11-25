@@ -20,3 +20,7 @@ Comparar alternativas de abastecimento e regiões candidatas para estimar em qua
 - [Estimativa de benefícios e impactos](./Beneficios_Impactos.md), separando capital liberado pela redução de estoques da economia recorrente, evitando dupla contagem e medindo os efeitos nos prazos de atendimento, na disponibilidade e no risco de falta de materiais.
 - Planilha inicial de viabilidade e conclusão preliminar, com critérios de comparação das regiões e informações ainda necessárias.
 
+## Entregas disponíveis
+
+- [Planilha e conclusão inicial de viabilidade — Laís](./Viabilidade_Inicial.md): investimento, funcionamento, benefícios, comparação de regiões e condições a confirmar.
+
