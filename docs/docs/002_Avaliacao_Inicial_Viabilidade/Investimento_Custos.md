@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.5
+sidebar_position: 4
 sidebar_label: 3. Investimento e custos de funcionamento
 slug: /sprint-2/investimento-custos-funcionamento
 description: "Estimativa do investimento inicial e dos custos de funcionamento de cada alternativa, com cálculos, fontes, datas e unidades; análise exploratória dos impostos a confirmar com a área fiscal da Atvos; e comparação do custo total com a situação atual, sem dupla contagem."
@@ -9,7 +9,7 @@ description: "Estimativa do investimento inicial e dos custos de funcionamento d
 
 **Referência:** 25/11/2026 · **Etapa:** avaliação inicial, Sprint 2 · **Moeda:** reais correntes de 2026, sem correção monetária.
 
-Esta seção reúne, em um só lugar, quanto cada alternativa exige para começar a operar e quanto passa a custar por ano. Ela detalha os cálculos por trás dos valores usados na [planilha inicial de viabilidade](./Viabilidade_Inicial.md) (seção 5.2) e nas Tabelas 7 e 8 de [Benefícios e impactos](./Beneficios_Impactos.md), acrescenta a análise exploratória dos impostos e compara o custo total de cada alternativa com a situação atual.
+Esta seção reúne, em um só lugar, quanto cada alternativa exige para começar a operar e quanto passa a custar por ano. Ela detalha os cálculos por trás dos valores usados na [planilha inicial de viabilidade](./Viabilidade_Inicial.md) (seção 5.2) e nas Tabelas 7 e 8 de [Benefícios e impactos](./Beneficios_Impactos.md), acrescenta a análise exploratória dos impostos e compara o custo total de cada alternativa com a situação atual. Enquanto os [itens 1](./Comparacao_Modelos.md) e [2](./Comparacao_Regioes_CD.md) já trabalham no recorte reduzido de quatro grupos, esta seção mantém o recorte oficial de seis grupos da Sprint 1 para preservar a conciliação com os itens 4 e 5.
 
 As alternativas são as mesmas da seção 4, no recorte de **seis grupos MRO, 3.201 materiais e oito unidades**:
 
@@ -40,7 +40,7 @@ Premissas comuns: imóvel **locado ou adaptado**, sem compra de terreno nem cons
 | **Total de implantação e transição** | | **0** | **57,5** | **1.150** | **506** |
 | Capital de giro adicional | Estoque de transição, saldos simultâneos na partida, prazos de pagamento | Não se aplica | A confirmar | A confirmar | A confirmar |
 
-*Fonte: hipótese de teste da equipe, publicada na [seção 5.2](./Viabilidade_Inicial.md) e na planilha `Viabilidade_Inicial_Lais.xlsx` (aba Premissas), referência 25/11/2026. Contingência: 15% × soma das quatro primeiras linhas (A1: 0,15 × 1.000 = 150; A2: 0,15 × 440 = 66; A0+: 0,15 × 50 = 7,5).*
+*Fonte: hipótese de teste da equipe, publicada na [seção 5.2](./Viabilidade_Inicial.md) e na planilha `Viabilidade_Inicial.xlsx` (aba Premissas), referência 25/11/2026. Contingência: 15% × soma das quatro primeiras linhas (A1: 0,15 × 1.000 = 150; A2: 0,15 × 440 = 66; A0+: 0,15 × 50 = 7,5).*
 
 O total mistura ativos (equipamentos, estruturas) e despesas de implantação (mudança, treinamento). Ele **não** classifica os valores contabilmente como CAPEX ou OPEX; essa separação muda depreciação e créditos de impostos e deve ser feita com a Controladoria.
 
@@ -80,7 +80,7 @@ Como ainda não há orçamento, a tabela abaixo transforma as hipóteses em cust
 | Encargos e benefícios sobre o salário | 70% | 60% – 80% | % do salário | Suposição da equipe (Sprint 1, DS-07) |
 | Pessoas no CD | A1: 10; A2: 5 | A1: 8–12; A2: 4–6 | pessoas | Hipótese de porte (Benefícios e impactos, Tabela 7) |
 | Área do CD | A1: 1.500; A2: 700 | A1: 1.200–1.800; A2: 550–900 | m² | Hipótese de porte (idem) |
-| Ocupação, utilidades e sistemas | ≈ 28 | 22 – 35 | R$/m²/mês | Faixa paramétrica da equipe, sem cotação por região (Benefícios e impactos, 4.2.2) |
+| Ocupação, utilidades e sistemas | 28 | 22 – 35 | R$/m²/mês | Faixa paramétrica da equipe, sem cotação por região (Benefícios e impactos, 4.2.2) |
 | Tarifa de frete por km | 6,625 | 4,00 – 9,25 | R$/km | Piso mínimo ANTT, carga geral, 2026 (Sprint 1, DS-09); valor esperado = ponto médio |
 | Carga e descarga | 654 | 436 – 872 | R$/viagem | Piso mínimo ANTT, 2026; esperado = ponto médio |
 | Distância média CD → unidades | 300 | 150 – 450 | km (ida) | Faixas paramétricas (Benefícios e impactos, 4.2.3) |
@@ -101,7 +101,7 @@ Alívio no frete        = consumo que passa pelo CD × % de alívio
 Reprodução do cenário esperado:
 
 - **Equipe A1:** 10 × 2.139 × 1,70 × 12 = **R$ 436 mil/ano**. A2: 5 pessoas = **R$ 218 mil/ano**.
-- **Ocupação e sistemas A1:** 1.500 m² × ≈ R$ 27,8/m²/mês × 12 = **R$ 500 mil/ano**. A2: 700 m² × ≈ R$ 28,6 × 12 = **R$ 240 mil/ano**.
+- **Ocupação e sistemas A1:** 1.500 m² × R$ 28/m²/mês × 12 = **R$ 504 mil/ano** (arredondado para R$ 500 mil na Tabela 3.4 e na planilha da seção 5). A2: 700 m² × R$ 28/m²/mês × 12 = **R$ 235 mil/ano** (arredondado para R$ 240 mil).
 - **Frete por viagem:** 2 × 300 km × R$ 6,625 + R$ 654 = **R$ 4.629 por viagem** (ida e volta).
 - **Frete A1:** 8 × 52 = 416 viagens × R$ 4.629 = **R$ 1,93 mi/ano**. A2: 3 × 52 = 156 viagens × R$ 4.629 = **R$ 722 mil/ano**.
 - **Alívio na entrada A1:** R$ 72,35 mi × 0,5% = **R$ 362 mil/ano**. A2: R$ 12,06 mi × 0,5% = **R$ 60 mil/ano**.
@@ -115,12 +115,12 @@ Reprodução do cenário esperado:
 | Equipe adicional | 0 | 0 | 440 | 220 | 329 – 554 | 164 – 277 |
 | Aluguel ou uso do espaço, utilidades e sistemas | 0 | 0 | 500 | 240 | 317 – 756 | 145 – 378 |
 | *Subtotal armazenagem (Tabela 7)* | *0* | *0* | *940* | *450* | *650 – 1.310* | *310 – 660* |
-| Distribuição e transferências | 0 | 100 | 1.930 | 720 | 680 – 3.830 | ver Tabela 8 |
+| Distribuição e transferências | 0 | 100 | 1.930 | 720 | 510 – 3.830 | 170 – 1.910 |
 | Alívio no frete de entrada | 0 | 0 | −360 | −60 | 0 a −720 | 0 a −120 |
 | **Custo de funcionamento adicional, antes de tributos** | **0** | **100** | **2.510** | **1.120** | | |
 | Equivalente mensal | 0 | 8,3 | 209,2 | 93,3 | | |
 
-*Fonte: parcelas arredondadas das Tabelas 7 e 8 de [Benefícios e impactos](./Beneficios_Impactos.md) e da [seção 5.2](./Viabilidade_Inicial.md). Faixas: limite inferior com menor porte, menor encargo, menor custo por m², 150 km e tarifa mínima; superior com maior porte, maior encargo, R$ 35/m², 450 km e tarifa máxima. Em A2, equipe (220) + ocupação (240) = 460, enquanto a Tabela 7 publica 450 por arredondamento; a soma da linha de custo adicional usa as parcelas desta tabela, como na planilha.*
+*Fonte: parcelas arredondadas das Tabelas 7 e 8 de [Benefícios e impactos](./Beneficios_Impactos.md) e da [seção 5.2](./Viabilidade_Inicial.md). Faixas: limite inferior com menor porte, menor encargo, R$ 22/m², 150 km, tarifa mínima e menor frequência de viagens (6/sem no A1 e 2/sem no A2); superior com maior porte, maior encargo, R$ 35/m², 450 km, tarifa máxima e maior frequência (8/sem no A1 e 4/sem no A2), coerentes com a Tabela 8 de Benefícios e impactos. Em A2, equipe (220) + ocupação (240) = 460, enquanto a Tabela 7 publica 450 por arredondamento sobre os valores exatos (218 + 235 = 453 mil); a soma da linha de custo adicional usa as parcelas desta tabela, como na planilha.*
 
 **O que está e o que não está nessa conta:**
 
@@ -134,7 +134,7 @@ Reprodução do cenário esperado:
 | Redução de equipe ou espaço nas usinas | **Não considerada** | Só entra quando a Atvos informar a estrutura atual e o que de fato deixaria de existir. |
 | Viagens de urgência | **Não incluídas** | R$ 2,8 mil a R$ 6,4 mil por viagem de 300 km no piso ANTT (Benefícios e impactos, Tabela 10). |
 
-**Frete é o fator mais sensível.** No A1, a distribuição sozinha varia de R$ 0,68 mi a R$ 3,83 mi por ano dentro das faixas testadas, mais do que toda a armazenagem. O piso ANTT é um mínimo legal: a tarifa contratada tende a ser igual ou maior. Para o C1 (CD BRM em Mineiros), o estudo de regiões estima **R$ 297 mil/ano** de saída no piso (2 viagens/semana, R$ 4,00/km), bem abaixo do frete do A1 por atender só quatro usinas a até 172 km ([Comparação de regiões, Tabela 2.11](./Comparacao_Regioes_CD.md)). Esse valor usa outro recorte (quatro grupos) e outra frequência e **não deve substituir** a linha de frete do A1 ou do A2.
+**Frete é o fator mais sensível.** No A1, a distribuição sozinha varia de R$ 0,51 mi a R$ 3,83 mi por ano dentro das faixas testadas, mais do que toda a armazenagem. O piso ANTT é um mínimo legal: a tarifa contratada tende a ser igual ou maior. Para o C1 (CD BRM em Mineiros), o estudo de regiões estima **R$ 445 mil/ano** de saída no piso (2 viagens/semana, ida e volta, R$ 4,00/km), bem abaixo do frete do A1 por atender só quatro usinas a até 172 km ([Comparação de regiões, Tabela 2.11](./Comparacao_Regioes_CD.md)). Esse valor usa outro recorte (quatro grupos) e outra frequência e **não deve substituir** a linha de frete do A1 ou do A2.
 
 ---
 
@@ -173,13 +173,13 @@ Para mostrar por que o imposto pode decidir a escolha, foram montados dois extre
 | Alternativa | Consumo que passa pelo CD (R$ mi/ano) | Parcela de outros CNPJs | Consumo entre CNPJs (R$ mi/ano) | Estrutura neutra | Empilhamento (≈ 21,25%) |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | A0 / A0+ | — | — | Transferências pontuais | ≈ 0 | Não estimado |
-| A1 – CD centralizado | 72,35 | 57% | 41,24 | ≈ 0 | 8.763 |
-| A2 – Híbrido | 12,06 | 57% | 6,87 | ≈ 0 | 1.461 |
+| A1 – CD centralizado | 72,35 | 60,5% | 43,77 | ≈ 0 | 9.301 |
+| A2 – Híbrido | 12,06 | 59,5% | 7,18 | ≈ 0 | 1.525 |
 | C1/C5 – CD BRM | Só usinas BRM | 0% | 0 | ≈ 0 | 0 |
 
-*Cálculo: consumo entre CNPJs × (12% + 9,25%). A parcela de 57% vem do recorte de quatro grupos da [Comparação de regiões](./Comparacao_Regioes_CD.md) (Tabela 2.10) e é usada como aproximação para os seis grupos até que a participação por CNPJ seja recalculada nessa base.*
+*Cálculo: consumo entre CNPJs × (12% + 9,25%). As parcelas de 60,5% (seis grupos) e 59,5% (rolamentos e transmissão) foram calculadas diretamente sobre o consumo da Safra 25/26 das quatro unidades de CNPJ próprio (UCP, USL, UEL e URC) na base consolidada desta seção (no recorte de quatro grupos da [Comparação de regiões](./Comparacao_Regioes_CD.md), Tabela 2.10, a parcela é de 57%).*
 
-**Leitura:** com empilhamento, o imposto do A1 seria mais de três vezes o seu custo de funcionamento adicional, e o do A2 superaria todo o saldo positivo do híbrido (Tabela 3.8). O **ponto de equilíbrio do A2** é baixo: o híbrido continua melhor que a situação atual somente se o custo tributário incremental ficar abaixo de cerca de **R$ 110 mil/ano**, ou **1,6% do consumo** que cruza CNPJs (110 ÷ 6.874). Por isso o C1/C5, que só movimenta estoque dentro da BRM, é a configuração que passa no filtro tributário com as regras atuais.
+**Leitura:** com empilhamento, o imposto do A1 seria mais de três vezes o seu custo de funcionamento adicional, e o do A2 superaria todo o saldo positivo do híbrido (Tabela 3.8). O **ponto de equilíbrio do A2** é baixo: o híbrido continua melhor que a situação atual somente se o custo tributário incremental ficar abaixo de cerca de **R$ 110 mil/ano**, ou **1,5% do consumo** que cruza CNPJs (110,38 ÷ 7.178). Por isso o C1/C5, que só movimenta estoque dentro da BRM, é a configuração que passa no filtro tributário com as regras atuais.
 
 ### 3.3.3. Pontos a confirmar com a área fiscal da Atvos
 
@@ -249,13 +249,13 @@ Custo isolado não decide: as alternativas também geram benefícios. A Tabela 3
 | *Para comparação: saldo sem o investimento (seção 5.3)* | *0* | *503,75* | *−779,75* | *256,00* |
 | Capital liberado uma vez (R$ mil, não somado acima) | 0 | 3.450 | 5.430 | 4.320 |
 | Capital de giro adicional | — | A confirmar | A confirmar | A confirmar |
-| Imposto nas vendas entre CNPJs (Tabela 3.6) | — | ≈ 0 | 0 a 8.763 | 0 a 1.461 |
+| Imposto nas vendas entre CNPJs (Tabela 3.6) | — | ≈ 0 | 0 a 9.301 | 0 a 1.525 |
 
 **Leitura:**
 
 1. **A otimização sem CD continua sendo a referência mais favorável.** Com o investimento incluído, ela mantém saldo de cerca de R$ 0,49 mi/ano com desembolso de apenas R$ 57,5 mil.
 2. **O CD centralizado custa mais do que gera** no cenário esperado: o saldo cai para −R$ 1,11 mi/ano e fica R$ 1,60 mi/ano abaixo da A0+, antes de qualquer imposto.
-3. **O híbrido fica pouco acima da situação atual** (+R$ 0,11 mi/ano), mas R$ 0,38 mi/ano abaixo da A0+. Esse saldo é pequeno diante da incerteza do frete e dos impostos: basta um custo tributário de 1,6% sobre o consumo que cruza CNPJs para zerá-lo.
+3. **O híbrido fica pouco acima da situação atual** (+R$ 0,11 mi/ano), mas R$ 0,38 mi/ano abaixo da A0+. Esse saldo é pequeno diante da incerteza do frete e dos impostos: basta um custo tributário de 1,5% sobre o consumo que cruza CNPJs para zerá-lo.
 4. **O capital liberado não paga o investimento.** Ele é um efeito de caixa único da transição e já está representado pela economia de 17,5% a.a. Usá-lo para abater a implantação contaria o mesmo benefício duas vezes.
 5. **Payback não foi calculado**, pelas mesmas razões da seção 5.3: faltam fluxo de caixa incremental, cronograma, giro e tributos confirmados.
 

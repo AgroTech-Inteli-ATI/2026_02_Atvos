@@ -13,10 +13,28 @@ const config = {
   projectName: '2026_02_Atvos',
   onBrokenLinks: 'throw',
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'throw',
     },
   },
+  themes: ['@docusaurus/theme-mermaid'],
+  plugins: [
+    function ignoreOptionalMermaidElk() {
+      return {
+        name: 'ignore-optional-mermaid-elk',
+        configureWebpack() {
+          return {
+            resolve: {
+              alias: {
+                '@mermaid-js/layout-elk': false,
+              },
+            },
+          };
+        },
+      };
+    },
+  ],
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR'],

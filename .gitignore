@@ -2,3 +2,8 @@ docs/node_modules/
 docs/build/
 docs/.docusaurus/
 .work-viabilidade/
+
+# Exportações CSV locais e planilha local de trabalho
+/*.csv
+Documentação do Projeto/Estimativa_Beneficios_Custos_Sprint2.xlsx
+~$*

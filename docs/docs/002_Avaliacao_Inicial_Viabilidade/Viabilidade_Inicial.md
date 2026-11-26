@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 sidebar_label: 5. Planilha e conclusão inicial de viabilidade
 slug: /sprint-2/viabilidade-inicial
 description: "Consolidação inicial de investimento, funcionamento, benefícios e critérios de escolha de regiões, com condições de viabilidade e pendências."
@@ -9,13 +9,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 5. Planilha e conclusão inicial de viabilidade
 
-**Responsável:** Laís · **Referência:** 25/11/2026 · **Etapa:** avaliação inicial, Sprint 2.
+**Referência:** 25/11/2026 · **Etapa:** avaliação inicial, Sprint 2.
 
 A otimização dos estoques sem um novo CD é a referência inicial mais favorável nos cálculos disponíveis. Um CD precisa demonstrar ganho adicional sobre essa alternativa, além de melhorar o atendimento. A configuração a aprofundar é um estoque compartilhado restrito às unidades BRM no Polo Norte, associado à consolidação de cargas na origem, conforme a comparação de regiões. Ainda faltam cotações e validações para afirmar que essa configuração é viável.
 
 ## 5.1. Planilha, escopo e forma de uso
 
-<a href={useBaseUrl('/planilhas/Viabilidade_Inicial_Lais.xlsx')}>Baixar a planilha inicial de viabilidade (.xlsx)</a>
+<a href={useBaseUrl('/planilhas/Viabilidade_Inicial.xlsx')}>Baixar a planilha inicial de viabilidade (.xlsx)</a>
 
 A planilha reúne três abas: **Viabilidade**, com resultados e diferenças entre alternativas; **Premissas**, com entradas ajustáveis e fontes; e **Regioes**, com os indicadores disponíveis e os campos necessários para a comparação ponderada. Entradas numéricas ajustáveis aparecem em azul. Campos sem informação permanecem pendentes. Um zero só deve ser informado quando representar ausência efetiva de custo ou benefício.
 
@@ -23,8 +23,10 @@ O modelo calcula variações em relação à situação atual. **Zero na situaç
 
 | Base utilizada | Recorte e período | Uso nesta entrega |
 | --- | --- | --- |
+| [Comparação dos modelos de abastecimento](./Comparacao_Modelos.md), seções 1.1–1.6 | Quatro grupos, 2.475 materiais (`Base_Consumo`); estoque de R$ 19,79 mi; consumo da Safra 25/26 de R$ 58,4 mi. | Direcionamento qualitativo por perfil de grupo, referências de MRO e alinhamento ao modelo híbrido/C5. |
+| [Comparação de regiões](./Comparacao_Regioes_CD.md), Tabelas 2.6 e 2.11 | Quatro grupos, 2.244 materiais (`Consolidado`); estoque de R$ 17,99 mi; consumo estimado de 2025 de R$ 56,46 mi. | Localizações, configurações C1–C5 e indicadores logísticos (piso ANTT ida e volta). |
+| [Investimento e custos de funcionamento](./Investimento_Custos.md), seções 3.1–3.4 | Seis grupos, 3.201 materiais; moeda corrente de 2026. | Memória de cálculo do investimento inicial, custo anual equivalente e análise exploratória de impostos. |
 | [Estimativa de benefícios e impactos](./Beneficios_Impactos.md), seções 4.1–4.5 | Seis grupos, 3.201 materiais; estoque de R$ 23,96 mi; consumo da Safra 25/26 de R$ 72,35 mi. O risco usa nov/2025–out/2026. | Capital liberado, ganhos potenciais, custos adicionais e atendimento das alternativas amplas. |
-| [Comparação de regiões](./Comparacao_Regioes_CD.md), Tabelas 2.6 e 2.11 | Quatro grupos, 2.244 materiais; estoque de R$ 17,99 mi; consumo estimado de 2025 de R$ 56,46 mi. | Localizações, configurações C1–C5 e indicadores logísticos. |
 | [Diagnóstico atual](../001_Diagnostico_Abastecimento/Diagnostico_Atual_MRO.md) | Oito unidades e piloto de estoque compartilhado. | Linha de base e lacunas de custo. |
 
 **Os recortes são diferentes.** Os benefícios dos seis grupos para as oito unidades não são os benefícios do CD BRM de quatro unidades. A configuração C5 não recebe automaticamente os ganhos do modelo híbrido da seção 4. Não foram somados os estoques nem os consumos dessas bases. As planilhas e a apresentação fornecidas no material de apoio são fontes de dados; os critérios de decisão desta entrega são os explicitados aqui.
@@ -84,10 +86,10 @@ A localização deve ser comparada dentro de uma configuração comum. A Tabela 
 
 | Região e papel | Custo disponível | Acesso e atendimento | Leitura inicial |
 | --- | --- | --- | --- |
-| Mineiros/GO — C1 BRM | Saída paramétrica de R$ 297 mil/ano | Maior trecho de 172 km entre sedes municipais; piloto existente em Morro Vermelho. | Primeira opção a orçar por aproveitar a operação existente; validar transporte dedicado e endereços reais. |
-| Alto Taquari/MT — C1 BRM | Saída de R$ 306 mil/ano | Maior trecho de 207 km; alternativa próxima das unidades BRM. | Diferença pequena de frete pode ser superada por ocupação, equipe e transporte contratado. |
-| Costa Rica/MS — C1 BRM | Saída de R$ 344 mil/ano | Maior trecho de 238 km. | Mantém-se candidata; exige avaliar o custo total e o prazo por unidade. |
-| Chapadão do Sul/MS — C2 integral | Saída de R$ 1,340 mi/ano | Média ponderada de 307 km e pior trecho de 574 km; oito unidades. | Melhor posição do CD único no estudo de distâncias, com maior exposição operacional e fiscal a validar. |
+| Mineiros/GO — C1 BRM | Saída paramétrica de R$ 445 mil/ano (ida e volta) | Maior trecho de 172 km entre sedes municipais; piloto existente em Morro Vermelho. | Primeira opção a orçar por aproveitar a operação existente; validar transporte dedicado e endereços reais. |
+| Alto Taquari/MT — C1 BRM | Saída de R$ 488 mil/ano (ida e volta) | Maior trecho de 207 km; alternativa próxima das unidades BRM. | Diferença pequena de frete pode ser superada por ocupação, equipe e transporte contratado. |
+| Costa Rica/MS — C1 BRM | Saída de R$ 551 mil/ano (ida e volta) | Maior trecho de 238 km. | Mantém-se candidata; exige avaliar o custo total e o prazo por unidade. |
+| Chapadão do Sul/MS — C2 integral | Saída de R$ 2,317 mi/ano (ida e volta) | Média ponderada de 307 km e pior trecho de 574 km; oito unidades. | Melhor posição do CD único no estudo de distâncias, com maior exposição operacional e fiscal a validar. |
 | Ribeirão Preto/SP — C4 entrada | Tarifa do operador e manuseio pendentes | Consolida origens de SP; não substitui o atendimento local nem comprova redução de estoques. | Complemento a avaliar junto ao C1, formando C5. |
 
 *Fonte: Comparação de regiões, Tabelas 2.6 e 2.11. Custos de saída calculados naquele estudo com frequência e parâmetros próprios. Não substituem os custos do modelo financeiro de seis grupos.*

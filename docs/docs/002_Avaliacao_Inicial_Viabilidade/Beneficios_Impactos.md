@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 sidebar_label: 4. Estimativa de benefícios e impactos
 slug: /sprint-2/estimativa-beneficios-impactos
 description: "Estimativa de benefícios financeiros e variações operacionais: redução de estoques repetidos, separação entre capital liberado e economia recorrente, ganhos potenciais em compras, mudanças nos custos de armazenagem e transporte e efeitos nos prazos de atendimento, na disponibilidade e no risco de falta de materiais."
@@ -15,7 +15,7 @@ Esta seção estima os potenciais benefícios financeiros e as variações de cu
 
 Todos os cálculos derivam do recorte oficial de **3.201 materiais** distribuídos nos **seis grupos MRO** e nas **oito unidades agroindustriais** (estoque atual de **R$ 23,96 milhões** em todos os depósitos e consumo anual estimado de **R$ 72,35 milhões** na Safra 25/26). As fórmulas e premissas editáveis estão consolidadas na planilha de apoio compartilhada nos canais internos do projeto; esta página apresenta os resultados agregados e as regras de cálculo.
 
-> **Escopo e transparência:** como as regiões candidatas para instalação do centro de distribuição e o investimento inicial de implantação ainda estão em definição, os custos de armazenagem e transporte são modelados por faixas de distância e porte de operação. Os valores abaixo representam cenários preliminares para apoio à decisão, e não resultados comprovados da operação.
+> **Escopo e transparência:** para manter consistência com o diagnóstico da Sprint 1 e alimentar diretamente os [itens 3](./Investimento_Custos.md) e [5](./Viabilidade_Inicial.md), esta página modela os custos de armazenagem e transporte por faixas paramétricas de distância e porte no recorte de seis grupos. As regiões candidatas e rotas por sede municipal estão detalhadas no [item 2](./Comparacao_Regioes_CD.md) (no recorte reduzido de quatro grupos), e as hipóteses de investimento inicial e tributos estão no [item 3](./Investimento_Custos.md). Os valores abaixo representam cenários preliminares para apoio à decisão, e não resultados comprovados da operação.
 
 ---
 
@@ -119,17 +119,17 @@ O consumo anual estimado do recorte na Safra 25/26 é de **R$ 72,35 milhões** (
 
 | Grupo MRO | Perfil de fornecimento | Fornecedores únicos | Consumo Safra 25/26 (R$ mi) | Gasto em itens com ≥2 fornecedores (R$ mi) | % do gasto em itens multi-fornecedor |
 | --- | --- | ---: | ---: | ---: | ---: |
-| Filtros e elementos | Pulverizado | 36 | 8,70 | 6,43 | **73,9%** |
-| Transmissão e mangueiras | Pulverizado | 41 | 5,74 | 3,61 | **62,9%** |
-| Rolamentos e vedação | Pulverizado | 43 | 6,32 | 2,41 | **38,1%** |
+| Filtros e elementos | Pulverizado | 43 | 8,70 | 6,43 | **73,9%** |
+| Transmissão e mangueiras | Pulverizado | 47 | 5,74 | 3,61 | **62,9%** |
+| Rolamentos e vedação | Pulverizado | 57 | 6,32 | 2,41 | **38,1%** |
 | *Subtotal (grupos pulverizados)* | - | - | *20,76* | *12,45* | *60,0%* |
-| Pneus e acessórios | Concentrado | 14 | 19,06 | 1,38 | 7,2% |
-| Lubrificantes e fluidos | Concentrado | 15 | 24,29 | 0,60 | 2,5% |
-| Desgaste agrícola | Concentrado | 14 | 8,24 | 0,07 | 0,9% |
+| Pneus e acessórios | Concentrado | 11 | 19,06 | 1,38 | 7,2% |
+| Lubrificantes e fluidos | Concentrado | 26 | 24,29 | 0,60 | 2,5% |
+| Desgaste agrícola | Concentrado | 32 | 8,24 | 0,07 | 0,9% |
 | *Subtotal (grupos concentrados)* | - | - | *51,59* | *2,05* | *4,0%* |
 | **Total do recorte** | - | **92** | **72,35** | **14,50** | **20,0%** |
 
-*Fonte: elaboração própria a partir da base consolidada da Atvos. Os valores de consumo são estimativas calculadas pelo custo unitário do estoque atual.*
+*Fonte: elaboração própria a partir da base consolidada da Atvos (reconciliada com a planilha `Estimativa_Beneficios_Custos_Sprint2.xlsx`). Um mesmo fornecedor pode atender mais de um grupo, por isso o total de fornecedores distintos no recorte (92) é menor que a soma das linhas. Os valores de consumo são estimativas calculadas pelo custo unitário do estoque atual.*
 
 A distribuição evidencia um ponto central: **71,3% do gasto anual (R$ 51,59 milhões)** já está concentrado em poucos fornecedores nacionais (lubrificantes, pneus e desgaste agrícola). Nesses grupos, o potencial de desconto adicional apenas por volume é reduzido, especialmente porque a área de compras da Atvos já atua de forma segregada do planejamento e ainda é necessário confirmar se os contratos já são negociados de forma corporativa. As maiores oportunidades de padronização e consolidação de pedidos concentram-se nos **R$ 20,76 milhões dos grupos pulverizados** (onde 60% do valor envolve o mesmo material comprado de múltiplos fornecedores) e na redução de compras emergenciais.
 
@@ -171,7 +171,7 @@ Como o custo operacional atual dos oito almoxarifados não consta nas bases rece
 A centralização altera o transporte em dois sentidos opostos:
 
 1. **Abastecimento (fornecedor → CD vs. fornecedor → oito unidades):** **86,1% do gasto anual com origem identificada vem de São Paulo (59,7%, R$ 35,06 milhões) e Minas Gerais (26,4%, R$ 15,51 milhões)**, enquanto fornecedores em GO, MS, MT e PR representam 13,9%. Consolidar entregas em um único destino pode aliviar fretes fracionados, mas o ganho efetivo depende de confirmar se o frete atual é pago pelo fornecedor (CIF) ou pela Atvos (FOB). Nos cenários, considera-se alívio conservador de 0,0% (conservador), 0,5% (esperado) e 1,0% (otimista) sobre o volume que passa pelo CD.
-2. **Distribuição interna (CD → oito unidades):** introduz uma nova etapa rodoviária. Como as regiões candidatas ainda não foram selecionadas, o frete foi modelado com base no **piso mínimo da ANTT para carga geral** (R$ 4,00 a R$ 9,25 por km rodado, mais R$ 436 a R$ 872 de carga e descarga por viagem, considerando ida e volta) em **três faixas paramétricas de distância média entre o CD e as unidades**: **150 km** (otimista), **300 km** (esperado) e **450 km** (conservador). Como referência real de ordem de grandeza, a rota semanal do piloto do Polo Norte (atendendo três usinas próximas) já representa entre R$ 0,37 milhão e R$ 0,82 milhão/ano pelo mesmo piso.
+2. **Distribuição interna (CD → oito unidades):** introduz uma nova etapa rodoviária. Para testar a sensibilidade do modelo financeiro de seis grupos de forma independente da escolha final de cidade (e antes de obter os endereços exatos das usinas apontados na [seção 2](./Comparacao_Regioes_CD.md)), o frete foi modelado com base no **piso mínimo da ANTT para carga geral** (R$ 4,00 a R$ 9,25 por km rodado, mais R$ 436 a R$ 872 de carga e descarga por viagem, considerando ida e volta) em **três faixas paramétricas de distância média entre o CD e as unidades**: **150 km** (otimista), **300 km** (esperado, compatível com os 307 km do melhor ponto único na seção 2) e **450 km** (conservador). Como referência real de ordem de grandeza, a rota semanal do piloto do Polo Norte (atendendo três usinas próximas) já representa entre R$ 0,37 milhão e R$ 0,82 milhão/ano pelo mesmo piso.
 
 **Tabela 8 – Variação anual estimada nos custos de transporte (sinal negativo indica custo adicional)**
 
@@ -291,7 +291,7 @@ Mesmo no CD centralizado, ainda sobram **622 materiais com estoque total abaixo 
 
 Existe ainda uma escolha a fazer entre capital e disponibilidade. Se o CD mantiver o mesmo estoque de segurança que as unidades têm hoje (R$ 10,10 milhões), o nível de serviço subiria de 95% para cerca de **98%**. A seção 4.1 seguiu o outro caminho, de manter os 95% e liberar capital. **As duas coisas não acontecem ao mesmo tempo com o mesmo estoque**: se a Atvos preferir mais disponibilidade, o capital liberado da Tabela 4 fica menor.
 
-> **Ponto de atenção para a seção 4.1.2:** quando o tempo de entrega do CD até a unidade entra no cálculo, o estoque de segurança consolidado sobe de R$ 7,23 milhões para R$ 7,82 milhões no cenário esperado (R$ 8,16 milhões no conservador e R$ 7,42 milhões no otimista). Com isso, a redução de R$ 2,93 milhões da Tabela 3 pode estar cerca de R$ 0,6 milhão acima do real no cenário esperado, e vale revisar esse valor.
+> **Ponto de atenção para a seção 4.1.2:** quando o tempo de entrega do CD até a unidade entra na simulação da seção 4.3, o estoque de segurança consolidado sobe de R$ 7,23 milhões (frente aos R$ 7,17 milhões da Tabela 3) para R$ 7,82 milhões no cenário esperado (R$ 8,16 milhões no conservador e R$ 7,42 milhões no otimista). Com isso, a redução de R$ 2,93 milhões da Tabela 3 pode estar cerca de R$ 0,6 milhão acima do real no cenário esperado, e vale revisar esse valor.
 
 ---
 
@@ -346,7 +346,7 @@ Os efeitos no atendimento, calculados na seção 4.3, aparecem separados na Tabe
 1. **A maior parte da redução de estoque independe de um CD:** rebalancear estoques transferíveis e ajustar excessos acima do máximo libera cerca de R$ 3,45 milhões no cenário esperado (com ganho recorrente líquido de +R$ 0,50 milhão/ano) sem exigir novo imóvel, equipe adicional ou rotas frequentes.
 2. **O frete de distribuição é o principal fator de sensibilidade:** no CD centralizado, a variação de distância média e de tarifa desloca o saldo recorrente de **−R$ 4,35 milhões/ano** (450 km, tarifa alta) para **+R$ 2,50 milhões/ano** (150 km, tarifa baixa e ganhos plenos em compras). A localização do CD será decisiva.
 3. **O modelo híbrido reduz significativamente a exposição a custos fixos e frete:** ao manter os itens de alto giro e volume abastecidos localmente e centralizar a cauda longa, o modelo híbrido reduz em cerca de metade o custo adicional de armazenagem e transporte frente ao CD centralizado, preservando 80% do capital liberado.
-4. **Fatores pendentes antes de qualquer conclusão de viabilidade:** a escolha final entre manter a rede otimizada, adotar um modelo híbrido ou centralizar integralmente depende de quatro validações em andamento: **(a)** definição das regiões candidatas e rotas reais; **(b)** estimativa completa de investimento inicial e custos de funcionamento; **(c)** análise fiscal das transferências entre CNPJs distintos; e **(d)** confirmação com a Atvos sobre o grau atual de centralização das compras e condições de frete.
+4. **Fatores pendentes antes da recomendação final:** a escolha definitiva entre manter a rede otimizada, adotar um modelo híbrido (como o caso C5 da [seção 2](./Comparacao_Regioes_CD.md)) ou centralizar integralmente depende de quatro validações com a Atvos: **(a)** coordenadas reais das usinas e tarifas contratadas de frete; **(b)** orçamentos reais para substituir as hipóteses de investimento e funcionamento da [seção 3](./Investimento_Custos.md); **(c)** validação formal da área fiscal sobre os pontos F1 a F9 da [seção 3.3](./Investimento_Custos.md#33-impostos-que-podem-afetar-os-custos-das-alternativas); e **(d)** confirmação sobre o grau atual de centralização das compras e condições de frete (CIF/FOB).
 5. **No atendimento, o modelo híbrido ganha onde mais importa:** nos grupos esporádicos, ele reduz o risco alto tanto quanto o CD centralizado (−63%) e troca uma espera de cerca de 25 dias pelo fornecedor por uns 5 dias. O ganho a mais do CD centralizado vem dos grupos contínuos, mas aí a usina perde os itens que hoje tem na prateleira. Já os lubrificantes precisam de contrato e de revisão dos estoques mínimos em qualquer alternativa, porque falta material na rede inteira.
 
 ---
@@ -370,7 +370,7 @@ Os efeitos no atendimento, calculados na seção 4.3, aparecem separados na Tabe
 
 **Principais limitações e pontos a confirmar com a Atvos:**
 
-- **Localização e rotas:** sem regiões candidatas definidas, as faixas de 150, 300 e 450 km funcionam como referência paramétrica a ser substituída pelas distâncias rodoviárias reais.
+- **Localização e rotas:** enquanto as coordenadas exatas das usinas e tarifas contratadas não são confirmadas com a Atvos (pendências da [seção 2](./Comparacao_Regioes_CD.md)), as faixas de 150, 300 e 450 km funcionam como referência paramétrica a ser substituída pelas rotas rodoviárias reais na Sprint 3.
 - **Custos internos de operação:** os custos atuais de armazenagem, equipe de almoxarifado e frota/frete das oito unidades não constam nas bases recebidas e precisam ser confirmados para calibrar o modelo.
 - **Condições comerciais e compras emergenciais:** os ganhos em compras e no frete de abastecimento dependem de confirmar se os contratos atuais já são corporativos, se o frete é CIF ou FOB e qual é o volume real de compras emergenciais.
 - **Impacto tributário:** transferências entre as quatro unidades de CNPJ próprio e o bloco do Polo Norte podem gerar incidência de impostos não contemplada nesta etapa.

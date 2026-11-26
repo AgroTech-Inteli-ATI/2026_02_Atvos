@@ -7,7 +7,7 @@ description: "Seleção e comparação preliminar de regiões candidatas ao CD d
 
 # 2. Comparação de regiões para o CD
 
-> **Versão de trabalho (Sprint 2).** O recorte desta comparação tem quatro grupos de materiais: **pneus, rolamentos e retentores, filtros e lubrificantes**. As distâncias usam a sede dos municípios e devem ser refeitas com a localização exata das usinas assim que a Atvos confirmar.
+> **Escopo e premissas (Sprint 2).** O recorte desta comparação tem quatro grupos de materiais: **pneus, rolamentos e retentores, filtros e lubrificantes**. As distâncias usam a sede dos municípios e devem ser refeitas com a localização exata das usinas assim que a Atvos confirmar.
 
 ## 2.1. Objetivo e perguntas a responder
 
@@ -279,7 +279,7 @@ Partimos das cidades das próprias usinas e de cidades com porte logístico no e
 
 ## 2.8. Condições para instalar o CD, receber e distribuir os materiais
 
-Estas condições valem para qualquer região e serão usadas como checklist em cada candidata. O detalhamento de área e investimento fica para o item 3 da Sprint 2 (estimativa de investimento inicial e custos).
+Estas condições valem para qualquer região e serão usadas como checklist em cada candidata. O detalhamento de área e investimento está no [item 3 da Sprint 2](./Investimento_Custos.md) (estimativa de investimento inicial e custos).
 
 | Etapa | Condição | Pontos específicos de pneus, rolamentos, filtros e lubrificantes |
 |---|---|---|
@@ -391,7 +391,7 @@ Segundo a Atvos (reunião de alinhamento), as oito usinas estão em **cinco CNPJ
 **Como cada fluxo foi medido**
 
 - **Entrada (fornecedor → CD, *cross-docking* ou usina):** cada combinação fornecedor × usina com consumo em um mês de 2025 conta como **uma entrega**. É uma aproximação da frequência de reposição. Quando várias usinas passam a receber pelo mesmo CD, os meses se sobrepõem e as entregas fracionadas viram uma entrega consolidada. O **índice de km de entrada** soma as entregas × distância. Ele mede a fragmentação das entregas, não o custo de frete: na prática, as transportadoras já agrupam parte dessas cargas.
-- **Saída (CD → usinas):** 2 viagens por semana para cada usina atendida, como no piloto do Polo Norte, ida e volta, sem roteirização. O custo usa o piso ANTT de referência da Sprint 1 (R$ 4,00/km + R$ 436 de carga e descarga por viagem, veículo de 2 eixos). É um piso, não o custo real.
+- **Saída (CD → usinas):** 2 viagens por semana para cada usina atendida (6 viagens/semana no C1, acima das 5 viagens/semana com sexta alternada do piloto atual), ida e volta, sem roteirização. O custo usa o piso ANTT de referência da Sprint 1 (R$ 4,00/km sobre a distância de ida e volta + R$ 436 de carga e descarga por viagem, veículo de 2 eixos), coerente com a fórmula de ida e volta adotada nos [itens 3](./Investimento_Custos.md) e [4](./Beneficios_Impactos.md) para rotas sem carga de retorno. É um piso, não o custo real.
 - **Base:** 2.986 entregas por ano em 340 rotas fornecedor × usina. Ficam fora R$ 12,3 mi de consumo sem fornecedor identificado, quase todo de lubrificantes.
 
 ### 2.10.3. Entrada e saída por caso
@@ -401,22 +401,22 @@ Segundo a Atvos (reunião de alinhamento), as oito usinas estão em **cinco CNPJ
 | Caso | Recebimentos por ano (entrada) | Índice de km de entrada (mil km/ano) | Viagens de saída por ano | km de saída (mil km/ano) | Custo de saída no piso ANTT (R$ mil/ano) | Maior distância CD → usina | Consumo com troca de CNPJ |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | A0 – Atual | 2.986 | 2.052 | — | — | — | — | — |
-| C1 – CD BRM em Mineiros | 2.174 (−27%) | 1.404 | 312 | 77 | 297 | 172 km (2,7h) | R$ 0 |
-| C1 – CD BRM em Alto Taquari | 2.174 (−27%) | 1.415 | 312 | 88 | 306 | 207 km (3,2h) | R$ 0 |
-| C1 – CD BRM em Costa Rica | 2.174 (−27%) | 1.385 | 312 | 104 | 344 | 238 km (3,7h) | R$ 0 |
-| C2 – CD único em Chapadão do Sul | 823 (−72%) | 478 | 832 | 488 | 1.340 | 574 km (8,0h) | R$ 32,2 mi |
-| C2 – CD único em Mineiros | 823 (−72%) | 552 | 728 | 540 | 1.404 | 747 km (10,4h) | R$ 32,2 mi |
-| C3 – Híbrido Mineiros + Nova Alvorada do Sul | 1.529 (−49%) | 957 | 520 | 133 | 499 | 222 km (3,5h) | R$ 14,5 mi |
-| C3 – Híbrido Chapadão do Sul + Nova Alvorada do Sul | 1.529 (−49%) | 910 | 624 | 184 | 640 | 260 km (3,3h) | R$ 14,5 mi |
+| C1 – CD BRM em Mineiros | 2.174 (−27%) | 1.404 | 312 | 77 | 445 | 172 km (2,7h) | R$ 0 |
+| C1 – CD BRM em Alto Taquari | 2.174 (−27%) | 1.415 | 312 | 88 | 488 | 207 km (3,2h) | R$ 0 |
+| C1 – CD BRM em Costa Rica | 2.174 (−27%) | 1.385 | 312 | 104 | 551 | 238 km (3,7h) | R$ 0 |
+| C2 – CD único em Chapadão do Sul | 823 (−72%) | 478 | 832 | 488 | 2.317 | 574 km (8,0h) | R$ 32,2 mi |
+| C2 – CD único em Mineiros | 823 (−72%) | 552 | 728 | 540 | 2.477 | 747 km (10,4h) | R$ 32,2 mi |
+| C3 – Híbrido Mineiros + Nova Alvorada do Sul | 1.529 (−49%) | 957 | 520 | 133 | 760 | 222 km (3,5h) | R$ 14,5 mi |
+| C3 – Híbrido Chapadão do Sul + Nova Alvorada do Sul | 1.529 (−49%) | 910 | 624 | 184 | 1.010 | 260 km (3,3h) | R$ 14,5 mi |
 | C4 – Consolidação em Ribeirão Preto | 1.274 (−57%) | 842 | — | — | — | — | R$ 0 |
-| **C5 – CD BRM em Mineiros + consolidação em Ribeirão Preto** | **927 (−69%)** | **604** | **312** | **77** | **297** | **172 km (2,7h)** | **R$ 0** |
+| **C5 – CD BRM em Mineiros + consolidação em Ribeirão Preto** | **927 (−69%)** | **604** | **312** | **77** | **445** | **172 km (2,7h)** | **R$ 0** |
 
-*Recebimentos = entregas que chegam às usinas ou ao CD. Em C4 e C5, as entregas dos fornecedores no* cross-docking *(440 por ano) não entram nessa contagem, mas entram no índice de km. Com 1 viagem de saída por semana, o custo no piso cai para R$ 148 mil (C1/C5), R$ 250 mil (C3) e R$ 670 mil (C2). Com 3 viagens por semana, sobe para R$ 445 mil, R$ 749 mil e R$ 2,0 mi.*
+*Recebimentos = entregas que chegam às usinas ou ao CD. Em C4 e C5, as entregas dos fornecedores no* cross-docking *(440 por ano) não entram nessa contagem, mas entram no índice de km. Com 1 viagem de saída por semana, o custo no piso cai para R$ 223 mil (C1/C5), R$ 380 mil (C3) e R$ 1,16 mi (C2). Com 3 viagens por semana, sobe para R$ 668 mil, R$ 1,14 mi e R$ 3,48 mi.*
 
 ### 2.10.4. Leitura por caso
 
 - **C1 – CD BRM.** É o único CD com estoque compartilhado que funciona com as regras tributárias atuais. Corta 27% dos recebimentos e tem saída curta (até 172 km). Mineiros, Alto Taquari e Costa Rica ficam praticamente empatados em distância média até as 4 usinas BRM (97–104 km). **Mineiros leva vantagem** por ter o menor km de saída e por já operar o piloto. Chapadão do Sul e Jataí, sem usina BRM no local, ficam piores neste caso. A dificuldade conhecida é o transporte dedicado caro em Mineiros.
-- **C2 – CD único.** É o que mais consolida a entrada (−72%), mas só funcionaria com estoque compartilhado entre CNPJs: R$ 32,2 mi por ano (57% do consumo) passariam por venda entre empresas do grupo. Também tem a saída mais cara: pelo menos R$ 1,3 mi/ano no piso ANTT e até 8h de viagem. **Com as regras atuais, não passa no filtro tributário.** Volta a ser candidato só se a reforma tributária ou uma estrutura fiscal específica eliminar o custo da venda entre CNPJs.
+- **C2 – CD único.** É o que mais consolida a entrada (−72%), mas só funcionaria com estoque compartilhado entre CNPJs: R$ 32,2 mi por ano (57% do consumo) passariam por venda entre empresas do grupo. Também tem a saída mais cara: pelo menos R$ 2,3 mi/ano no piso ANTT (ida e volta) e até 8h de viagem. **Com as regras atuais, não passa no filtro tributário.** Volta a ser candidato só se a reforma tributária ou uma estrutura fiscal específica eliminar o custo da venda entre CNPJs.
 - **C3 – Híbrido de 2 polos.** Fica no meio do caminho (−49% de recebimentos), mas os dois polos misturam CNPJs: URC no Norte e USL/UEL no Sul. Para funcionar sem venda, o Norte teria de ficar só com as BRM (o que é o C1) e o Sul precisaria de estoques separados por CNPJ.
 - **C4 – Consolidação em Ribeirão Preto.** Não precisa de CD de estoque nem de troca de CNPJ e corta 57% dos recebimentos. Funciona porque pneus, filtros e rolamentos vêm em boa parte de SP. Exige um operador logístico e a concordância dos fornecedores. Formaliza um fluxo que a transportadora de pneus já faz. Sozinho, porém, não reduz estoques nas usinas.
 - **C5 – CD BRM + consolidação em Ribeirão Preto.** Combina o que cada solução tem de melhor: estoque compartilhado onde a tributação permite (4 usinas BRM) e consolidação de transporte para todas. Tem a **maior redução de recebimentos entre os casos sem troca de CNPJ (−69%)** e a mesma saída curta do C1.
@@ -455,4 +455,4 @@ Estes resultados usam aproximações: meses com consumo como proxy de entregas, 
 
 **Documentos do projeto:** [Mapeamento dos fornecedores prioritários](../001_Diagnostico_Abastecimento/Mapeamento_Fornecedores.md) (método de classificação e valoração); [Abastecimento atual e seus custos](../001_Diagnostico_Abastecimento/Diagnostico_Atual_MRO.md) (seção 3.2).
 
-**Referências externas:** OpenStreetMap/Nominatim (localização das sedes municipais, acesso em nov. 2026); OSRM – Open Source Routing Machine (distâncias e tempos rodoviários, acesso em nov. 2026); IBGE, Censo 2022 (porte aproximado dos municípios). As informações de rodovias e estrutura de transporte da Tabela 2.9 são um levantamento qualitativo inicial e precisam de fonte específica antes da entrega final.
+**Referências externas:** OpenStreetMap/Nominatim (localização das sedes municipais, acesso em nov. 2026); OSRM – Open Source Routing Machine (distâncias e tempos rodoviários, acesso em nov. 2026); IBGE, Censo 2022 (porte aproximado dos municípios). As informações de rodovias e estrutura de transporte da Tabela 2.9 compõem um levantamento qualitativo inicial a ser validado com fontes específicas na Sprint 3.

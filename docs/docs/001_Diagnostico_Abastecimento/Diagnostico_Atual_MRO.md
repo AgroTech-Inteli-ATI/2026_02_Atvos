@@ -185,4 +185,4 @@ A tabela abaixo sintetiza os elementos do diagnóstico do abastecimento atual, s
 
 **Dados da Atvos:** Planejamento de Materiais (aba Consolidado); Base de Planejamento de Materiais (abas Base_Consumo e Base_Estoque_Atual); Apresentação Estoque Compartilhado (slides 4 a 8).
 
-**Referências externas:** Atvos – Nossas Unidades; Loggi – Custo de estoque; Mundo Logística – reajuste do piso ANTT; Portal do Trânsito – cálculo do piso; Portal Salário – Almoxarife; InfoJobs – Almoxarife Mineiros; ABM – Gestão MRO na CSN; UFMS – Estoque de manutenção em usina. Os documentos de origem não traziam os links; vale incluí-los antes da entrega.
+**Referências externas:** Atvos – Nossas Unidades; Loggi – Custo de estoque; Mundo Logística – reajuste do piso ANTT; Portal do Trânsito – cálculo do piso; Portal Salário – Almoxarife; InfoJobs – Almoxarife Mineiros; ABM – Gestão MRO na CSN; UFMS – Estoque de manutenção em usina. Referências consultadas pela equipe na Sprint 1 (sem URLs nos registros de origem) e detalhadas com fontes completas nas entregas seguintes.

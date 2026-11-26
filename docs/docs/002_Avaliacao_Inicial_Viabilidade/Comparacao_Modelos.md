@@ -136,7 +136,7 @@ A Tabela 5 recorta para os quatro grupos as estimativas do [item 4](./Beneficios
 Três leituras importam para a decisão:
 
 - **O frete é o que mais pesa contra o CD centralizado.** Sozinho, o transporte CD → unidades consome R$ 1,9 milhão por ano no cenário esperado, mais que toda a economia de estoque e de compras somadas. O motivo é o volume: no CD centralizado passariam R$ 65 milhões por ano em mercadoria, quase tudo item de uso contínuo que hoje vai direto do fornecedor para a usina. A distância média de 300 km usada no frete é compatível com a [comparação de regiões](./Comparacao_Regioes_CD.md), em que o melhor ponto para um CD único (Chapadão do Sul) fica a 307 km em média das usinas e a 574 km da UCP.
-- **O híbrido fica perto do equilíbrio e libera R$ 0,6 milhão a mais de capital do que a situação otimizada.** Os valores de armazenagem e transporte do híbrido herdados do item 4 são conservadores para este recorte, porque o volume que passaria pelo ponto central (R$ 3,8 milhões por ano) é bem menor que o de seis grupos. A comparação de regiões estima a saída de um CD da BRM em Mineiros em cerca de R$ 0,30 mi por ano no piso da ANTT (duas viagens por semana para cada usina), menos da metade dos R$ 0,72 mi usados aqui. Se o ponto central usar uma estrutura que já existe (como o almoxarifado da UMV e a rota do piloto) ou for operado pelo fornecedor, o saldo tende a ficar positivo.
+- **O híbrido fica perto do equilíbrio e libera R$ 0,6 milhão a mais de capital do que a situação otimizada.** Os valores de armazenagem e transporte do híbrido herdados do item 4 são conservadores para este recorte, porque o volume que passaria pelo ponto central (R$ 3,8 milhões por ano) é bem menor que o de seis grupos. A comparação de regiões estima a saída de um CD da BRM em Mineiros em cerca de R$ 0,45 mi por ano no piso da ANTT (duas viagens por semana para cada usina, ida e volta), cerca de 38% abaixo dos R$ 0,72 mi usados aqui. Se o ponto central usar uma estrutura que já existe (como o almoxarifado da UMV e a rota do piloto) ou for operado pelo fornecedor, o saldo tende a ficar positivo.
 - **O ganho em compras é limitado.** Em pneus e lubrificantes, 74% do consumo da safra 25/26 no recorte, o fornecimento já é concentrado em poucos fornecedores nacionais, e ainda falta confirmar se os contratos já são corporativos.
 
 ### 1.3.2. Prazos
@@ -267,7 +267,7 @@ O resultado reforça a Tabela 3. Em rolamentos, os fatores apontam para centrali
 
 ### 1.5.2. Duas formas de operar o ponto central do híbrido
 
-A Tabela 13 mostra que o ponto central do híbrido pode ser operado de duas formas. As duas podem conviver: o CD da BRM atende as quatro usinas do mesmo CNPJ, e o estoque do fornecedor atende URC, USL, UEL e UCP. A escolha final depende da análise fiscal, que está em outra entrega desta sprint.
+A Tabela 13 mostra que o ponto central do híbrido pode ser operado de duas formas. As duas podem conviver: o CD da BRM atende as quatro usinas do mesmo CNPJ, e o estoque do fornecedor atende URC, USL, UEL e UCP. A escolha final depende da [análise fiscal](./Investimento_Custos.md#33-impostos-que-podem-afetar-os-custos-das-alternativas), detalhada no item 3 desta sprint.
 
 **Tabela 13 – Formas de operar o ponto central**
 
@@ -312,7 +312,7 @@ A Atvos ainda não informou a criticidade operacional dos itens. Enquanto isso, 
 
 A [comparação de regiões](./Comparacao_Regioes_CD.md) chegou ao mesmo desenho por outro caminho: o caso recomendado (C5) é um CD da BRM no Polo Norte, que só compartilha estoque entre as quatro usinas do mesmo CNPJ, mais consolidação de transporte em Ribeirão Preto para os fornecedores de SP. As outras quatro usinas mantêm seus almoxarifados e podem ampliar o estoque do fornecedor. Esse é o modelo híbrido desta página com endereço definido.
 
-O **CD centralizado** só passa a fazer sentido se três condições acontecerem juntas: (1) uma distância média bem menor que a do melhor ponto único encontrado (307 km, com a UCP a 574 km), perto do limite otimista de 150 km do item 4; (2) uma solução fiscal que permita atender as unidades de CNPJ próprio sem revenda, como a reforma tributária pode trazer; e (3) frete compartilhado com fluxos que já existem, e não uma frota dedicada. As entregas de investimento e impostos desta sprint devem testar essas condições.
+O **CD centralizado** só passa a fazer sentido se três condições acontecerem juntas: (1) uma distância média bem menor que a do melhor ponto único encontrado (307 km, com a UCP a 574 km), perto do limite otimista de 150 km do item 4; (2) uma solução fiscal que permita atender as unidades de CNPJ próprio sem revenda, como a reforma tributária pode trazer; e (3) frete compartilhado com fluxos que já existem, e não uma frota dedicada. A análise de [investimento, custos e impostos](./Investimento_Custos.md) confirma que, sob as regras fiscais atuais, o empilhamento tributário reforça a inviabilidade do CD centralizado.
 
 **Informações que ainda faltam para fechar a comparação:**
 
@@ -346,8 +346,8 @@ O **CD centralizado** só passa a fazer sentido se três condições acontecerem
 
 - **Recorte a confirmar.** O recorte vem da classificação da Sprint 1. A base de 17/11 usa grupos mais amplos, e a comparação de regiões usa a descrição do material; os números podem mudar quando a lista oficial for confirmada.
 - **Consolidação possivelmente otimista.** A estimativa de benefícios alerta que, com o tempo de entrega do CD no cálculo, a redução por consolidação pode estar cerca de R$ 0,6 mi acima do real nos seis grupos. O mesmo cuidado vale para o capital liberado da Tabela 5.
-- **Custos herdados.** Os custos de armazenagem e transporte usam o porte e as viagens definidos no item 4 para seis grupos. São conservadores para o híbrido deste recorte e serão substituídos pelas estimativas de investimento, custos de funcionamento e regiões desta sprint.
-- **Sem investimento e sem impostos.** A comparação financeira ainda não inclui o investimento inicial nem o efeito dos impostos, que podem mudar a ordem das alternativas.
+- **Custos herdados.** Os custos de armazenagem e transporte usam o porte e as viagens definidos no item 4 para seis grupos. São conservadores para o híbrido deste recorte e dialogam com as estimativas de [investimento e custos](./Investimento_Custos.md) e de [regiões](./Comparacao_Regioes_CD.md) desta sprint, a consolidar na Sprint 3.
+- **Sem investimento e sem impostos.** A comparação financeira desta página não inclui o investimento inicial nem o efeito dos impostos, tratados no [item 3](./Investimento_Custos.md) (no recorte de seis grupos) e que podem alterar a ordem das alternativas.
 - **Híbrido proposto vs. híbrido calculado.** O risco de falta do híbrido foi calculado no item 4 com só rolamentos no ponto central. O modelo proposto aqui inclui também os itens esporádicos dos outros grupos, então o resultado da Tabela 7 é um limite inferior do ganho.
 - **Referências externas.** Os casos externos têm contextos diferentes (distâncias, setores, legislação) e servem para entender condições de sucesso, não para estimar resultados da Atvos. Os números de fornecedores de serviço (integrated supply) são metas comerciais.
 - **Criticidade.** Os materiais essenciais foram aproximados por frequência de uso e preço. A classificação VED com a Manutenção pode incluir itens de uso raro que precisam ficar na usina.
